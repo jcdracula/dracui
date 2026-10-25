@@ -87,7 +87,7 @@
       <CY>128</CY>
     </Size>
   </TextureInfo>
-  <TextureInfo item="sbw_modern.png">
+  <TextureInfo item="sbw_list.png">
     <Size>
       <CX>512</CX>
       <CY>512</CY>
@@ -202,6 +202,18 @@
     </Size>
   </TextureInfo>
   <TextureInfo item="wnd_bg_dark_rock.png">
+    <Size>
+      <CX>256</CX>
+      <CY>256</CY>
+    </Size>
+  </TextureInfo>
+  <TextureInfo item="wnd_bg_menu.png">
+    <Size>
+      <CX>256</CX>
+      <CY>256</CY>
+    </Size>
+  </TextureInfo>
+  <TextureInfo item="wnd_bg_buff.png">
     <Size>
       <CX>256</CX>
       <CY>256</CY>
@@ -12674,18 +12686,120 @@
   </Ui2DAnimation>
   <!-- Art for book and spell book -->
   <!-- Empty spell book slot: the game draws this in every empty slot (not referenced in any XML).
-       Was a yellow block on window_pieces01.png; now a quiet inset tile on the spell book sheet. -->
+       Was a yellow block on window_pieces01.png; now a quiet empty row on the spell book sheet (sbw_list.png). -->
+  <!-- Item display compare-list dropdown chevron (idw_pieces.png) -->
+  <TextureInfo item="idw_pieces.png">
+    <Size>
+      <CX>128</CX>
+      <CY>64</CY>
+    </Size>
+  </TextureInfo>
+  <Ui2DAnimation item="A_IDW_ComboNormal">
+    <Cycle>true</Cycle>
+    <Frames>
+      <Texture>idw_pieces.png</Texture>
+      <Location>
+        <X>0</X>
+        <Y>48</Y>
+      </Location>
+      <Size>
+        <CX>16</CX>
+        <CY>16</CY>
+      </Size>
+      <Hotspot>
+        <X>0</X>
+        <Y>0</Y>
+      </Hotspot>
+      <Duration>1000</Duration>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="A_IDW_ComboFlyby">
+    <Cycle>true</Cycle>
+    <Frames>
+      <Texture>idw_pieces.png</Texture>
+      <Location>
+        <X>18</X>
+        <Y>48</Y>
+      </Location>
+      <Size>
+        <CX>16</CX>
+        <CY>16</CY>
+      </Size>
+      <Hotspot>
+        <X>0</X>
+        <Y>0</Y>
+      </Hotspot>
+      <Duration>1000</Duration>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="A_IDW_ComboPressed">
+    <Cycle>true</Cycle>
+    <Frames>
+      <Texture>idw_pieces.png</Texture>
+      <Location>
+        <X>36</X>
+        <Y>48</Y>
+      </Location>
+      <Size>
+        <CX>16</CX>
+        <CY>16</CY>
+      </Size>
+      <Hotspot>
+        <X>0</X>
+        <Y>0</Y>
+      </Hotspot>
+      <Duration>1000</Duration>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="A_IDW_FieldCorner">
+    <Cycle>true</Cycle>
+    <Frames>
+      <Texture>idw_pieces.png</Texture>
+      <Location>
+        <X>60</X>
+        <Y>48</Y>
+      </Location>
+      <Size>
+        <CX>1</CX>
+        <CY>1</CY>
+      </Size>
+      <Hotspot>
+        <X>0</X>
+        <Y>0</Y>
+      </Hotspot>
+      <Duration>1000</Duration>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="A_IDW_FieldEdge">
+    <Cycle>true</Cycle>
+    <Frames>
+      <Texture>idw_pieces.png</Texture>
+      <Location>
+        <X>62</X>
+        <Y>48</Y>
+      </Location>
+      <Size>
+        <CX>1</CX>
+        <CY>1</CY>
+      </Size>
+      <Hotspot>
+        <X>0</X>
+        <Y>0</Y>
+      </Hotspot>
+      <Duration>1000</Duration>
+    </Frames>
+  </Ui2DAnimation>
   <Ui2DAnimation item="A_SpellBookSlot">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>280</X>
-        <Y>460</Y>
+        <X>0</X>
+        <Y>458</Y>
       </Location>
       <Size>
-        <CX>44</CX>
-        <CY>44</CY>
+        <CX>232</CX>
+        <CY>30</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26471,11 +26585,11 @@
       <Duration>1000</Duration>
     </Frames>
   </Ui2DAnimation>
-  <!-- Modern-theme spell book (sbw_modern.png): background in four quarters, page arrows, close X, spell tiles -->
+  <!-- Modern-theme spell book, list layout (sbw_list.png): background in four quarters, page arrows, close X, spell rows -->
   <Ui2DAnimation item="A_SBW_Bg1">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
         <X>0</X>
         <Y>0</Y>
@@ -26494,7 +26608,7 @@
   <Ui2DAnimation item="A_SBW_Bg2">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
         <X>256</X>
         <Y>0</Y>
@@ -26513,7 +26627,7 @@
   <Ui2DAnimation item="A_SBW_Bg3">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
         <X>0</X>
         <Y>256</Y>
@@ -26532,7 +26646,7 @@
   <Ui2DAnimation item="A_SBW_Bg4">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
         <X>256</X>
         <Y>256</Y>
@@ -26551,14 +26665,14 @@
   <Ui2DAnimation item="A_SBW_LeftNormal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
         <X>0</X>
-        <Y>368</Y>
+        <Y>490</Y>
       </Location>
       <Size>
-        <CX>18</CX>
-        <CY>32</CY>
+        <CX>26</CX>
+        <CY>20</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26570,14 +26684,14 @@
   <Ui2DAnimation item="A_SBW_LeftFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>20</X>
-        <Y>368</Y>
+        <X>28</X>
+        <Y>490</Y>
       </Location>
       <Size>
-        <CX>18</CX>
-        <CY>32</CY>
+        <CX>26</CX>
+        <CY>20</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26589,14 +26703,14 @@
   <Ui2DAnimation item="A_SBW_LeftPressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>40</X>
-        <Y>368</Y>
+        <X>56</X>
+        <Y>490</Y>
       </Location>
       <Size>
-        <CX>18</CX>
-        <CY>32</CY>
+        <CX>26</CX>
+        <CY>20</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26608,14 +26722,14 @@
   <Ui2DAnimation item="A_SBW_LeftPressedFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>60</X>
-        <Y>368</Y>
+        <X>84</X>
+        <Y>490</Y>
       </Location>
       <Size>
-        <CX>18</CX>
-        <CY>32</CY>
+        <CX>26</CX>
+        <CY>20</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26627,14 +26741,14 @@
   <Ui2DAnimation item="A_SBW_LeftDisabled">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>80</X>
-        <Y>368</Y>
+        <X>112</X>
+        <Y>490</Y>
       </Location>
       <Size>
-        <CX>18</CX>
-        <CY>32</CY>
+        <CX>26</CX>
+        <CY>20</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26646,14 +26760,14 @@
   <Ui2DAnimation item="A_SBW_RightNormal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>0</X>
-        <Y>404</Y>
+        <X>140</X>
+        <Y>490</Y>
       </Location>
       <Size>
-        <CX>18</CX>
-        <CY>32</CY>
+        <CX>26</CX>
+        <CY>20</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26665,14 +26779,14 @@
   <Ui2DAnimation item="A_SBW_RightFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>20</X>
-        <Y>404</Y>
+        <X>168</X>
+        <Y>490</Y>
       </Location>
       <Size>
-        <CX>18</CX>
-        <CY>32</CY>
+        <CX>26</CX>
+        <CY>20</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26684,14 +26798,14 @@
   <Ui2DAnimation item="A_SBW_RightPressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>40</X>
-        <Y>404</Y>
+        <X>196</X>
+        <Y>490</Y>
       </Location>
       <Size>
-        <CX>18</CX>
-        <CY>32</CY>
+        <CX>26</CX>
+        <CY>20</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26703,14 +26817,14 @@
   <Ui2DAnimation item="A_SBW_RightPressedFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>60</X>
-        <Y>404</Y>
+        <X>224</X>
+        <Y>490</Y>
       </Location>
       <Size>
-        <CX>18</CX>
-        <CY>32</CY>
+        <CX>26</CX>
+        <CY>20</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26722,14 +26836,14 @@
   <Ui2DAnimation item="A_SBW_RightDisabled">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>80</X>
-        <Y>404</Y>
+        <X>252</X>
+        <Y>490</Y>
       </Location>
       <Size>
-        <CX>18</CX>
-        <CY>32</CY>
+        <CX>26</CX>
+        <CY>20</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26741,10 +26855,10 @@
   <Ui2DAnimation item="A_SBW_CloseNormal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>0</X>
-        <Y>440</Y>
+        <X>280</X>
+        <Y>490</Y>
       </Location>
       <Size>
         <CX>16</CX>
@@ -26760,10 +26874,10 @@
   <Ui2DAnimation item="A_SBW_CloseFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>18</X>
-        <Y>440</Y>
+        <X>298</X>
+        <Y>490</Y>
       </Location>
       <Size>
         <CX>16</CX>
@@ -26779,10 +26893,10 @@
   <Ui2DAnimation item="A_SBW_ClosePressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>36</X>
-        <Y>440</Y>
+        <X>316</X>
+        <Y>490</Y>
       </Location>
       <Size>
         <CX>16</CX>
@@ -26798,14 +26912,14 @@
   <Ui2DAnimation item="A_SBW_TileBlueNormal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
         <X>0</X>
-        <Y>460</Y>
+        <Y>362</Y>
       </Location>
       <Size>
-        <CX>44</CX>
-        <CY>44</CY>
+        <CX>232</CX>
+        <CY>30</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26817,14 +26931,14 @@
   <Ui2DAnimation item="A_SBW_TileBlueFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>46</X>
-        <Y>460</Y>
+        <X>240</X>
+        <Y>362</Y>
       </Location>
       <Size>
-        <CX>44</CX>
-        <CY>44</CY>
+        <CX>232</CX>
+        <CY>30</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26836,14 +26950,14 @@
   <Ui2DAnimation item="A_SBW_TileBluePressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>92</X>
-        <Y>460</Y>
+        <X>0</X>
+        <Y>394</Y>
       </Location>
       <Size>
-        <CX>44</CX>
-        <CY>44</CY>
+        <CX>232</CX>
+        <CY>30</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26855,14 +26969,14 @@
   <Ui2DAnimation item="A_SBW_TileRedNormal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>138</X>
-        <Y>460</Y>
+        <X>240</X>
+        <Y>394</Y>
       </Location>
       <Size>
-        <CX>44</CX>
-        <CY>44</CY>
+        <CX>232</CX>
+        <CY>30</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26874,14 +26988,14 @@
   <Ui2DAnimation item="A_SBW_TileRedFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>184</X>
-        <Y>460</Y>
+        <X>0</X>
+        <Y>426</Y>
       </Location>
       <Size>
-        <CX>44</CX>
-        <CY>44</CY>
+        <CX>232</CX>
+        <CY>30</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -26893,14 +27007,14 @@
   <Ui2DAnimation item="A_SBW_TileRedPressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>sbw_modern.png</Texture>
+      <Texture>sbw_list.png</Texture>
       <Location>
-        <X>230</X>
-        <Y>460</Y>
+        <X>240</X>
+        <Y>426</Y>
       </Location>
       <Size>
-        <CX>44</CX>
-        <CY>44</CY>
+        <CX>232</CX>
+        <CY>30</CY>
       </Size>
       <Hotspot>
         <X>0</X>

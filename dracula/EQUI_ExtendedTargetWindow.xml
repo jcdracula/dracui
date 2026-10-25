@@ -2,6 +2,14 @@
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData"
             xmlns:dt="EverQuestDataTypes" />
+  <!-- Slot layout (each slot stays 116x32 on the same grid, so the window size doesn't change):
+       slot number in its own 12px column at the far left, then the 16x16 role icon, then the bars
+       (31..110, 6px before the next column). The game shows each slot's role icon even when the
+       slot is empty, so the number never sits on top of it. Aggro % at the top-left above the
+       number and icon; health % right-aligned inside the health bar. The aggro label spans the
+       whole slot content (111x32) because the game draws the current-target box around it. -->
+  <!-- Bars use the theme's gauge art (A_ACHM_Gauge*), as on the target, group and player windows.
+       Role icons / slot boxes come from TargetRole.png (restyled in place; same 16px grid). -->
   <!-- 4-row mana / endurance fill: 3 opaque rows + 1 transparent row, so the gauge background shows as a bottom edge -->
   <Ui2DAnimation item="A_ETWThinFill">
     <Cycle>false</Cycle>
@@ -38,23 +46,24 @@
         <Text>100</Text>
         <TextColor>
             <R>255</R>
-            <G>0</G>
-            <B>0</B>
+            <G>85</G>
+            <B>85</B>
         </TextColor>
         <EQType>314</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role0">
         <ScreenID>ETW_Role0</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -65,11 +74,11 @@
         <ScreenID>ETW_Gauge0</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -87,21 +96,21 @@
         </FillTint>
         <EQType>42</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge0">
         <ScreenID>ETW_ManaGauge0</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -114,20 +123,20 @@
         <EQType>62</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge0">
         <ScreenID>ETW_STAGauge0</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -140,9 +149,9 @@
         <EQType>82</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel0">
@@ -150,14 +159,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>151</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -167,13 +177,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>1</Text>
     <TextColor>
       <R>223</R>
@@ -190,13 +200,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>2</Text>
     <TextColor>
       <R>223</R>
@@ -213,13 +223,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>3</Text>
     <TextColor>
       <R>223</R>
@@ -236,13 +246,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>4</Text>
     <TextColor>
       <R>223</R>
@@ -259,13 +269,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>5</Text>
     <TextColor>
       <R>223</R>
@@ -282,13 +292,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>6</Text>
     <TextColor>
       <R>223</R>
@@ -305,13 +315,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>7</Text>
     <TextColor>
       <R>223</R>
@@ -328,13 +338,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>8</Text>
     <TextColor>
       <R>223</R>
@@ -351,13 +361,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>9</Text>
     <TextColor>
       <R>223</R>
@@ -374,13 +384,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>10</Text>
     <TextColor>
       <R>223</R>
@@ -397,13 +407,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>11</Text>
     <TextColor>
       <R>223</R>
@@ -420,13 +430,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>12</Text>
     <TextColor>
       <R>223</R>
@@ -443,13 +453,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>13</Text>
     <TextColor>
       <R>223</R>
@@ -466,13 +476,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>14</Text>
     <TextColor>
       <R>223</R>
@@ -489,13 +499,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>15</Text>
     <TextColor>
       <R>223</R>
@@ -512,13 +522,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>16</Text>
     <TextColor>
       <R>223</R>
@@ -535,13 +545,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>17</Text>
     <TextColor>
       <R>223</R>
@@ -558,13 +568,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>18</Text>
     <TextColor>
       <R>223</R>
@@ -581,13 +591,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>19</Text>
     <TextColor>
       <R>223</R>
@@ -604,13 +614,13 @@
     <RelativePosition>true</RelativePosition>
     <Font>1</Font>
     <Location>
-      <X>2</X>
-      <Y>16</Y>
-    </Location>
+            <X>0</X>
+            <Y>16</Y>
+        </Location>
     <Size>
-      <CX>16</CX>
-      <CY>12</CY>
-    </Size>
+            <CX>12</CX>
+            <CY>12</CY>
+        </Size>
     <Text>20</Text>
     <TextColor>
       <R>223</R>
@@ -656,17 +666,18 @@
         <EQType>315</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role1">
         <ScreenID>ETW_Role1</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -677,11 +688,11 @@
         <ScreenID>ETW_Gauge1</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -699,21 +710,21 @@
         </FillTint>
         <EQType>43</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge1">
         <ScreenID>ETW_ManaGauge1</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -726,20 +737,20 @@
         <EQType>63</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge1">
         <ScreenID>ETW_STAGauge1</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -752,9 +763,9 @@
         <EQType>83</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel1">
@@ -762,14 +773,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>152</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -804,17 +816,18 @@
         <EQType>316</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role2">
         <ScreenID>ETW_Role2</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -825,11 +838,11 @@
         <ScreenID>ETW_Gauge2</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -847,21 +860,21 @@
         </FillTint>
         <EQType>44</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge2">
         <ScreenID>ETW_ManaGauge2</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -874,20 +887,20 @@
         <EQType>64</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge2">
         <ScreenID>ETW_STAGauge2</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -900,9 +913,9 @@
         <EQType>84</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel2">
@@ -910,14 +923,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>153</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -952,17 +966,18 @@
         <EQType>317</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role3">
         <ScreenID>ETW_Role3</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -973,11 +988,11 @@
         <ScreenID>ETW_Gauge3</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -995,21 +1010,21 @@
         </FillTint>
         <EQType>45</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge3">
         <ScreenID>ETW_ManaGauge3</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -1022,20 +1037,20 @@
         <EQType>65</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge3">
         <ScreenID>ETW_STAGauge3</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -1048,9 +1063,9 @@
         <EQType>85</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel3">
@@ -1058,14 +1073,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>154</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -1100,17 +1116,18 @@
         <EQType>318</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role4">
         <ScreenID>ETW_Role4</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -1121,11 +1138,11 @@
         <ScreenID>ETW_Gauge4</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -1143,21 +1160,21 @@
         </FillTint>
         <EQType>46</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge4">
         <ScreenID>ETW_ManaGauge4</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -1170,20 +1187,20 @@
         <EQType>66</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge4">
         <ScreenID>ETW_STAGauge4</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -1196,9 +1213,9 @@
         <EQType>86</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel4">
@@ -1206,14 +1223,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>155</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -1248,17 +1266,18 @@
         <EQType>319</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role5">
         <ScreenID>ETW_Role5</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -1269,11 +1288,11 @@
         <ScreenID>ETW_Gauge5</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -1291,21 +1310,21 @@
         </FillTint>
         <EQType>47</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge5">
         <ScreenID>ETW_ManaGauge5</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -1318,20 +1337,20 @@
         <EQType>67</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge5">
         <ScreenID>ETW_STAGauge5</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -1344,9 +1363,9 @@
         <EQType>87</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel5">
@@ -1354,14 +1373,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>156</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -1396,17 +1416,18 @@
         <EQType>320</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role6">
         <ScreenID>ETW_Role6</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -1417,11 +1438,11 @@
         <ScreenID>ETW_Gauge6</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -1439,21 +1460,21 @@
         </FillTint>
         <EQType>48</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge6">
         <ScreenID>ETW_ManaGauge6</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -1466,20 +1487,20 @@
         <EQType>68</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge6">
         <ScreenID>ETW_STAGauge6</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -1492,9 +1513,9 @@
         <EQType>88</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel6">
@@ -1502,14 +1523,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>157</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -1548,17 +1570,18 @@
         <EQType>321</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role7">
         <ScreenID>ETW_Role7</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -1569,11 +1592,11 @@
         <ScreenID>ETW_Gauge7</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -1591,21 +1614,21 @@
         </FillTint>
         <EQType>49</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge7">
         <ScreenID>ETW_ManaGauge7</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -1618,20 +1641,20 @@
         <EQType>69</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge7">
         <ScreenID>ETW_STAGauge7</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -1644,9 +1667,9 @@
         <EQType>89</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel7">
@@ -1654,14 +1677,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>158</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -1700,17 +1724,18 @@
         <EQType>322</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role8">
         <ScreenID>ETW_Role8</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -1721,11 +1746,11 @@
         <ScreenID>ETW_Gauge8</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -1743,21 +1768,21 @@
         </FillTint>
         <EQType>50</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge8">
         <ScreenID>ETW_ManaGauge8</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -1770,20 +1795,20 @@
         <EQType>70</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge8">
         <ScreenID>ETW_STAGauge8</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -1796,9 +1821,9 @@
         <EQType>90</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel8">
@@ -1806,14 +1831,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>159</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -1852,17 +1878,18 @@
         <EQType>323</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role9">
         <ScreenID>ETW_Role9</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -1873,11 +1900,11 @@
         <ScreenID>ETW_Gauge9</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -1895,21 +1922,21 @@
         </FillTint>
         <EQType>51</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge9">
         <ScreenID>ETW_ManaGauge9</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -1922,20 +1949,20 @@
         <EQType>71</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge9">
         <ScreenID>ETW_STAGauge9</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -1948,9 +1975,9 @@
         <EQType>91</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel9">
@@ -1958,14 +1985,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>160</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -2004,17 +2032,18 @@
         <EQType>324</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role10">
         <ScreenID>ETW_Role10</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -2025,11 +2054,11 @@
         <ScreenID>ETW_Gauge10</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -2047,21 +2076,21 @@
         </FillTint>
         <EQType>52</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge10">
         <ScreenID>ETW_ManaGauge10</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -2074,20 +2103,20 @@
         <EQType>72</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge10">
         <ScreenID>ETW_STAGauge10</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -2100,9 +2129,9 @@
         <EQType>92</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel10">
@@ -2110,14 +2139,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>161</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -2156,17 +2186,18 @@
         <EQType>325</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role11">
         <ScreenID>ETW_Role11</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -2177,11 +2208,11 @@
         <ScreenID>ETW_Gauge11</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -2199,21 +2230,21 @@
         </FillTint>
         <EQType>53</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge11">
         <ScreenID>ETW_ManaGauge11</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -2226,20 +2257,20 @@
         <EQType>73</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge11">
         <ScreenID>ETW_STAGauge11</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -2252,9 +2283,9 @@
         <EQType>93</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel11">
@@ -2262,14 +2293,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>162</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -2308,17 +2340,18 @@
         <EQType>326</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role12">
         <ScreenID>ETW_Role12</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -2329,11 +2362,11 @@
         <ScreenID>ETW_Gauge12</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -2351,21 +2384,21 @@
         </FillTint>
         <EQType>54</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge12">
         <ScreenID>ETW_ManaGauge12</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -2378,20 +2411,20 @@
         <EQType>74</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge12">
         <ScreenID>ETW_STAGauge12</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -2404,9 +2437,9 @@
         <EQType>94</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel12">
@@ -2414,14 +2447,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>163</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -2460,17 +2494,18 @@
         <EQType>327</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role13">
         <ScreenID>ETW_Role13</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -2481,11 +2516,11 @@
         <ScreenID>ETW_Gauge13</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -2503,21 +2538,21 @@
         </FillTint>
         <EQType>55</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge13">
         <ScreenID>ETW_ManaGauge13</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -2530,20 +2565,20 @@
         <EQType>75</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge13">
         <ScreenID>ETW_STAGauge13</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -2556,9 +2591,9 @@
         <EQType>95</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel13">
@@ -2566,14 +2601,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>164</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -2612,17 +2648,18 @@
         <EQType>328</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role14">
         <ScreenID>ETW_Role14</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -2633,11 +2670,11 @@
         <ScreenID>ETW_Gauge14</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -2655,21 +2692,21 @@
         </FillTint>
         <EQType>56</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge14">
         <ScreenID>ETW_ManaGauge14</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -2682,20 +2719,20 @@
         <EQType>76</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge14">
         <ScreenID>ETW_STAGauge14</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -2708,9 +2745,9 @@
         <EQType>96</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel14">
@@ -2718,14 +2755,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>165</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -2764,17 +2802,18 @@
         <EQType>329</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role15">
         <ScreenID>ETW_Role15</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -2785,11 +2824,11 @@
         <ScreenID>ETW_Gauge15</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -2807,21 +2846,21 @@
         </FillTint>
         <EQType>57</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge15">
         <ScreenID>ETW_ManaGauge15</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -2834,20 +2873,20 @@
         <EQType>77</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge15">
         <ScreenID>ETW_STAGauge15</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -2860,9 +2899,9 @@
         <EQType>97</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel15">
@@ -2870,14 +2909,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>166</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -2916,17 +2956,18 @@
         <EQType>330</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role16">
         <ScreenID>ETW_Role16</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -2937,11 +2978,11 @@
         <ScreenID>ETW_Gauge16</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -2959,21 +3000,21 @@
         </FillTint>
         <EQType>58</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge16">
         <ScreenID>ETW_ManaGauge16</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -2986,20 +3027,20 @@
         <EQType>78</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge16">
         <ScreenID>ETW_STAGauge16</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -3012,9 +3053,9 @@
         <EQType>98</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel16">
@@ -3022,14 +3063,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>167</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -3068,17 +3110,18 @@
         <EQType>331</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role17">
         <ScreenID>ETW_Role17</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -3089,11 +3132,11 @@
         <ScreenID>ETW_Gauge17</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -3111,21 +3154,21 @@
         </FillTint>
         <EQType>59</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge17">
         <ScreenID>ETW_ManaGauge17</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -3138,20 +3181,20 @@
         <EQType>79</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge17">
         <ScreenID>ETW_STAGauge17</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -3164,9 +3207,9 @@
         <EQType>99</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel17">
@@ -3174,14 +3217,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>168</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -3220,17 +3264,18 @@
         <EQType>332</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role18">
         <ScreenID>ETW_Role18</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -3241,11 +3286,11 @@
         <ScreenID>ETW_Gauge18</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -3263,21 +3308,21 @@
         </FillTint>
         <EQType>60</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge18">
         <ScreenID>ETW_ManaGauge18</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -3290,20 +3335,20 @@
         <EQType>80</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge18">
         <ScreenID>ETW_STAGauge18</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -3316,9 +3361,9 @@
         <EQType>100</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel18">
@@ -3326,14 +3371,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>169</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -3372,17 +3418,18 @@
         <EQType>333</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role19">
         <ScreenID>ETW_Role19</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -3393,11 +3440,11 @@
         <ScreenID>ETW_Gauge19</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -3415,21 +3462,21 @@
         </FillTint>
         <EQType>61</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge19">
         <ScreenID>ETW_ManaGauge19</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -3442,20 +3489,20 @@
         <EQType>81</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge19">
         <ScreenID>ETW_STAGauge19</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -3468,9 +3515,9 @@
         <EQType>101</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel19">
@@ -3478,14 +3525,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>170</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -3524,17 +3572,18 @@
         <EQType>391</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role20">
         <ScreenID>ETW_Role20</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -3545,11 +3594,11 @@
         <ScreenID>ETW_Gauge20</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -3567,21 +3616,21 @@
         </FillTint>
         <EQType>151</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge20">
         <ScreenID>ETW_ManaGauge20</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -3594,20 +3643,20 @@
         <EQType>161</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge20">
         <ScreenID>ETW_STAGauge20</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -3620,9 +3669,9 @@
         <EQType>171</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel20">
@@ -3630,14 +3679,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>361</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -3675,17 +3725,18 @@
         <EQType>392</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role21">
         <ScreenID>ETW_Role21</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -3696,11 +3747,11 @@
         <ScreenID>ETW_Gauge21</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -3718,21 +3769,21 @@
         </FillTint>
         <EQType>152</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge21">
         <ScreenID>ETW_ManaGauge21</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -3745,20 +3796,20 @@
         <EQType>162</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge21">
         <ScreenID>ETW_STAGauge21</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -3771,9 +3822,9 @@
         <EQType>172</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel21">
@@ -3781,14 +3832,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>362</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
@@ -3826,17 +3878,18 @@
         <EQType>393</EQType>
         <NoWrap>true</NoWrap>
         <AlignCenter>false</AlignCenter>
+        <AlignRight>false</AlignRight>
     </Label>
     <Button item="ETW_Role22">
         <ScreenID>ETW_Role22</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>2</X>
+            <X>12</X>
             <Y>14</Y>
         </Location>
         <Size>
             <CX>16</CX>
-            <CY>17</CY>
+            <CY>16</CY>
         </Size>
         <DecalSize>
             <CX>16</CX>
@@ -3847,11 +3900,11 @@
         <ScreenID>ETW_Gauge22</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>0</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>23</CY>
         </Size>
         <TextColor>
@@ -3869,21 +3922,21 @@
         </FillTint>
         <EQType>153</EQType>
         <GaugeDrawTemplate>
-            <Fill>A_GaugeFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Fill>A_ACHM_GaugeFill</Fill>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_ManaGauge22">
         <ScreenID>ETW_ManaGauge22</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>23</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -3896,20 +3949,20 @@
         <EQType>163</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Gauge item="ETW_STAGauge22">
         <ScreenID>ETW_STAGauge22</ScreenID>
         <RelativePosition>true</RelativePosition>
         <Location>
-            <X>17</X>
+            <X>31</X>
             <Y>27</Y>
         </Location>
         <Size>
-            <CX>96</CX>
+            <CX>79</CX>
             <CY>4</CY>
         </Size>
         <TextOffsetY>-50</TextOffsetY>
@@ -3922,9 +3975,9 @@
         <EQType>173</EQType>
         <GaugeDrawTemplate>
             <Fill>A_ETWThinFill</Fill>
-            <Background>A_GaugeBackground</Background>
-            <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-            <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+            <Background>A_ACHM_GaugeBackground</Background>
+            <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+            <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
         </GaugeDrawTemplate>
     </Gauge>
     <Label item="ETW_HPLabel22">
@@ -3932,14 +3985,15 @@
         <RelativePosition>true</RelativePosition>
         <Font>1</Font>
         <Location>
-            <X>49</X>
+            <X>73</X>
             <Y>12</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>34</CX>
             <CY>12</CY>
         </Size>
         <NoWrap>true</NoWrap>
+        <AlignRight>true</AlignRight>
         <EQType>363</EQType>
         <AppendText>%</AppendText>
         <Style_Tooltip>false</Style_Tooltip>
