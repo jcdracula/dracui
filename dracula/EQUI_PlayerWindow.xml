@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
   <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+  <!-- ============================================================
+       Modernized player window (Slate Glass HUD panel, like target / pet / group)
+       - health 14px (#FF5555), mana and endurance 4px, stacked with no gaps, all on the
+         theme's bar art with matching end caps; name and numbers stay hidden
+       - combat-state icon beside the bars, redrawn so each state reads at a glance:
+         swords = in combat, hourglass = combat timer, down arrow = debuffed,
+         ring = standing, plus = regenerating (pw_pieces.png)
+       - combat timer as a slim bar with its countdown beside it; aggro readouts hidden
+         (the target and extended target windows show aggro); group role icons on their
+         own row at the bottom (default height 52 shows bars and timer; drag the window
+         ~16px taller to show role icons)
+       - the auto-attack frame outlines the bar block
+       ============================================================ -->
   <TextureInfo item="AttackIndicator.tga">
+    <Size>
+      <CX>128</CX>
+      <CY>32</CY>
+    </Size>
+  </TextureInfo>
+  <TextureInfo item="pw_pieces.png">
     <Size>
       <CX>128</CX>
       <CY>32</CY>
@@ -82,10 +101,10 @@
     <Animation>A_AttackIndicatorTop</Animation>
     <AutoDraw>false</AutoDraw>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>34</TopAnchorOffset>
-    <BottomAnchorOffset>35</BottomAnchorOffset>
-    <LeftAnchorOffset>4</LeftAnchorOffset>
-    <RightAnchorOffset>3</RightAnchorOffset>
+    <TopAnchorOffset>0</TopAnchorOffset>
+    <BottomAnchorOffset>1</BottomAnchorOffset>
+    <LeftAnchorOffset>0</LeftAnchorOffset>
+    <RightAnchorOffset>0</RightAnchorOffset>
     <TopAnchorToTop>true</TopAnchorToTop>
     <BottomAnchorToTop>true</BottomAnchorToTop>
     <LeftAnchorToLeft>true</LeftAnchorToLeft>
@@ -96,10 +115,10 @@
     <Animation>A_AttackIndicatorBottom</Animation>
     <AutoDraw>false</AutoDraw>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>67</TopAnchorOffset>
-    <BottomAnchorOffset>68</BottomAnchorOffset>
-    <LeftAnchorOffset>4</LeftAnchorOffset>
-    <RightAnchorOffset>3</RightAnchorOffset>
+    <TopAnchorOffset>27</TopAnchorOffset>
+    <BottomAnchorOffset>28</BottomAnchorOffset>
+    <LeftAnchorOffset>0</LeftAnchorOffset>
+    <RightAnchorOffset>0</RightAnchorOffset>
     <TopAnchorToTop>true</TopAnchorToTop>
     <BottomAnchorToTop>true</BottomAnchorToTop>
     <LeftAnchorToLeft>true</LeftAnchorToLeft>
@@ -110,10 +129,10 @@
     <Animation>A_AttackIndicatorLeft</Animation>
     <AutoDraw>false</AutoDraw>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>35</TopAnchorOffset>
-    <BottomAnchorOffset>67</BottomAnchorOffset>
-    <LeftAnchorOffset>4</LeftAnchorOffset>
-    <RightAnchorOffset>5</RightAnchorOffset>
+    <TopAnchorOffset>1</TopAnchorOffset>
+    <BottomAnchorOffset>27</BottomAnchorOffset>
+    <LeftAnchorOffset>0</LeftAnchorOffset>
+    <RightAnchorOffset>1</RightAnchorOffset>
     <TopAnchorToTop>true</TopAnchorToTop>
     <BottomAnchorToTop>true</BottomAnchorToTop>
     <LeftAnchorToLeft>true</LeftAnchorToLeft>
@@ -124,10 +143,10 @@
     <Animation>A_AttackIndicatorRight</Animation>
     <AutoDraw>false</AutoDraw>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>35</TopAnchorOffset>
-    <BottomAnchorOffset>67</BottomAnchorOffset>
-    <LeftAnchorOffset>4</LeftAnchorOffset>
-    <RightAnchorOffset>3</RightAnchorOffset>
+    <TopAnchorOffset>1</TopAnchorOffset>
+    <BottomAnchorOffset>27</BottomAnchorOffset>
+    <LeftAnchorOffset>1</LeftAnchorOffset>
+    <RightAnchorOffset>0</RightAnchorOffset>
     <TopAnchorToTop>true</TopAnchorToTop>
     <BottomAnchorToTop>true</BottomAnchorToTop>
     <LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -138,10 +157,10 @@
     <Animation>A_AttackIndicatorFill</Animation>
     <AutoDraw>false</AutoDraw>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>35</TopAnchorOffset>
-    <BottomAnchorOffset>67</BottomAnchorOffset>
-    <LeftAnchorOffset>5</LeftAnchorOffset>
-    <RightAnchorOffset>4</RightAnchorOffset>
+    <TopAnchorOffset>1</TopAnchorOffset>
+    <BottomAnchorOffset>27</BottomAnchorOffset>
+    <LeftAnchorOffset>1</LeftAnchorOffset>
+    <RightAnchorOffset>1</RightAnchorOffset>
     <TopAnchorToTop>true</TopAnchorToTop>
     <BottomAnchorToTop>true</BottomAnchorToTop>
     <LeftAnchorToLeft>true</LeftAnchorToLeft>
@@ -150,9 +169,9 @@
   <Ui2DAnimation item="A_PWCSInCombat">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>pw_pieces.png</Texture>
       <Location>
-        <X>200</X>
+        <X>0</X>
         <Y>0</Y>
       </Location>
       <Size>
@@ -169,10 +188,10 @@
   <Ui2DAnimation item="A_PWCSTimer">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>pw_pieces.png</Texture>
       <Location>
-        <X>200</X>
-        <Y>80</Y>
+        <X>20</X>
+        <Y>0</Y>
       </Location>
       <Size>
         <CX>16</CX>
@@ -188,10 +207,10 @@
   <Ui2DAnimation item="A_PWCSDebuff">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>pw_pieces.png</Texture>
       <Location>
-        <X>200</X>
-        <Y>40</Y>
+        <X>40</X>
+        <Y>0</Y>
       </Location>
       <Size>
         <CX>16</CX>
@@ -207,10 +226,10 @@
   <Ui2DAnimation item="A_PWCSStanding">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>pw_pieces.png</Texture>
       <Location>
-        <X>200</X>
-        <Y>120</Y>
+        <X>60</X>
+        <Y>0</Y>
       </Location>
       <Size>
         <CX>16</CX>
@@ -226,10 +245,10 @@
   <Ui2DAnimation item="A_PWCSRegen">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>pw_pieces.png</Texture>
       <Location>
-        <X>200</X>
-        <Y>160</Y>
+        <X>80</X>
+        <Y>0</Y>
       </Location>
       <Size>
         <CX>16</CX>
@@ -489,6 +508,7 @@
     <ScreenID>Player_CombatTimer</ScreenID>
     <RelativePosition>true</RelativePosition>
     <GaugeOffsetY>0</GaugeOffsetY>
+    <GaugeOffsetX>0</GaugeOffsetX>
     <FillTint>
       <R>169</R>
       <G>169</G>
@@ -496,17 +516,16 @@
     </FillTint>
     <EQType>29</EQType>
     <GaugeDrawTemplate>
-      <Background>A_GaugeBackground</Background>
-      <Fill>A_GaugeFill</Fill>
-      <Lines>A_GaugeLines</Lines>
-      <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-      <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>82</TopAnchorOffset>
-    <BottomAnchorOffset>92</BottomAnchorOffset>
+    <TopAnchorOffset>32</TopAnchorOffset>
+    <BottomAnchorOffset>36</BottomAnchorOffset>
     <LeftAnchorOffset>2</LeftAnchorOffset>
-    <RightAnchorOffset>1</RightAnchorOffset>
+    <RightAnchorOffset>44</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Label item="Player_CombatTimerLabel">
@@ -519,9 +538,11 @@
     <AlignRight>false</AlignRight>
     <Font>1</Font>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>68</TopAnchorOffset>
-    <BottomAnchorOffset>78</BottomAnchorOffset>
-    <LeftAnchorOffset>2</LeftAnchorOffset>
+    <TopAnchorOffset>27</TopAnchorOffset>
+    <BottomAnchorOffset>38</BottomAnchorOffset>
+    <LeftAnchorOffset>42</LeftAnchorOffset>
+    <LeftAnchorToLeft>false</LeftAnchorToLeft>
+    <RightAnchorOffset>2</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
     <Style_Tooltip>false</Style_Tooltip>
   </Label>
@@ -535,10 +556,10 @@
       <CY>16</CY>
     </DecalSize>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>7</TopAnchorOffset>
-    <BottomAnchorOffset>32</BottomAnchorOffset>
-    <LeftAnchorOffset>22</LeftAnchorOffset>
-    <RightAnchorOffset>6</RightAnchorOffset>
+    <TopAnchorOffset>6</TopAnchorOffset>
+    <BottomAnchorOffset>22</BottomAnchorOffset>
+    <LeftAnchorOffset>18</LeftAnchorOffset>
+    <RightAnchorOffset>2</RightAnchorOffset>
     <LeftAnchorToLeft>false</LeftAnchorToLeft>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Button>
@@ -603,25 +624,25 @@
     <RelativePosition>true</RelativePosition>
     <TextOffsetX>1</TextOffsetX>
     <TextOffsetY>100</TextOffsetY>
-    <GaugeOffsetY>34</GaugeOffsetY>
+    <GaugeOffsetY>0</GaugeOffsetY>
+    <GaugeOffsetX>0</GaugeOffsetX>
     <FillTint>
-      <R>98</R>
-      <G>114</G>
-      <B>164</B>
+      <R>255</R>
+      <G>85</G>
+      <B>85</B>
     </FillTint>
     <EQType>1</EQType>
     <GaugeDrawTemplate>
-      <Background>A_PWGaugeBackground</Background>
-      <Fill>A_PWGaugeFill</Fill>
-      <Lines>A_GaugeLines</Lines>
-      <EndCapLeft>A_PWGaugeEndCapLeft</EndCapLeft>
-      <EndCapRight>A_PWGaugeEndCapRight</EndCapRight>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>1</TopAnchorOffset>
-    <BottomAnchorOffset>55</BottomAnchorOffset>
+    <TopAnchorOffset>3</TopAnchorOffset>
+    <BottomAnchorOffset>17</BottomAnchorOffset>
     <LeftAnchorOffset>2</LeftAnchorOffset>
-    <RightAnchorOffset>1</RightAnchorOffset>
+    <RightAnchorOffset>22</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Label item="Player_HPLabel">
@@ -685,6 +706,7 @@
     <ScreenID>PlayerMana</ScreenID>
     <RelativePosition>true</RelativePosition>
     <GaugeOffsetY>0</GaugeOffsetY>
+    <GaugeOffsetX>0</GaugeOffsetX>
     <FillTint>
       <R>139</R>
       <G>233</G>
@@ -692,17 +714,16 @@
     </FillTint>
     <EQType>2</EQType>
     <GaugeDrawTemplate>
-      <Background>A_PWGaugeBackgroundMana</Background>
-      <Fill>A_PWGaugeFillMana</Fill>
-      <Lines>A_GaugeLines</Lines>
-      <EndCapLeft>A_PWGaugeEndCapLeftMana</EndCapLeft>
-      <EndCapRight>A_PWGaugeEndCapRightMana</EndCapRight>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>54</TopAnchorOffset>
-    <BottomAnchorOffset>60</BottomAnchorOffset>
+    <TopAnchorOffset>17</TopAnchorOffset>
+    <BottomAnchorOffset>21</BottomAnchorOffset>
     <LeftAnchorOffset>2</LeftAnchorOffset>
-    <RightAnchorOffset>1</RightAnchorOffset>
+    <RightAnchorOffset>22</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Label item="Player_ManaLabel">
@@ -736,6 +757,7 @@
     <ScreenID>PlayerFatigue</ScreenID>
     <RelativePosition>true</RelativePosition>
     <GaugeOffsetY>0</GaugeOffsetY>
+    <GaugeOffsetX>0</GaugeOffsetX>
     <FillTint>
       <R>241</R>
       <G>250</G>
@@ -743,17 +765,16 @@
     </FillTint>
     <EQType>3</EQType>
     <GaugeDrawTemplate>
-      <Background>A_PWGaugeBackgroundEnd</Background>
-      <Fill>A_PWGaugeFillEnd</Fill>
-      <Lines>A_GaugeLines</Lines>
-      <EndCapLeft>A_PWGaugeEndCapLeftEnd</EndCapLeft>
-      <EndCapRight>A_PWGaugeEndCapRightEnd</EndCapRight>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>60</TopAnchorOffset>
-    <BottomAnchorOffset>67</BottomAnchorOffset>
+    <TopAnchorOffset>21</TopAnchorOffset>
+    <BottomAnchorOffset>25</BottomAnchorOffset>
     <LeftAnchorOffset>2</LeftAnchorOffset>
-    <RightAnchorOffset>1</RightAnchorOffset>
+    <RightAnchorOffset>22</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Label item="Player_FatigueLabel">
@@ -796,7 +817,8 @@
       <CY>15</CY>
     </DecalSize>
     <AutoStretch>true</AutoStretch>
-    <BottomAnchorOffset>15</BottomAnchorOffset>
+    <TopAnchorOffset>42</TopAnchorOffset>
+    <BottomAnchorOffset>57</BottomAnchorOffset>
     <LeftAnchorOffset>87</LeftAnchorOffset>
     <RightAnchorOffset>72</RightAnchorOffset>
     <LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -815,7 +837,8 @@
       <CY>15</CY>
     </DecalSize>
     <AutoStretch>true</AutoStretch>
-    <BottomAnchorOffset>15</BottomAnchorOffset>
+    <TopAnchorOffset>42</TopAnchorOffset>
+    <BottomAnchorOffset>57</BottomAnchorOffset>
     <LeftAnchorOffset>72</LeftAnchorOffset>
     <RightAnchorOffset>57</RightAnchorOffset>
     <LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -834,7 +857,8 @@
       <CY>15</CY>
     </DecalSize>
     <AutoStretch>true</AutoStretch>
-    <BottomAnchorOffset>15</BottomAnchorOffset>
+    <TopAnchorOffset>42</TopAnchorOffset>
+    <BottomAnchorOffset>57</BottomAnchorOffset>
     <LeftAnchorOffset>57</LeftAnchorOffset>
     <RightAnchorOffset>42</RightAnchorOffset>
     <LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -853,53 +877,49 @@
       <CY>15</CY>
     </DecalSize>
     <AutoStretch>true</AutoStretch>
-    <BottomAnchorOffset>15</BottomAnchorOffset>
+    <TopAnchorOffset>42</TopAnchorOffset>
+    <BottomAnchorOffset>57</BottomAnchorOffset>
     <LeftAnchorOffset>42</LeftAnchorOffset>
     <RightAnchorOffset>27</RightAnchorOffset>
     <LeftAnchorToLeft>false</LeftAnchorToLeft>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Button>
+  <!-- Aggro readouts hidden: the target and extended target windows show aggro. -->
   <Label item="PW_AggroPctPlayerLabel">
     <ScreenID>PW_AggroPctPlayerLabel</ScreenID>
     <RelativePosition>true</RelativePosition>
-    <Font>2</Font>
-    <Text />
-    <EQType>306</EQType>
-    <NoWrap>true</NoWrap>
-    <AutoStretch>true</AutoStretch>
-    <AlignLeft>true</AlignLeft>
-    <TopAnchorOffset>65</TopAnchorOffset>
-    <BottomAnchorOffset>79</BottomAnchorOffset>
-    <RightAnchorToLeft>false</RightAnchorToLeft>
+    <Location>
+      <X>0</X>
+      <Y>0</Y>
+    </Location>
+    <Size>
+      <CX>0</CX>
+      <CY>0</CY>
+    </Size>
   </Label>
   <Label item="PW_AggroNameSecondaryLabel">
     <ScreenID>PW_AggroNameSecondaryLabel</ScreenID>
     <RelativePosition>true</RelativePosition>
-    <Font>2</Font>
-    <Text />
-    <EQType>304</EQType>
-    <NoWrap>true</NoWrap>
-    <AutoStretch>true</AutoStretch>
-    <AlignCenter>true</AlignCenter>
-    <TopAnchorOffset>65</TopAnchorOffset>
-    <LeftAnchorOffset>20</LeftAnchorOffset>
-    <RightAnchorOffset>20</RightAnchorOffset>
-    <BottomAnchorOffset>79</BottomAnchorOffset>
-    <RightAnchorToLeft>false</RightAnchorToLeft>
+    <Location>
+      <X>0</X>
+      <Y>0</Y>
+    </Location>
+    <Size>
+      <CX>0</CX>
+      <CY>0</CY>
+    </Size>
   </Label>
   <Label item="PW_AggroPctSecondaryLabel">
     <ScreenID>PW_AggroPctSecondaryLabel</ScreenID>
     <RelativePosition>true</RelativePosition>
-    <Font>2</Font>
-    <Text />
-    <EQType>308</EQType>
-    <NoWrap>true</NoWrap>
-    <AutoStretch>true</AutoStretch>
-    <AlignRight>true</AlignRight>
-    <TopAnchorOffset>65</TopAnchorOffset>
-    <BottomAnchorOffset>79</BottomAnchorOffset>
-    <LeftAnchorOffset>35</LeftAnchorOffset>
-    <RightAnchorToLeft>false</RightAnchorToLeft>
+    <Location>
+      <X>0</X>
+      <Y>0</Y>
+    </Location>
+    <Size>
+      <CX>0</CX>
+      <CY>0</CY>
+    </Size>
   </Label>
   <Screen item="PlayerWindow">
     <Style_ToolTip>true</Style_ToolTip>
@@ -910,16 +930,16 @@
     </Location>
     <Size>
       <CX>160</CX>
-      <CY>95</CY>
+      <CY>52</CY>
     </Size>
     <Style_VScroll>false</Style_VScroll>
     <Style_HScroll>false</Style_HScroll>
-    <Style_Transparent>true</Style_Transparent>
+    <Style_Transparent>false</Style_Transparent>
     <DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
     <Style_Titlebar>false</Style_Titlebar>
     <Style_Closebox>false</Style_Closebox>
     <Style_Minimizebox>false</Style_Minimizebox>
-    <Style_Border>false</Style_Border>
+    <Style_Border>true</Style_Border>
     <Style_Sizable>true</Style_Sizable>
     <Style_ClientMovable>true</Style_ClientMovable>
     <Escapable>false</Escapable>

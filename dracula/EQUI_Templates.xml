@@ -629,9 +629,9 @@
       <OverlapBottom>0</OverlapBottom>
     </Border>
     <Titlebar>
-      <Right>A_WindowTitle2Right</Right>
-      <Left>A_WindowTitle2Left</Left>
-      <Middle>A_WindowTitle2Middle</Middle>
+      <Right>A_WindowTitleRight</Right>
+      <Left>A_WindowTitleLeft</Left>
+      <Middle>A_WindowTitleMiddle</Middle>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
@@ -1048,7 +1048,7 @@
     </Border>
   </WindowDrawTemplate>
   <WindowDrawTemplate item="WDT_AchievementOpen">
-    <Background>Achievement_unlock_color.tga</Background>
+    <Background>achm_card_open.png</Background>
     <VSBTemplate>
       <UpButton>
         <Normal>A_VSBUpNormal</Normal>
@@ -1151,36 +1151,27 @@
       <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
     </TileBox>
     <Border>
-      <TopLeft>A_AchievementOpenFiligreeFrameTopLeft</TopLeft>
-      <Top>A_AchievementOpenFiligreeFrameTop</Top>
-      <TopRight>A_AchievementOpenFiligreeFrameTopRight</TopRight>
-      <RightTop>A_AchievementOpenFiligreeFrameRightTop</RightTop>
-      <Right>A_AchievementOpenFiligreeFrameRight</Right>
-      <RightBottom>A_AchievementOpenFiligreeFrameRightBottom</RightBottom>
-      <BottomRight>A_AchievementOpenFiligreeFrameBottomRight</BottomRight>
-      <Bottom>A_AchievementOpenFiligreeFrameBottom</Bottom>
-      <BottomLeft>A_AchievementOpenFiligreeFrameBottomLeft</BottomLeft>
-      <LeftTop>A_AchievementOpenFiligreeFrameLeftTop</LeftTop>
-      <Left>A_AchievementOpenFiligreeFrameLeft</Left>
-      <LeftBottom>A_AchievementOpenFiligreeFrameLeftBottom</LeftBottom>
-      <!--
-			<RightTop>A_SmallBlank</RightTop>
-			<Right>A_SmallBlank</Right>
-			<RightBottom>A_SmallBlank</RightBottom>
-			<BottomRight>A_SmallBlank</BottomRight>
-			<Bottom>A_SmallBlank</Bottom>
-			<BottomLeft>A_SmallBlank</BottomLeft>
-			<Left>A_SmallBlank</Left>
--->
+      <TopLeft>A_ACHC_OpenFrameTopLeft</TopLeft>
+      <Top>A_ACHC_OpenFrameTop</Top>
+      <TopRight>A_ACHC_OpenFrameTopRight</TopRight>
+      <RightTop>A_ACHC_OpenFrameRight</RightTop>
+      <Right>A_ACHC_OpenFrameRight</Right>
+      <RightBottom>A_ACHC_OpenFrameRight</RightBottom>
+      <BottomRight>A_ACHC_OpenFrameBottomRight</BottomRight>
+      <Bottom>A_ACHC_OpenFrameBottom</Bottom>
+      <BottomLeft>A_ACHC_OpenFrameBottomLeft</BottomLeft>
+      <LeftTop>A_ACHC_OpenFrameLeft</LeftTop>
+      <Left>A_ACHC_OpenFrameLeft</Left>
+      <LeftBottom>A_ACHC_OpenFrameLeft</LeftBottom>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
       <OverlapBottom>0</OverlapBottom>
     </Border>
     <Titlebar>
-      <Right>A_Achievement_WindowTitleOpenRight</Right>
-      <Left>A_Achievement_WindowTitleOpenLeft</Left>
-      <Middle>A_Achievement_WindowTitleOpenMiddle</Middle>
+      <Right>A_ACHC_OpenTitleRight</Right>
+      <Left>A_ACHC_OpenTitleLeft</Left>
+      <Middle>A_ACHC_OpenTitleMiddle</Middle>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
@@ -1188,7 +1179,7 @@
     </Titlebar>
   </WindowDrawTemplate>
   <WindowDrawTemplate item="WDT_AchievementAccountOpen">
-    <Background>Achievement_account_unlock_color.tga</Background>
+    <Background>achm_card_account.png</Background>
     <VSBTemplate>
       <UpButton>
         <Normal>A_VSBUpNormal</Normal>
@@ -1291,36 +1282,27 @@
       <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
     </TileBox>
     <Border>
-      <TopLeft>A_AchievementOpenAcctFiligreeFrameTopLeft</TopLeft>
-      <Top>A_AchievementOpenAcctFiligreeFrameTop</Top>
-      <TopRight>A_AchievementOpenAcctFiligreeFrameTopRight</TopRight>
-      <RightTop>A_AchievementOpenAcctFiligreeFrameRightTop</RightTop>
-      <Right>A_AchievementOpenAcctFiligreeFrameRight</Right>
-      <RightBottom>A_AchievementOpenAcctFiligreeFrameRightBottom</RightBottom>
-      <BottomRight>A_AchievementOpenAcctFiligreeFrameBottomRight</BottomRight>
-      <Bottom>A_AchievementOpenAcctFiligreeFrameBottom</Bottom>
-      <BottomLeft>A_AchievementOpenAcctFiligreeFrameBottomLeft</BottomLeft>
-      <LeftTop>A_AchievementOpenAcctFiligreeFrameLeftTop</LeftTop>
-      <Left>A_AchievementOpenAcctFiligreeFrameLeft</Left>
-      <LeftBottom>A_AchievementOpenAcctFiligreeFrameLeftBottom</LeftBottom>
-      <!--
-			<RightTop>A_SmallBlank</RightTop>
-			<Right>A_SmallBlank</Right>
-			<RightBottom>A_SmallBlank</RightBottom>
-			<BottomRight>A_SmallBlank</BottomRight>
-			<Bottom>A_SmallBlank</Bottom>
-			<BottomLeft>A_SmallBlank</BottomLeft>
-			<Left>A_SmallBlank</Left>
--->
+      <TopLeft>A_ACHC_AccountFrameTopLeft</TopLeft>
+      <Top>A_ACHC_AccountFrameTop</Top>
+      <TopRight>A_ACHC_AccountFrameTopRight</TopRight>
+      <RightTop>A_ACHC_AccountFrameRight</RightTop>
+      <Right>A_ACHC_AccountFrameRight</Right>
+      <RightBottom>A_ACHC_AccountFrameRight</RightBottom>
+      <BottomRight>A_ACHC_AccountFrameBottomRight</BottomRight>
+      <Bottom>A_ACHC_AccountFrameBottom</Bottom>
+      <BottomLeft>A_ACHC_AccountFrameBottomLeft</BottomLeft>
+      <LeftTop>A_ACHC_AccountFrameLeft</LeftTop>
+      <Left>A_ACHC_AccountFrameLeft</Left>
+      <LeftBottom>A_ACHC_AccountFrameLeft</LeftBottom>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
       <OverlapBottom>0</OverlapBottom>
     </Border>
     <Titlebar>
-      <Right>A_Achievement_WindowTitleOpenAcctRight</Right>
-      <Left>A_Achievement_WindowTitleOpenAcctLeft</Left>
-      <Middle>A_Achievement_WindowTitleOpenAcctMiddle</Middle>
+      <Right>A_ACHC_AccountTitleRight</Right>
+      <Left>A_ACHC_AccountTitleLeft</Left>
+      <Middle>A_ACHC_AccountTitleMiddle</Middle>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
@@ -1328,7 +1310,7 @@
     </Titlebar>
   </WindowDrawTemplate>
   <WindowDrawTemplate item="WDT_AchievementCompleted">
-    <Background>Achievement_achieved_color.tga</Background>
+    <Background>achm_card_completed.png</Background>
     <VSBTemplate>
       <UpButton>
         <Normal>A_VSBUpNormal</Normal>
@@ -1431,36 +1413,27 @@
       <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
     </TileBox>
     <Border>
-      <TopLeft>A_AchievementCompletedFiligreeFrameTopLeft</TopLeft>
-      <Top>A_AchievementCompletedFiligreeFrameTop</Top>
-      <TopRight>A_AchievementCompletedFiligreeFrameTopRight</TopRight>
-      <RightTop>A_AchievementCompletedFiligreeFrameRightTop</RightTop>
-      <Right>A_AchievementCompletedFiligreeFrameRight</Right>
-      <RightBottom>A_AchievementCompletedFiligreeFrameRightBottom</RightBottom>
-      <BottomRight>A_AchievementCompletedFiligreeFrameBottomRight</BottomRight>
-      <Bottom>A_AchievementCompletedFiligreeFrameBottom</Bottom>
-      <BottomLeft>A_AchievementCompletedFiligreeFrameBottomLeft</BottomLeft>
-      <LeftTop>A_AchievementCompletedFiligreeFrameLeftTop</LeftTop>
-      <Left>A_AchievementCompletedFiligreeFrameLeft</Left>
-      <LeftBottom>A_AchievementCompletedFiligreeFrameLeftBottom</LeftBottom>
-      <!--
-			<RightTop>A_SmallBlank</RightTop>
-			<Right>A_SmallBlank</Right>
-			<RightBottom>A_SmallBlank</RightBottom>
-			<BottomRight>A_SmallBlank</BottomRight>
-			<Bottom>A_SmallBlank</Bottom>
-			<BottomLeft>A_SmallBlank</BottomLeft>
-			<Left>A_SmallBlank</Left>
--->
+      <TopLeft>A_ACHC_CompletedFrameTopLeft</TopLeft>
+      <Top>A_ACHC_CompletedFrameTop</Top>
+      <TopRight>A_ACHC_CompletedFrameTopRight</TopRight>
+      <RightTop>A_ACHC_CompletedFrameRight</RightTop>
+      <Right>A_ACHC_CompletedFrameRight</Right>
+      <RightBottom>A_ACHC_CompletedFrameRight</RightBottom>
+      <BottomRight>A_ACHC_CompletedFrameBottomRight</BottomRight>
+      <Bottom>A_ACHC_CompletedFrameBottom</Bottom>
+      <BottomLeft>A_ACHC_CompletedFrameBottomLeft</BottomLeft>
+      <LeftTop>A_ACHC_CompletedFrameLeft</LeftTop>
+      <Left>A_ACHC_CompletedFrameLeft</Left>
+      <LeftBottom>A_ACHC_CompletedFrameLeft</LeftBottom>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
       <OverlapBottom>0</OverlapBottom>
     </Border>
     <Titlebar>
-      <Right>A_Achievement_WindowTitleCompletedRight</Right>
-      <Left>A_Achievement_WindowTitleCompletedLeft</Left>
-      <Middle>A_Achievement_WindowTitleCompletedMiddle</Middle>
+      <Right>A_ACHC_CompletedTitleRight</Right>
+      <Left>A_ACHC_CompletedTitleLeft</Left>
+      <Middle>A_ACHC_CompletedTitleMiddle</Middle>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
@@ -1468,7 +1441,7 @@
     </Titlebar>
   </WindowDrawTemplate>
   <WindowDrawTemplate item="WDT_AchievementLocked">
-    <Background>Achievement_lock_color.tga</Background>
+    <Background>achm_card_locked.png</Background>
     <VSBTemplate>
       <UpButton>
         <Normal>A_VSBUpNormal</Normal>
@@ -1571,36 +1544,27 @@
       <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
     </TileBox>
     <Border>
-      <TopLeft>A_AchievementLockedFiligreeFrameTopLeft</TopLeft>
-      <Top>A_AchievementLockedFiligreeFrameTop</Top>
-      <TopRight>A_AchievementLockedFiligreeFrameTopRight</TopRight>
-      <RightTop>A_AchievementLockedFiligreeFrameRightTop</RightTop>
-      <Right>A_AchievementLockedFiligreeFrameRight</Right>
-      <RightBottom>A_AchievementLockedFiligreeFrameRightBottom</RightBottom>
-      <BottomRight>A_AchievementLockedFiligreeFrameBottomRight</BottomRight>
-      <Bottom>A_AchievementLockedFiligreeFrameBottom</Bottom>
-      <BottomLeft>A_AchievementLockedFiligreeFrameBottomLeft</BottomLeft>
-      <LeftTop>A_AchievementLockedFiligreeFrameLeftTop</LeftTop>
-      <Left>A_AchievementLockedFiligreeFrameLeft</Left>
-      <LeftBottom>A_AchievementLockedFiligreeFrameLeftBottom</LeftBottom>
-      <!--
-			<RightTop>A_SmallBlank</RightTop>
-			<Right>A_SmallBlank</Right>
-			<RightBottom>A_SmallBlank</RightBottom>
-			<BottomRight>A_SmallBlank</BottomRight>
-			<Bottom>A_SmallBlank</Bottom>
-			<BottomLeft>A_SmallBlank</BottomLeft>
-			<Left>A_SmallBlank</Left>
--->
+      <TopLeft>A_ACHC_LockedFrameTopLeft</TopLeft>
+      <Top>A_ACHC_LockedFrameTop</Top>
+      <TopRight>A_ACHC_LockedFrameTopRight</TopRight>
+      <RightTop>A_ACHC_LockedFrameRight</RightTop>
+      <Right>A_ACHC_LockedFrameRight</Right>
+      <RightBottom>A_ACHC_LockedFrameRight</RightBottom>
+      <BottomRight>A_ACHC_LockedFrameBottomRight</BottomRight>
+      <Bottom>A_ACHC_LockedFrameBottom</Bottom>
+      <BottomLeft>A_ACHC_LockedFrameBottomLeft</BottomLeft>
+      <LeftTop>A_ACHC_LockedFrameLeft</LeftTop>
+      <Left>A_ACHC_LockedFrameLeft</Left>
+      <LeftBottom>A_ACHC_LockedFrameLeft</LeftBottom>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
       <OverlapBottom>0</OverlapBottom>
     </Border>
     <Titlebar>
-      <Right>A_Achievement_WindowTitleLockedRight</Right>
-      <Left>A_Achievement_WindowTitleLockedLeft</Left>
-      <Middle>A_Achievement_WindowTitleLockedMiddle</Middle>
+      <Right>A_ACHC_LockedTitleRight</Right>
+      <Left>A_ACHC_LockedTitleLeft</Left>
+      <Middle>A_ACHC_LockedTitleMiddle</Middle>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
@@ -3220,12 +3184,22 @@
     <Normal>A_RecessedBox</Normal>
     <NormalDecal>A_DragItem</NormalDecal>
   </ButtonDrawTemplate>
+  <!-- Spell book tile. The game picks BDT_BlueBuff (beneficial) / BDT_RedBuff (detrimental) by name,
+       so these keep that colour coding; hover turns the rim gold. Art: sbw_modern.png -->
   <ButtonDrawTemplate item="BDT_BlueBuff">
-    <Normal>A_BuffTileBlue</Normal>
+    <Normal>A_SBW_TileBlueNormal</Normal>
+    <Flyby>A_SBW_TileBlueFlyby</Flyby>
+    <Pressed>A_SBW_TileBluePressed</Pressed>
+    <PressedFlyby>A_SBW_TileBluePressed</PressedFlyby>
     <NormalDecal>A_DragItem</NormalDecal>
   </ButtonDrawTemplate>
+  <!-- Spell book tile. The game picks BDT_BlueBuff (beneficial) / BDT_RedBuff (detrimental) by name,
+       so these keep that colour coding; hover turns the rim gold. Art: sbw_modern.png -->
   <ButtonDrawTemplate item="BDT_RedBuff">
-    <Normal>A_BuffTileRed</Normal>
+    <Normal>A_SBW_TileRedNormal</Normal>
+    <Flyby>A_SBW_TileRedFlyby</Flyby>
+    <Pressed>A_SBW_TileRedPressed</Pressed>
+    <PressedFlyby>A_SBW_TileRedPressed</PressedFlyby>
     <NormalDecal>A_DragItem</NormalDecal>
   </ButtonDrawTemplate>
   <ButtonDrawTemplate item="BDT_PlayerBuff">
@@ -3234,6 +3208,25 @@
   </ButtonDrawTemplate>
   <ButtonDrawTemplate item="BDT_BuffSlotEmpty">
     <Normal>A_BuffSlotEmpty</Normal>
+  </ButtonDrawTemplate>
+  <!-- Slate Glass buff window: slate card per buff (gold edge on hover), faint outline for empty slots -->
+  <ButtonDrawTemplate item="BDT_ModernBuff">
+    <Normal>A_BUFF_Active</Normal>
+    <Flyby>A_BUFF_ActiveHover</Flyby>
+    <Pressed>A_BUFF_ActiveHover</Pressed>
+    <PressedFlyby>A_BUFF_ActiveHover</PressedFlyby>
+    <NormalDecal>A_DragItem</NormalDecal>
+  </ButtonDrawTemplate>
+  <ButtonDrawTemplate item="BDT_ModernBuffSlot">
+    <Normal>A_BUFF_Empty</Normal>
+  </ButtonDrawTemplate>
+  <!-- Slate Glass spellbook button (spell bar): steel book outline, gold on hover and while the book is open -->
+  <ButtonDrawTemplate item="BDT_CSPW_Book">
+    <Normal>A_CSPW_BookNormal</Normal>
+    <Pressed>A_CSPW_BookPressed</Pressed>
+    <Flyby>A_CSPW_BookFlyby</Flyby>
+    <Disabled>A_CSPW_BookDisabled</Disabled>
+    <PressedFlyby>A_CSPW_BookPressedFlyby</PressedFlyby>
   </ButtonDrawTemplate>
   <ButtonDrawTemplate item="BDT_SongBuff">
     <Normal>A_RecessedBox</Normal>
@@ -3320,4 +3313,618 @@
     <OverlapRight>1</OverlapRight>
     <OverlapBottom>0</OverlapBottom>
   </FrameTemplate>
+  <!-- Slate Glass chat window (chat_pieces.png):
+       WDT_ChatGlass  - chat text area: no visible frame (the container's glow frame is the only one),
+                        4px clear padding, slim scrollbar with gold-on-hover chevrons
+       WDT_ChatField  - chat input: dark glass fill, fine steel outline, 4px padding
+       FT_ChatTabGlass - tab outline: rounded top corners, sides fade out downward -->
+  <WindowDrawTemplate item="WDT_ChatGlass">
+    <Background>wnd_bg_trans.png</Background>
+    <VSBTemplate>
+      <UpButton>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
+      </UpButton>
+      <DownButton>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
+      </DownButton>
+      <Thumb>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+      </Thumb>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
+      <MiddleTint>
+        <Alpha>255</Alpha>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </MiddleTint>
+    </VSBTemplate>
+    <HSBTemplate>
+      <UpButton>
+        <Normal>A_HSBLeftNormal</Normal>
+        <Pressed>A_HSBLeftPressed</Pressed>
+        <Flyby>A_HSBLeftFlyby</Flyby>
+        <Disabled>A_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+      </UpButton>
+      <DownButton>
+        <Normal>A_HSBRightNormal</Normal>
+        <Pressed>A_HSBRightPressed</Pressed>
+        <Flyby>A_HSBRightFlyby</Flyby>
+        <Disabled>A_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+      </DownButton>
+      <Thumb>
+        <Right>A_HSBThumbRight</Right>
+        <Left>A_HSBThumbLeft</Left>
+        <Middle>A_HSBThumbMiddle</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+      </Thumb>
+      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTint>
+        <Alpha>255</Alpha>
+        <R>128</R>
+        <G>128</G>
+        <B>128</B>
+      </MiddleTint>
+    </HSBTemplate>
+    <Border>
+      <TopLeft>A_CHAT_Pad</TopLeft>
+      <Top>A_CHAT_Pad</Top>
+      <TopRight>A_CHAT_Pad</TopRight>
+      <RightTop>A_CHAT_Pad</RightTop>
+      <Right>A_CHAT_Pad</Right>
+      <RightBottom>A_CHAT_Pad</RightBottom>
+      <BottomRight>A_CHAT_Pad</BottomRight>
+      <Bottom>A_CHAT_Pad</Bottom>
+      <BottomLeft>A_CHAT_Pad</BottomLeft>
+      <LeftTop>A_CHAT_Pad</LeftTop>
+      <Left>A_CHAT_Pad</Left>
+      <LeftBottom>A_CHAT_Pad</LeftBottom>
+      <OverlapLeft>0</OverlapLeft>
+      <OverlapTop>0</OverlapTop>
+      <OverlapRight>0</OverlapRight>
+      <OverlapBottom>0</OverlapBottom>
+    </Border>
+  </WindowDrawTemplate>
+  <WindowDrawTemplate item="WDT_ChatField">
+    <Background>chat_field.png</Background>
+    <VSBTemplate>
+      <UpButton>
+        <Normal>A_VSBUpNormal</Normal>
+        <Pressed>A_VSBUpPressed</Pressed>
+        <Flyby>A_VSBUpFlyby</Flyby>
+        <Disabled>A_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+      </UpButton>
+      <DownButton>
+        <Normal>A_VSBDownNormal</Normal>
+        <Pressed>A_VSBDownPressed</Pressed>
+        <Flyby>A_VSBDownFlyby</Flyby>
+        <Disabled>A_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+      </DownButton>
+      <Thumb>
+        <Top>A_VSBThumbTop</Top>
+        <Bottom>A_VSBThumbBottom</Bottom>
+        <Middle>A_VSBThumbMiddle</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+      </Thumb>
+      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTint>
+        <Alpha>255</Alpha>
+        <R>128</R>
+        <G>128</G>
+        <B>128</B>
+      </MiddleTint>
+    </VSBTemplate>
+    <HSBTemplate>
+      <UpButton>
+        <Normal>A_HSBLeftNormal</Normal>
+        <Pressed>A_HSBLeftPressed</Pressed>
+        <Flyby>A_HSBLeftFlyby</Flyby>
+        <Disabled>A_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+      </UpButton>
+      <DownButton>
+        <Normal>A_HSBRightNormal</Normal>
+        <Pressed>A_HSBRightPressed</Pressed>
+        <Flyby>A_HSBRightFlyby</Flyby>
+        <Disabled>A_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+      </DownButton>
+      <Thumb>
+        <Right>A_HSBThumbRight</Right>
+        <Left>A_HSBThumbLeft</Left>
+        <Middle>A_HSBThumbMiddle</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+      </Thumb>
+      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTint>
+        <Alpha>255</Alpha>
+        <R>128</R>
+        <G>128</G>
+        <B>128</B>
+      </MiddleTint>
+    </HSBTemplate>
+    <Border>
+      <TopLeft>A_CHAT_FieldTopLeft</TopLeft>
+      <Top>A_CHAT_FieldTop</Top>
+      <TopRight>A_CHAT_FieldTopRight</TopRight>
+      <RightTop>A_CHAT_FieldRight</RightTop>
+      <Right>A_CHAT_FieldRight</Right>
+      <RightBottom>A_CHAT_FieldRight</RightBottom>
+      <BottomRight>A_CHAT_FieldBottomRight</BottomRight>
+      <Bottom>A_CHAT_FieldBottom</Bottom>
+      <BottomLeft>A_CHAT_FieldBottomLeft</BottomLeft>
+      <LeftTop>A_CHAT_FieldLeft</LeftTop>
+      <Left>A_CHAT_FieldLeft</Left>
+      <LeftBottom>A_CHAT_FieldLeft</LeftBottom>
+      <OverlapLeft>0</OverlapLeft>
+      <OverlapTop>0</OverlapTop>
+      <OverlapRight>0</OverlapRight>
+      <OverlapBottom>0</OverlapBottom>
+    </Border>
+  </WindowDrawTemplate>
+  <FrameTemplate item="FT_ChatTabGlass">
+    <TopLeft>A_CHAT_TabTopLeft</TopLeft>
+    <Top>A_CHAT_TabTop</Top>
+    <TopRight>A_CHAT_TabTopRight</TopRight>
+    <RightTop>A_CHAT_TabRightTop</RightTop>
+    <Right>A_CHAT_TabBlank</Right>
+    <RightBottom>A_CHAT_TabBlank</RightBottom>
+    <LeftTop>A_CHAT_TabLeftTop</LeftTop>
+    <Left>A_CHAT_TabBlank</Left>
+    <LeftBottom>A_CHAT_TabBlank</LeftBottom>
+    <OverlapLeft>0</OverlapLeft>
+    <OverlapTop>0</OverlapTop>
+    <OverlapRight>0</OverlapRight>
+    <OverlapBottom>0</OverlapBottom>
+  </FrameTemplate>
+  <!-- Shared modern theme (slate frame, panels, flat buttons). Textures: achm_pieces.png, achm_bg.png, achm_panel.png -->
+  <WindowDrawTemplate item="WDT_AchModern">
+    <Background>achm_bg.png</Background>
+    <VSBTemplate>
+      <UpButton>
+        <Normal>A_VSBUpNormal</Normal>
+        <Pressed>A_VSBUpPressed</Pressed>
+        <Flyby>A_VSBUpFlyby</Flyby>
+        <Disabled>A_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+      </UpButton>
+      <DownButton>
+        <Normal>A_VSBDownNormal</Normal>
+        <Pressed>A_VSBDownPressed</Pressed>
+        <Flyby>A_VSBDownFlyby</Flyby>
+        <Disabled>A_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+      </DownButton>
+      <Thumb>
+        <Top>A_VSBThumbTop</Top>
+        <Bottom>A_VSBThumbBottom</Bottom>
+        <Middle>A_VSBThumbMiddle</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+      </Thumb>
+      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTint>
+        <Alpha>255</Alpha>
+        <R>128</R>
+        <G>128</G>
+        <B>128</B>
+      </MiddleTint>
+    </VSBTemplate>
+    <HSBTemplate>
+      <UpButton>
+        <Normal>A_HSBLeftNormal</Normal>
+        <Pressed>A_HSBLeftPressed</Pressed>
+        <Flyby>A_HSBLeftFlyby</Flyby>
+        <Disabled>A_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+      </UpButton>
+      <DownButton>
+        <Normal>A_HSBRightNormal</Normal>
+        <Pressed>A_HSBRightPressed</Pressed>
+        <Flyby>A_HSBRightFlyby</Flyby>
+        <Disabled>A_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+      </DownButton>
+      <Thumb>
+        <Right>A_HSBThumbRight</Right>
+        <Left>A_HSBThumbLeft</Left>
+        <Middle>A_HSBThumbMiddle</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+      </Thumb>
+      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTint>
+        <Alpha>255</Alpha>
+        <R>128</R>
+        <G>128</G>
+        <B>128</B>
+      </MiddleTint>
+    </HSBTemplate>
+    <CloseBox>
+      <Normal>A_ACHM_CloseNormal</Normal>
+      <Flyby>A_ACHM_CloseFlyby</Flyby>
+      <Pressed>A_ACHM_ClosePressed</Pressed>
+      <Disabled>A_ACHM_CloseDisabled</Disabled>
+      <PressedFlyby>A_ACHM_ClosePressedFlyby</PressedFlyby>
+    </CloseBox>
+    <QMarkBox>
+      <Normal>A_ACHM_QMarkNormal</Normal>
+      <Flyby>A_ACHM_QMarkFlyby</Flyby>
+      <Pressed>A_ACHM_QMarkPressed</Pressed>
+      <Disabled>A_ACHM_QMarkDisabled</Disabled>
+      <PressedFlyby>A_ACHM_QMarkPressedFlyby</PressedFlyby>
+    </QMarkBox>
+    <MinimizeBox>
+      <Normal>A_ACHM_MinimizeNormal</Normal>
+      <Flyby>A_ACHM_MinimizeFlyby</Flyby>
+      <Pressed>A_ACHM_MinimizePressed</Pressed>
+      <Disabled>A_ACHM_MinimizeDisabled</Disabled>
+      <PressedFlyby>A_ACHM_MinimizePressedFlyby</PressedFlyby>
+    </MinimizeBox>
+    <MaximizeBox>
+      <Normal>A_ACHM_MaximizeNormal</Normal>
+      <Flyby>A_ACHM_MaximizeFlyby</Flyby>
+      <Pressed>A_ACHM_MaximizePressed</Pressed>
+      <Disabled>A_ACHM_MaximizeDisabled</Disabled>
+      <PressedFlyby>A_ACHM_MaximizePressedFlyby</PressedFlyby>
+    </MaximizeBox>
+    <TileBox>
+      <Normal>A_TileBtnNormal</Normal>
+      <Pressed>A_TileBtnPressed</Pressed>
+      <Flyby>A_TileBtnFlyby</Flyby>
+      <Disabled>A_TileBtnDisabled</Disabled>
+      <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
+    </TileBox>
+    <Border>
+      <TopLeft>A_ACHM_FrameTopLeft</TopLeft>
+      <Top>A_ACHM_FrameTop</Top>
+      <TopRight>A_ACHM_FrameTopRight</TopRight>
+      <RightTop>A_ACHM_FrameRight</RightTop>
+      <Right>A_ACHM_FrameRight</Right>
+      <RightBottom>A_ACHM_FrameRight</RightBottom>
+      <BottomRight>A_ACHM_FrameBottomRight</BottomRight>
+      <Bottom>A_ACHM_FrameBottom</Bottom>
+      <BottomLeft>A_ACHM_FrameBottomLeft</BottomLeft>
+      <LeftTop>A_ACHM_FrameLeft</LeftTop>
+      <Left>A_ACHM_FrameLeft</Left>
+      <LeftBottom>A_ACHM_FrameLeft</LeftBottom>
+      <OverlapLeft>0</OverlapLeft>
+      <OverlapTop>0</OverlapTop>
+      <OverlapRight>0</OverlapRight>
+      <OverlapBottom>0</OverlapBottom>
+    </Border>
+    <Titlebar>
+      <Right>A_ACHM_TitleRight</Right>
+      <Left>A_ACHM_TitleLeft</Left>
+      <Middle>A_ACHM_TitleMiddle</Middle>
+      <OverlapLeft>0</OverlapLeft>
+      <OverlapTop>0</OverlapTop>
+      <OverlapRight>0</OverlapRight>
+      <OverlapBottom>0</OverlapBottom>
+    </Titlebar>
+  </WindowDrawTemplate>
+  <WindowDrawTemplate item="WDT_AchPanel">
+    <Background>achm_panel.png</Background>
+    <VSBTemplate>
+      <UpButton>
+        <Normal>A_VSBUpNormal</Normal>
+        <Pressed>A_VSBUpPressed</Pressed>
+        <Flyby>A_VSBUpFlyby</Flyby>
+        <Disabled>A_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+      </UpButton>
+      <DownButton>
+        <Normal>A_VSBDownNormal</Normal>
+        <Pressed>A_VSBDownPressed</Pressed>
+        <Flyby>A_VSBDownFlyby</Flyby>
+        <Disabled>A_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+      </DownButton>
+      <Thumb>
+        <Top>A_VSBThumbTop</Top>
+        <Bottom>A_VSBThumbBottom</Bottom>
+        <Middle>A_VSBThumbMiddle</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+      </Thumb>
+      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTint>
+        <Alpha>255</Alpha>
+        <R>128</R>
+        <G>128</G>
+        <B>128</B>
+      </MiddleTint>
+    </VSBTemplate>
+    <HSBTemplate>
+      <UpButton>
+        <Normal>A_HSBLeftNormal</Normal>
+        <Pressed>A_HSBLeftPressed</Pressed>
+        <Flyby>A_HSBLeftFlyby</Flyby>
+        <Disabled>A_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+      </UpButton>
+      <DownButton>
+        <Normal>A_HSBRightNormal</Normal>
+        <Pressed>A_HSBRightPressed</Pressed>
+        <Flyby>A_HSBRightFlyby</Flyby>
+        <Disabled>A_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+      </DownButton>
+      <Thumb>
+        <Right>A_HSBThumbRight</Right>
+        <Left>A_HSBThumbLeft</Left>
+        <Middle>A_HSBThumbMiddle</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+      </Thumb>
+      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTint>
+        <Alpha>255</Alpha>
+        <R>128</R>
+        <G>128</G>
+        <B>128</B>
+      </MiddleTint>
+    </HSBTemplate>
+    <CloseBox>
+      <Normal>A_ACHM_CloseNormal</Normal>
+      <Flyby>A_ACHM_CloseFlyby</Flyby>
+      <Pressed>A_ACHM_ClosePressed</Pressed>
+      <Disabled>A_ACHM_CloseDisabled</Disabled>
+      <PressedFlyby>A_ACHM_ClosePressedFlyby</PressedFlyby>
+    </CloseBox>
+    <QMarkBox>
+      <Normal>A_ACHM_QMarkNormal</Normal>
+      <Flyby>A_ACHM_QMarkFlyby</Flyby>
+      <Pressed>A_ACHM_QMarkPressed</Pressed>
+      <Disabled>A_ACHM_QMarkDisabled</Disabled>
+      <PressedFlyby>A_ACHM_QMarkPressedFlyby</PressedFlyby>
+    </QMarkBox>
+    <MinimizeBox>
+      <Normal>A_ACHM_MinimizeNormal</Normal>
+      <Flyby>A_ACHM_MinimizeFlyby</Flyby>
+      <Pressed>A_ACHM_MinimizePressed</Pressed>
+      <Disabled>A_ACHM_MinimizeDisabled</Disabled>
+      <PressedFlyby>A_ACHM_MinimizePressedFlyby</PressedFlyby>
+    </MinimizeBox>
+    <MaximizeBox>
+      <Normal>A_ACHM_MaximizeNormal</Normal>
+      <Flyby>A_ACHM_MaximizeFlyby</Flyby>
+      <Pressed>A_ACHM_MaximizePressed</Pressed>
+      <Disabled>A_ACHM_MaximizeDisabled</Disabled>
+      <PressedFlyby>A_ACHM_MaximizePressedFlyby</PressedFlyby>
+    </MaximizeBox>
+    <TileBox>
+      <Normal>A_TileBtnNormal</Normal>
+      <Pressed>A_TileBtnPressed</Pressed>
+      <Flyby>A_TileBtnFlyby</Flyby>
+      <Disabled>A_TileBtnDisabled</Disabled>
+      <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
+    </TileBox>
+    <Border>
+      <TopLeft>A_ACHM_PanelTopLeft</TopLeft>
+      <Top>A_ACHM_PanelTop</Top>
+      <TopRight>A_ACHM_PanelTopRight</TopRight>
+      <RightTop>A_ACHM_PanelRight</RightTop>
+      <Right>A_ACHM_PanelRight</Right>
+      <RightBottom>A_ACHM_PanelRight</RightBottom>
+      <BottomRight>A_ACHM_PanelBottomRight</BottomRight>
+      <Bottom>A_ACHM_PanelBottom</Bottom>
+      <BottomLeft>A_ACHM_PanelBottomLeft</BottomLeft>
+      <LeftTop>A_ACHM_PanelLeft</LeftTop>
+      <Left>A_ACHM_PanelLeft</Left>
+      <LeftBottom>A_ACHM_PanelLeft</LeftBottom>
+      <OverlapLeft>0</OverlapLeft>
+      <OverlapTop>0</OverlapTop>
+      <OverlapRight>0</OverlapRight>
+      <OverlapBottom>0</OverlapBottom>
+    </Border>
+    <Titlebar>
+      <Right>A_ACHM_TitleRight</Right>
+      <Left>A_ACHM_TitleLeft</Left>
+      <Middle>A_ACHM_TitleMiddle</Middle>
+      <OverlapLeft>0</OverlapLeft>
+      <OverlapTop>0</OverlapTop>
+      <OverlapRight>0</OverlapRight>
+      <OverlapBottom>0</OverlapBottom>
+    </Titlebar>
+  </WindowDrawTemplate>
+  <WindowDrawTemplate item="WDT_AchCard">
+    <Background>achm_bg.png</Background>
+    <VSBTemplate>
+      <UpButton>
+        <Normal>A_VSBUpNormal</Normal>
+        <Pressed>A_VSBUpPressed</Pressed>
+        <Flyby>A_VSBUpFlyby</Flyby>
+        <Disabled>A_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+      </UpButton>
+      <DownButton>
+        <Normal>A_VSBDownNormal</Normal>
+        <Pressed>A_VSBDownPressed</Pressed>
+        <Flyby>A_VSBDownFlyby</Flyby>
+        <Disabled>A_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+      </DownButton>
+      <Thumb>
+        <Top>A_VSBThumbTop</Top>
+        <Bottom>A_VSBThumbBottom</Bottom>
+        <Middle>A_VSBThumbMiddle</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+      </Thumb>
+      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTint>
+        <Alpha>255</Alpha>
+        <R>128</R>
+        <G>128</G>
+        <B>128</B>
+      </MiddleTint>
+    </VSBTemplate>
+    <HSBTemplate>
+      <UpButton>
+        <Normal>A_HSBLeftNormal</Normal>
+        <Pressed>A_HSBLeftPressed</Pressed>
+        <Flyby>A_HSBLeftFlyby</Flyby>
+        <Disabled>A_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+      </UpButton>
+      <DownButton>
+        <Normal>A_HSBRightNormal</Normal>
+        <Pressed>A_HSBRightPressed</Pressed>
+        <Flyby>A_HSBRightFlyby</Flyby>
+        <Disabled>A_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+      </DownButton>
+      <Thumb>
+        <Right>A_HSBThumbRight</Right>
+        <Left>A_HSBThumbLeft</Left>
+        <Middle>A_HSBThumbMiddle</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+      </Thumb>
+      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTint>
+        <Alpha>255</Alpha>
+        <R>128</R>
+        <G>128</G>
+        <B>128</B>
+      </MiddleTint>
+    </HSBTemplate>
+    <CloseBox>
+      <Normal>A_ACHM_CloseNormal</Normal>
+      <Flyby>A_ACHM_CloseFlyby</Flyby>
+      <Pressed>A_ACHM_ClosePressed</Pressed>
+      <Disabled>A_ACHM_CloseDisabled</Disabled>
+      <PressedFlyby>A_ACHM_ClosePressedFlyby</PressedFlyby>
+    </CloseBox>
+    <QMarkBox>
+      <Normal>A_ACHM_QMarkNormal</Normal>
+      <Flyby>A_ACHM_QMarkFlyby</Flyby>
+      <Pressed>A_ACHM_QMarkPressed</Pressed>
+      <Disabled>A_ACHM_QMarkDisabled</Disabled>
+      <PressedFlyby>A_ACHM_QMarkPressedFlyby</PressedFlyby>
+    </QMarkBox>
+    <MinimizeBox>
+      <Normal>A_ACHM_MinimizeNormal</Normal>
+      <Flyby>A_ACHM_MinimizeFlyby</Flyby>
+      <Pressed>A_ACHM_MinimizePressed</Pressed>
+      <Disabled>A_ACHM_MinimizeDisabled</Disabled>
+      <PressedFlyby>A_ACHM_MinimizePressedFlyby</PressedFlyby>
+    </MinimizeBox>
+    <MaximizeBox>
+      <Normal>A_ACHM_MaximizeNormal</Normal>
+      <Flyby>A_ACHM_MaximizeFlyby</Flyby>
+      <Pressed>A_ACHM_MaximizePressed</Pressed>
+      <Disabled>A_ACHM_MaximizeDisabled</Disabled>
+      <PressedFlyby>A_ACHM_MaximizePressedFlyby</PressedFlyby>
+    </MaximizeBox>
+    <TileBox>
+      <Normal>A_TileBtnNormal</Normal>
+      <Pressed>A_TileBtnPressed</Pressed>
+      <Flyby>A_TileBtnFlyby</Flyby>
+      <Disabled>A_TileBtnDisabled</Disabled>
+      <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
+    </TileBox>
+    <Border>
+      <TopLeft>A_ACHM_PanelTopLeft</TopLeft>
+      <Top>A_ACHM_PanelTop</Top>
+      <TopRight>A_ACHM_PanelTopRight</TopRight>
+      <RightTop>A_ACHM_PanelRight</RightTop>
+      <Right>A_ACHM_PanelRight</Right>
+      <RightBottom>A_ACHM_PanelRight</RightBottom>
+      <BottomRight>A_ACHM_PanelBottomRight</BottomRight>
+      <Bottom>A_ACHM_PanelBottom</Bottom>
+      <BottomLeft>A_ACHM_PanelBottomLeft</BottomLeft>
+      <LeftTop>A_ACHM_PanelLeft</LeftTop>
+      <Left>A_ACHM_PanelLeft</Left>
+      <LeftBottom>A_ACHM_PanelLeft</LeftBottom>
+      <OverlapLeft>0</OverlapLeft>
+      <OverlapTop>0</OverlapTop>
+      <OverlapRight>0</OverlapRight>
+      <OverlapBottom>0</OverlapBottom>
+    </Border>
+    <Titlebar>
+      <Right>A_ACHM_TitleRight</Right>
+      <Left>A_ACHM_TitleLeft</Left>
+      <Middle>A_ACHM_TitleMiddle</Middle>
+      <OverlapLeft>0</OverlapLeft>
+      <OverlapTop>0</OverlapTop>
+      <OverlapRight>0</OverlapRight>
+      <OverlapBottom>0</OverlapBottom>
+    </Titlebar>
+  </WindowDrawTemplate>
+  <ButtonDrawTemplate item="BDT_AchFlat">
+    <Normal>A_ACHM_BtnNormal</Normal>
+    <Pressed>A_ACHM_BtnPressed</Pressed>
+    <Flyby>A_ACHM_BtnFlyby</Flyby>
+    <Disabled>A_ACHM_BtnDisabled</Disabled>
+    <PressedFlyby>A_ACHM_BtnPressed</PressedFlyby>
+  </ButtonDrawTemplate>
+  <ButtonDrawTemplate item="BDT_ModernCheckbox">
+    <NormalDecal>A_ACHM_CheckOff</NormalDecal>
+    <PressedDecal>A_ACHM_CheckOn</PressedDecal>
+    <DisabledDecal>A_ACHM_CheckOffDisabled</DisabledDecal>
+    <PressedDisabledDecal>A_ACHM_CheckOnDisabled</PressedDisabledDecal>
+  </ButtonDrawTemplate>
+  <ButtonDrawTemplate item="BDT_AchFlatFind">
+    <Normal>A_ACHM_BtnNormal</Normal>
+    <Pressed>A_ACHM_BtnPressed</Pressed>
+    <Flyby>A_ACHM_BtnFlyby</Flyby>
+    <Disabled>A_ACHM_BtnDisabled</Disabled>
+    <PressedFlyby>A_ACHM_BtnPressed</PressedFlyby>
+    <NormalDecal>A_LFGBtnNormal</NormalDecal>
+    <PressedDecal>A_LFGBtnPressed</PressedDecal>
+    <FlybyDecal>A_LFGBtnFlyby</FlybyDecal>
+    <PressedFlybyDecal>A_LFGBtnPressedFlyby</PressedFlybyDecal>
+  </ButtonDrawTemplate>
+  <SliderDrawTemplate item="SDT_ModernSlider">
+    <Thumb>
+      <Normal>A_ACHM_SliderThumbNormal</Normal>
+      <Pressed>A_ACHM_SliderThumbPressed</Pressed>
+      <Flyby>A_ACHM_SliderThumbFlyby</Flyby>
+      <Disabled>A_ACHM_SliderThumbDisabled</Disabled>
+      <PressedFlyby>A_ACHM_SliderThumbPressedFlyby</PressedFlyby>
+    </Thumb>
+    <Background>A_ACHM_SliderTrack</Background>
+    <EndCapRight>A_ACHM_SliderCapRight</EndCapRight>
+    <EndCapLeft>A_ACHM_SliderCapLeft</EndCapLeft>
+  </SliderDrawTemplate>
 </XML>

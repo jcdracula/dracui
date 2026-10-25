@@ -2,21 +2,32 @@
 <XML ID = "EQInterfaceDefinitionLanguage">
 	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
 
+	<!-- ============================================================
+	     Modernized tribute bar (Slate Glass HUD look), sized for the window at its
+	     minimum (MinHSize/MinVSize unchanged)
+	     - five even columns: Personal, Trophy, Guild, Guild Trophy, Power Source
+	       (68px tribute columns, 4px gaps, 3px side margins)
+	     - flat theme buttons (gold on hover); disabled ones dim
+	     - each timer centred under its button; muted prefix, bright value
+	     - tooltips spell out PR / PT / GU / GT / PS
+	     - power source slot centred over its charge, with a steel ring around it
+	     ============================================================ -->
+
 	<Button item = "TBWP_ActivateButton">
 		<ScreenID>ActivateButton</ScreenID>
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>0</TopAnchorOffset>
-		<BottomAnchorOffset>20</BottomAnchorOffset>
-		<LeftAnchorOffset>2</LeftAnchorOffset>
-		<RightAnchorOffset>70</RightAnchorOffset>
+		<TopAnchorOffset>2</TopAnchorOffset>
+		<BottomAnchorOffset>22</BottomAnchorOffset>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<RightAnchorOffset>71</RightAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference>Personal Tribute</TooltipReference>
+		<TooltipReference>Activate or deactivate personal tribute</TooltipReference>
 		<Style_Checkbox>false</Style_Checkbox>
 		<Text>Activate</Text>
 		<TextColor>
@@ -24,23 +35,23 @@
 				<G>248</G>
 				<B>242</B>
 		</TextColor>
-		<Template>BDT_SmallNormal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Button item = "TBWT_ActivateButton">
 		<ScreenID>TrophyActivateButton</ScreenID>
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>0</TopAnchorOffset>
-		<BottomAnchorOffset>20</BottomAnchorOffset>
-		<LeftAnchorOffset>74</LeftAnchorOffset>
-		<RightAnchorOffset>142</RightAnchorOffset>
+		<TopAnchorOffset>2</TopAnchorOffset>
+		<BottomAnchorOffset>22</BottomAnchorOffset>
+		<LeftAnchorOffset>75</LeftAnchorOffset>
+		<RightAnchorOffset>143</RightAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference>Personal Trophy</TooltipReference>
+		<TooltipReference>Activate or deactivate trophy tribute</TooltipReference>
 		<Style_Checkbox>false</Style_Checkbox>
 		<Text>Activate</Text>
 		<TextColor>
@@ -48,23 +59,23 @@
 				<G>248</G>
 				<B>242</B>
 		</TextColor>
-		<Template>BDT_SmallNormal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Button item = "TBWG_ActivateButton">
 		<ScreenID>GuildActivateButton</ScreenID>
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>0</TopAnchorOffset>
-		<BottomAnchorOffset>20</BottomAnchorOffset>
-		<LeftAnchorOffset>146</LeftAnchorOffset>
-		<RightAnchorOffset>214</RightAnchorOffset>
+		<TopAnchorOffset>2</TopAnchorOffset>
+		<BottomAnchorOffset>22</BottomAnchorOffset>
+		<LeftAnchorOffset>147</LeftAnchorOffset>
+		<RightAnchorOffset>215</RightAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference>Guild Tribute</TooltipReference>
+		<TooltipReference>Activate or deactivate guild tribute</TooltipReference>
 		<Style_Checkbox>false</Style_Checkbox>
 		<Text>Activate</Text>
 		<TextColor>
@@ -72,23 +83,23 @@
 				<G>248</G>
 				<B>242</B>
 		</TextColor>
-		<Template>BDT_SmallNormal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Button item = "TBWGT_ActivateButton">
 		<ScreenID>GuildTrophyActivateButton</ScreenID>
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>0</TopAnchorOffset>
-		<BottomAnchorOffset>20</BottomAnchorOffset>
-		<LeftAnchorOffset>218</LeftAnchorOffset>
-		<RightAnchorOffset>286</RightAnchorOffset>
+		<TopAnchorOffset>2</TopAnchorOffset>
+		<BottomAnchorOffset>22</BottomAnchorOffset>
+		<LeftAnchorOffset>219</LeftAnchorOffset>
+		<RightAnchorOffset>287</RightAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<Style_Transparent>false</Style_Transparent>
-		<TooltipReference>Guild Trophy</TooltipReference>
+		<TooltipReference>Activate or deactivate guild trophy tribute</TooltipReference>
 		<Style_Checkbox>false</Style_Checkbox>
 		<Text>Activate</Text>
 		<TextColor>
@@ -96,7 +107,7 @@
 				<G>248</G>
 				<B>242</B>
 		</TextColor>
-		<Template>BDT_SmallNormal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 
 	<!-- Will not render an inventory window. -->
@@ -106,19 +117,20 @@
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>23</TopAnchorOffset>
+		<TopAnchorOffset>25</TopAnchorOffset>
 		<BottomAnchorOffset>40</BottomAnchorOffset>
-		<LeftAnchorOffset>0</LeftAnchorOffset>
-		<RightAnchorOffset>22</RightAnchorOffset>
+		<LeftAnchorOffset>5</LeftAnchorOffset>
+		<RightAnchorOffset>29</RightAnchorOffset>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<Text>PR:</Text>
+		<TooltipReference>Personal tribute time remaining</TooltipReference>
 		<TextColor>
-			<R>241</R>
-			<G>250</G>
-			<B>140</B>
+			<R>150</R>
+			<G>160</G>
+			<B>182</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -129,42 +141,44 @@
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>23</TopAnchorOffset>
+		<TopAnchorOffset>25</TopAnchorOffset>
 		<BottomAnchorOffset>40</BottomAnchorOffset>
-		<LeftAnchorOffset>21</LeftAnchorOffset>
-		<RightAnchorOffset>66</RightAnchorOffset>
+		<LeftAnchorOffset>32</LeftAnchorOffset>
+		<RightAnchorOffset>69</RightAnchorOffset>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<TooltipReference>Personal tribute time remaining</TooltipReference>
 		<EQType>116</EQType>
 		<TextColor>
-				<R>248</R>
-				<G>248</G>
-				<B>242</B>
+				<R>236</R>
+				<G>239</G>
+				<B>245</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
+		<AlignRight>false</AlignRight>
 	</Label>
 	<Label item ="TBWT_TimeText">
 		<ScreenID/>
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>23</TopAnchorOffset>
+		<TopAnchorOffset>25</TopAnchorOffset>
 		<BottomAnchorOffset>40</BottomAnchorOffset>
-		<LeftAnchorOffset>66</LeftAnchorOffset>
-		<RightAnchorOffset>94</RightAnchorOffset>
+		<LeftAnchorOffset>77</LeftAnchorOffset>
+		<RightAnchorOffset>101</RightAnchorOffset>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<Text>PT:</Text>
+		<TooltipReference>Trophy tribute time remaining</TooltipReference>
 		<TextColor>
-			<R>241</R>
-			<G>250</G>
-			<B>140</B>
+			<R>150</R>
+			<G>160</G>
+			<B>182</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -175,42 +189,44 @@
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>23</TopAnchorOffset>
+		<TopAnchorOffset>25</TopAnchorOffset>
 		<BottomAnchorOffset>40</BottomAnchorOffset>
-		<LeftAnchorOffset>93</LeftAnchorOffset>
-		<RightAnchorOffset>138</RightAnchorOffset>
+		<LeftAnchorOffset>104</LeftAnchorOffset>
+		<RightAnchorOffset>141</RightAnchorOffset>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<TooltipReference>Trophy tribute time remaining</TooltipReference>
 		<EQType>297</EQType>
 		<TextColor>
-				<R>248</R>
-				<G>248</G>
-				<B>242</B>
+				<R>236</R>
+				<G>239</G>
+				<B>245</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
+		<AlignRight>false</AlignRight>
 	</Label>
 	<Label item ="TBWG_GuildTimerText">
 		<ScreenID/>
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>23</TopAnchorOffset>
+		<TopAnchorOffset>25</TopAnchorOffset>
 		<BottomAnchorOffset>40</BottomAnchorOffset>
-		<LeftAnchorOffset>138</LeftAnchorOffset>
-		<RightAnchorOffset>166</RightAnchorOffset>
+		<LeftAnchorOffset>149</LeftAnchorOffset>
+		<RightAnchorOffset>173</RightAnchorOffset>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<Text>GU:</Text>
+		<TooltipReference>Guild tribute time remaining</TooltipReference>
 		<TextColor>
-			<R>241</R>
-			<G>250</G>
-			<B>140</B>
+			<R>150</R>
+			<G>160</G>
+			<B>182</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -221,42 +237,44 @@
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>23</TopAnchorOffset>
+		<TopAnchorOffset>25</TopAnchorOffset>
 		<BottomAnchorOffset>40</BottomAnchorOffset>
-		<LeftAnchorOffset>165</LeftAnchorOffset>
-		<RightAnchorOffset>210</RightAnchorOffset>
+		<LeftAnchorOffset>176</LeftAnchorOffset>
+		<RightAnchorOffset>213</RightAnchorOffset>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<TooltipReference>Guild tribute time remaining</TooltipReference>
 		<EQType>121</EQType>
 		<TextColor>
-				<R>248</R>
-				<G>248</G>
-				<B>242</B>
+				<R>236</R>
+				<G>239</G>
+				<B>245</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
+		<AlignRight>false</AlignRight>
 	</Label>
 	<Label item ="TBWGT_GuildTimerText">
 		<ScreenID/>
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>23</TopAnchorOffset>
+		<TopAnchorOffset>25</TopAnchorOffset>
 		<BottomAnchorOffset>40</BottomAnchorOffset>
-		<LeftAnchorOffset>210</LeftAnchorOffset>
-		<RightAnchorOffset>238</RightAnchorOffset>
+		<LeftAnchorOffset>221</LeftAnchorOffset>
+		<RightAnchorOffset>245</RightAnchorOffset>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<Text>GT:</Text>
+		<TooltipReference>Guild trophy tribute time remaining</TooltipReference>
 		<TextColor>
-			<R>241</R>
-			<G>250</G>
-			<B>140</B>
+			<R>150</R>
+			<G>160</G>
+			<B>182</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -267,23 +285,24 @@
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>23</TopAnchorOffset>
+		<TopAnchorOffset>25</TopAnchorOffset>
 		<BottomAnchorOffset>40</BottomAnchorOffset>
-		<LeftAnchorOffset>237</LeftAnchorOffset>
-		<RightAnchorOffset>282</RightAnchorOffset>
+		<LeftAnchorOffset>248</LeftAnchorOffset>
+		<RightAnchorOffset>285</RightAnchorOffset>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<TooltipReference>Guild trophy tribute time remaining</TooltipReference>
 		<EQType>299</EQType>
 		<TextColor>
-				<R>248</R>
-				<G>248</G>
-				<B>242</B>
+				<R>236</R>
+				<G>239</G>
+				<B>245</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
-		<AlignRight>true</AlignRight>
+		<AlignRight>false</AlignRight>
 	</Label>
 
 <Label item ="TBWGT_PowerTimerText">
@@ -291,19 +310,20 @@
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>23</TopAnchorOffset>
+		<TopAnchorOffset>25</TopAnchorOffset>
 		<BottomAnchorOffset>40</BottomAnchorOffset>
-		<LeftAnchorOffset>282</LeftAnchorOffset>
-		<RightAnchorOffset>310</RightAnchorOffset>
+		<LeftAnchorOffset>291</LeftAnchorOffset>
+		<RightAnchorOffset>315</RightAnchorOffset>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<Text>PS:</Text>
+		<TooltipReference>Power source charge remaining</TooltipReference>
 		<TextColor>
-			<R>241</R>
-			<G>250</G>
-			<B>140</B>
+			<R>150</R>
+			<G>160</G>
+			<B>182</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -314,14 +334,15 @@
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>23</TopAnchorOffset>
+		<TopAnchorOffset>25</TopAnchorOffset>
 		<BottomAnchorOffset>40</BottomAnchorOffset>
-		<LeftAnchorOffset>313</LeftAnchorOffset>
-		<RightAnchorOffset>348</RightAnchorOffset>
+		<LeftAnchorOffset>318</LeftAnchorOffset>
+		<RightAnchorOffset>355</RightAnchorOffset>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<TooltipReference>Power source charge remaining</TooltipReference>
 		<EQType>360</EQType>
 		<TextColor>
 				<R>80</R>
@@ -1399,6 +1420,21 @@
 		<Pieces>VerticalLayoutBox:TBWGT_Layout</Pieces>
 	</Page>
 
+<!-- steel ring drawn around (not over) the power source slot -->
+	<StaticAnimation item="TBW_PowerSlotRing">
+		<ScreenID>TBW_PowerSlotRing</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>309</X>
+			<Y>1</Y>
+		</Location>
+		<Size>
+			<CX>22</CX>
+			<CY>22</CY>
+		</Size>
+		<Animation>A_TRIB_SlotRing</Animation>
+	</StaticAnimation>
+
 <InvSlot item="TBW_InvSlot21">
 		<ScreenID>InvSlot21</ScreenID>
 		<!--<Font>3</Font>-->
@@ -1411,8 +1447,8 @@
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
 		<RightAnchorToLeft>false</RightAnchorToLeft>-->
 		<Location>
-			<X>290</X>
-			<Y>0</Y>
+			<X>310</X>
+			<Y>2</Y>
 		</Location>
 		<Size>
 			<CX>20</CX>
@@ -1423,7 +1459,7 @@
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
 		<Style_Transparent>false</Style_Transparent>
-		<!--<TooltipReference/>-->
+		<TooltipReference>Power source</TooltipReference>
 	</InvSlot>
 	<TabBox item = "TBW_Subwindows">
 		<ScreenID>Subwindows</ScreenID>
@@ -1470,6 +1506,7 @@
 		<Style_Border>true</Style_Border>
 		<Style_Sizable>true</Style_Sizable>
 		<Style_ClientMovable>true</Style_ClientMovable>
+		<Pieces>TBW_PowerSlotRing</Pieces>
 		<Pieces>TBW_InvSlot21</Pieces>
 		<Pieces>TBW_Subwindows</Pieces>
 		<Pieces>Button:TBWP_ActivateButton</Pieces>

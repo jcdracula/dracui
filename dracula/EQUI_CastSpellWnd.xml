@@ -1,64 +1,17 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
 	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
-	<!-- Slate Glass spell gems (edge to edge): own pieces, so the shared A_SpellGem* animations are untouched -->
-	<Ui2DAnimation item="A_SGSlateBackground">
-		<Cycle>true</Cycle>
-		<Frames>
-			<Texture>window_pieces06.png</Texture>
-			<Location>
-				<X>44</X>
-				<Y>156</Y>
-			</Location>
-			<Size>
-				<CX>36</CX>
-				<CY>36</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-			<Duration>1000</Duration>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_SGSlateHolder">
-		<Cycle>true</Cycle>
-		<Frames>
-			<Texture>window_pieces06.png</Texture>
-			<Location>
-				<X>84</X>
-				<Y>156</Y>
-			</Location>
-			<Size>
-				<CX>36</CX>
-				<CY>36</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-			<Duration>1000</Duration>
-		</Frames>
-	</Ui2DAnimation>
-	<Ui2DAnimation item="A_SGSlateHighlight">
-		<Cycle>true</Cycle>
-		<Frames>
-			<Texture>window_pieces06.png</Texture>
-			<Location>
-				<X>124</X>
-				<Y>156</Y>
-			</Location>
-			<Size>
-				<CX>36</CX>
-				<CY>36</CY>
-			</Size>
-			<Hotspot>
-				<X>0</X>
-				<Y>0</Y>
-			</Hotspot>
-			<Duration>1000</Duration>
-		</Frames>
-	</Ui2DAnimation>
+	<!-- ============================================================
+	     Modernized spell bar (Slate Glass HUD look)
+	     - each gem is a framed tile: gold rim, dark ring with rounded inner corners, then the
+	       icon (32px, inset 2px)
+	     - gem pieces, as the game uses them: Holder sits behind the icon (backing plate),
+	       Highlight is drawn on top of every gem all the time (the frame, clear centre),
+	       Background is laid over the icon while it's unavailable/casting (kept fully clear)
+	     - flat spellbook button: steel book outline, gold on hover and while the book is open
+	     - even 3px padding around the gems (they used to touch the top and bottom edges)
+	     Art: csw_pieces.png (EQUI_Animations.xml), button template BDT_CSPW_Book (EQUI_Templates.xml)
+	     ============================================================ -->
 	<SpellGem item="CSPW_Spell0">
 		<ScreenID>CSPW_Spell0</ScreenID>
 		<RelativePosition>true</RelativePosition>
@@ -67,14 +20,14 @@
 			<CY>36</CY>
 		</Size>
 		<SpellGemDrawTemplate>
-			<Holder>A_SGSlateHolder</Holder>
-			<Background>A_SGSlateBackground</Background>
-			<Highlight>A_SGSlateHighlight</Highlight>
+			<Holder>A_CSPW_GemBack</Holder>
+			<Background>A_CSPW_GemClear</Background>
+			<Highlight>A_CSPW_GemFrameGold</Highlight>
 		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>1</SpellIconOffsetX>
-		<SpellIconOffsetY>1</SpellIconOffsetY>
-		<SpellIconSizeX>34</SpellIconSizeX>
-		<SpellIconSizeY>34</SpellIconSizeY>
+		<SpellIconOffsetX>2</SpellIconOffsetX>
+		<SpellIconOffsetY>2</SpellIconOffsetY>
+		<SpellIconSizeX>32</SpellIconSizeX>
+		<SpellIconSizeY>32</SpellIconSizeY>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell1">
 		<ScreenID>CSPW_Spell1</ScreenID>
@@ -84,14 +37,14 @@
 			<CY>36</CY>
 		</Size>
 		<SpellGemDrawTemplate>
-			<Holder>A_SGSlateHolder</Holder>
-			<Background>A_SGSlateBackground</Background>
-			<Highlight>A_SGSlateHighlight</Highlight>
+			<Holder>A_CSPW_GemBack</Holder>
+			<Background>A_CSPW_GemClear</Background>
+			<Highlight>A_CSPW_GemFrameGold</Highlight>
 		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>1</SpellIconOffsetX>
-		<SpellIconOffsetY>1</SpellIconOffsetY>
-		<SpellIconSizeX>34</SpellIconSizeX>
-		<SpellIconSizeY>34</SpellIconSizeY>
+		<SpellIconOffsetX>2</SpellIconOffsetX>
+		<SpellIconOffsetY>2</SpellIconOffsetY>
+		<SpellIconSizeX>32</SpellIconSizeX>
+		<SpellIconSizeY>32</SpellIconSizeY>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell2">
 		<ScreenID>CSPW_Spell2</ScreenID>
@@ -101,14 +54,14 @@
 			<CY>36</CY>
 		</Size>
 		<SpellGemDrawTemplate>
-			<Holder>A_SGSlateHolder</Holder>
-			<Background>A_SGSlateBackground</Background>
-			<Highlight>A_SGSlateHighlight</Highlight>
+			<Holder>A_CSPW_GemBack</Holder>
+			<Background>A_CSPW_GemClear</Background>
+			<Highlight>A_CSPW_GemFrameGold</Highlight>
 		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>1</SpellIconOffsetX>
-		<SpellIconOffsetY>1</SpellIconOffsetY>
-		<SpellIconSizeX>34</SpellIconSizeX>
-		<SpellIconSizeY>34</SpellIconSizeY>
+		<SpellIconOffsetX>2</SpellIconOffsetX>
+		<SpellIconOffsetY>2</SpellIconOffsetY>
+		<SpellIconSizeX>32</SpellIconSizeX>
+		<SpellIconSizeY>32</SpellIconSizeY>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell3">
 		<ScreenID>CSPW_Spell3</ScreenID>
@@ -118,14 +71,14 @@
 			<CY>36</CY>
 		</Size>
 		<SpellGemDrawTemplate>
-			<Holder>A_SGSlateHolder</Holder>
-			<Background>A_SGSlateBackground</Background>
-			<Highlight>A_SGSlateHighlight</Highlight>
+			<Holder>A_CSPW_GemBack</Holder>
+			<Background>A_CSPW_GemClear</Background>
+			<Highlight>A_CSPW_GemFrameGold</Highlight>
 		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>1</SpellIconOffsetX>
-		<SpellIconOffsetY>1</SpellIconOffsetY>
-		<SpellIconSizeX>34</SpellIconSizeX>
-		<SpellIconSizeY>34</SpellIconSizeY>
+		<SpellIconOffsetX>2</SpellIconOffsetX>
+		<SpellIconOffsetY>2</SpellIconOffsetY>
+		<SpellIconSizeX>32</SpellIconSizeX>
+		<SpellIconSizeY>32</SpellIconSizeY>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell4">
 		<ScreenID>CSPW_Spell4</ScreenID>
@@ -135,14 +88,14 @@
 			<CY>36</CY>
 		</Size>
 		<SpellGemDrawTemplate>
-			<Holder>A_SGSlateHolder</Holder>
-			<Background>A_SGSlateBackground</Background>
-			<Highlight>A_SGSlateHighlight</Highlight>
+			<Holder>A_CSPW_GemBack</Holder>
+			<Background>A_CSPW_GemClear</Background>
+			<Highlight>A_CSPW_GemFrameGold</Highlight>
 		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>1</SpellIconOffsetX>
-		<SpellIconOffsetY>1</SpellIconOffsetY>
-		<SpellIconSizeX>34</SpellIconSizeX>
-		<SpellIconSizeY>34</SpellIconSizeY>
+		<SpellIconOffsetX>2</SpellIconOffsetX>
+		<SpellIconOffsetY>2</SpellIconOffsetY>
+		<SpellIconSizeX>32</SpellIconSizeX>
+		<SpellIconSizeY>32</SpellIconSizeY>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell5">
 		<ScreenID>CSPW_Spell5</ScreenID>
@@ -152,14 +105,14 @@
 			<CY>36</CY>
 		</Size>
 		<SpellGemDrawTemplate>
-			<Holder>A_SGSlateHolder</Holder>
-			<Background>A_SGSlateBackground</Background>
-			<Highlight>A_SGSlateHighlight</Highlight>
+			<Holder>A_CSPW_GemBack</Holder>
+			<Background>A_CSPW_GemClear</Background>
+			<Highlight>A_CSPW_GemFrameGold</Highlight>
 		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>1</SpellIconOffsetX>
-		<SpellIconOffsetY>1</SpellIconOffsetY>
-		<SpellIconSizeX>34</SpellIconSizeX>
-		<SpellIconSizeY>34</SpellIconSizeY>
+		<SpellIconOffsetX>2</SpellIconOffsetX>
+		<SpellIconOffsetY>2</SpellIconOffsetY>
+		<SpellIconSizeX>32</SpellIconSizeX>
+		<SpellIconSizeY>32</SpellIconSizeY>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell6">
 		<ScreenID>CSPW_Spell6</ScreenID>
@@ -169,14 +122,14 @@
 			<CY>36</CY>
 		</Size>
 		<SpellGemDrawTemplate>
-			<Holder>A_SGSlateHolder</Holder>
-			<Background>A_SGSlateBackground</Background>
-			<Highlight>A_SGSlateHighlight</Highlight>
+			<Holder>A_CSPW_GemBack</Holder>
+			<Background>A_CSPW_GemClear</Background>
+			<Highlight>A_CSPW_GemFrameGold</Highlight>
 		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>1</SpellIconOffsetX>
-		<SpellIconOffsetY>1</SpellIconOffsetY>
-		<SpellIconSizeX>34</SpellIconSizeX>
-		<SpellIconSizeY>34</SpellIconSizeY>
+		<SpellIconOffsetX>2</SpellIconOffsetX>
+		<SpellIconOffsetY>2</SpellIconOffsetY>
+		<SpellIconSizeX>32</SpellIconSizeX>
+		<SpellIconSizeY>32</SpellIconSizeY>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell7">
 		<ScreenID>CSPW_Spell7</ScreenID>
@@ -186,14 +139,14 @@
 			<CY>36</CY>
 		</Size>
 		<SpellGemDrawTemplate>
-			<Holder>A_SGSlateHolder</Holder>
-			<Background>A_SGSlateBackground</Background>
-			<Highlight>A_SGSlateHighlight</Highlight>
+			<Holder>A_CSPW_GemBack</Holder>
+			<Background>A_CSPW_GemClear</Background>
+			<Highlight>A_CSPW_GemFrameGold</Highlight>
 		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>1</SpellIconOffsetX>
-		<SpellIconOffsetY>1</SpellIconOffsetY>
-		<SpellIconSizeX>34</SpellIconSizeX>
-		<SpellIconSizeY>34</SpellIconSizeY>
+		<SpellIconOffsetX>2</SpellIconOffsetX>
+		<SpellIconOffsetY>2</SpellIconOffsetY>
+		<SpellIconSizeX>32</SpellIconSizeX>
+		<SpellIconSizeY>32</SpellIconSizeY>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell8">
 		<ScreenID>CSPW_Spell8</ScreenID>
@@ -203,14 +156,14 @@
 			<CY>36</CY>
 		</Size>
 		<SpellGemDrawTemplate>
-			<Holder>A_SGSlateHolder</Holder>
-			<Background>A_SGSlateBackground</Background>
-			<Highlight>A_SGSlateHighlight</Highlight>
+			<Holder>A_CSPW_GemBack</Holder>
+			<Background>A_CSPW_GemClear</Background>
+			<Highlight>A_CSPW_GemFrameGold</Highlight>
 		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>1</SpellIconOffsetX>
-		<SpellIconOffsetY>1</SpellIconOffsetY>
-		<SpellIconSizeX>34</SpellIconSizeX>
-		<SpellIconSizeY>34</SpellIconSizeY>
+		<SpellIconOffsetX>2</SpellIconOffsetX>
+		<SpellIconOffsetY>2</SpellIconOffsetY>
+		<SpellIconSizeX>32</SpellIconSizeX>
+		<SpellIconSizeY>32</SpellIconSizeY>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell9">
 		<ScreenID>CSPW_Spell9</ScreenID>
@@ -220,14 +173,14 @@
 			<CY>36</CY>
 		</Size>
 		<SpellGemDrawTemplate>
-			<Holder>A_SGSlateHolder</Holder>
-			<Background>A_SGSlateBackground</Background>
-			<Highlight>A_SGSlateHighlight</Highlight>
+			<Holder>A_CSPW_GemBack</Holder>
+			<Background>A_CSPW_GemClear</Background>
+			<Highlight>A_CSPW_GemFrameGold</Highlight>
 		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>1</SpellIconOffsetX>
-		<SpellIconOffsetY>1</SpellIconOffsetY>
-		<SpellIconSizeX>34</SpellIconSizeX>
-		<SpellIconSizeY>34</SpellIconSizeY>
+		<SpellIconOffsetX>2</SpellIconOffsetX>
+		<SpellIconOffsetY>2</SpellIconOffsetY>
+		<SpellIconSizeX>32</SpellIconSizeX>
+		<SpellIconSizeY>32</SpellIconSizeY>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell10">
 		<ScreenID>CSPW_Spell10</ScreenID>
@@ -237,14 +190,14 @@
 			<CY>36</CY>
 		</Size>
 		<SpellGemDrawTemplate>
-			<Holder>A_SGSlateHolder</Holder>
-			<Background>A_SGSlateBackground</Background>
-			<Highlight>A_SGSlateHighlight</Highlight>
+			<Holder>A_CSPW_GemBack</Holder>
+			<Background>A_CSPW_GemClear</Background>
+			<Highlight>A_CSPW_GemFrameGold</Highlight>
 		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>1</SpellIconOffsetX>
-		<SpellIconOffsetY>1</SpellIconOffsetY>
-		<SpellIconSizeX>34</SpellIconSizeX>
-		<SpellIconSizeY>34</SpellIconSizeY>
+		<SpellIconOffsetX>2</SpellIconOffsetX>
+		<SpellIconOffsetY>2</SpellIconOffsetY>
+		<SpellIconSizeX>32</SpellIconSizeX>
+		<SpellIconSizeY>32</SpellIconSizeY>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell11">
 		<ScreenID>CSPW_Spell11</ScreenID>
@@ -254,14 +207,14 @@
 			<CY>36</CY>
 		</Size>
 		<SpellGemDrawTemplate>
-			<Holder>A_SGSlateHolder</Holder>
-			<Background>A_SGSlateBackground</Background>
-			<Highlight>A_SGSlateHighlight</Highlight>
+			<Holder>A_CSPW_GemBack</Holder>
+			<Background>A_CSPW_GemClear</Background>
+			<Highlight>A_CSPW_GemFrameGold</Highlight>
 		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>1</SpellIconOffsetX>
-		<SpellIconOffsetY>1</SpellIconOffsetY>
-		<SpellIconSizeX>34</SpellIconSizeX>
-		<SpellIconSizeY>34</SpellIconSizeY>
+		<SpellIconOffsetX>2</SpellIconOffsetX>
+		<SpellIconOffsetY>2</SpellIconOffsetY>
+		<SpellIconSizeX>32</SpellIconSizeX>
+		<SpellIconSizeY>32</SpellIconSizeY>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell12">
 		<ScreenID>CSPW_Spell12</ScreenID>
@@ -271,14 +224,14 @@
 			<CY>36</CY>
 		</Size>
 		<SpellGemDrawTemplate>
-			<Holder>A_SGSlateHolder</Holder>
-			<Background>A_SGSlateBackground</Background>
-			<Highlight>A_SGSlateHighlight</Highlight>
+			<Holder>A_CSPW_GemBack</Holder>
+			<Background>A_CSPW_GemClear</Background>
+			<Highlight>A_CSPW_GemFrameGold</Highlight>
 		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>1</SpellIconOffsetX>
-		<SpellIconOffsetY>1</SpellIconOffsetY>
-		<SpellIconSizeX>34</SpellIconSizeX>
-		<SpellIconSizeY>34</SpellIconSizeY>
+		<SpellIconOffsetX>2</SpellIconOffsetX>
+		<SpellIconOffsetY>2</SpellIconOffsetY>
+		<SpellIconSizeX>32</SpellIconSizeX>
+		<SpellIconSizeY>32</SpellIconSizeY>
 	</SpellGem>
 	<SpellGem item="CSPW_Spell13">
 		<ScreenID>CSPW_Spell13</ScreenID>
@@ -288,14 +241,14 @@
 			<CY>36</CY>
 		</Size>
 		<SpellGemDrawTemplate>
-			<Holder>A_SGSlateHolder</Holder>
-			<Background>A_SGSlateBackground</Background>
-			<Highlight>A_SGSlateHighlight</Highlight>
+			<Holder>A_CSPW_GemBack</Holder>
+			<Background>A_CSPW_GemClear</Background>
+			<Highlight>A_CSPW_GemFrameGold</Highlight>
 		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>1</SpellIconOffsetX>
-		<SpellIconOffsetY>1</SpellIconOffsetY>
-		<SpellIconSizeX>34</SpellIconSizeX>
-		<SpellIconSizeY>34</SpellIconSizeY>
+		<SpellIconOffsetX>2</SpellIconOffsetX>
+		<SpellIconOffsetY>2</SpellIconOffsetY>
+		<SpellIconSizeX>32</SpellIconSizeX>
+		<SpellIconSizeY>32</SpellIconSizeY>
 	</SpellGem>
 	<Label item="CSPW_BookSpacer">
 		<ScreenID>CSPW_BookSpacer</ScreenID>
@@ -305,19 +258,12 @@
 			<CY>24</CY>
 		</Size>
 	</Label>
-	<ButtonDrawTemplate item="BDT_BookBtn">
-		<Normal>A_BookBtnNormal</Normal>
-		<Pressed>A_BookBtnPressed</Pressed>
-		<Flyby>A_BookBtnFlyby</Flyby>
-		<Disabled>A_BookBtnDisabled</Disabled>
-		<PressedFlyby>A_BookBtnPressedFlyby</PressedFlyby>
-	</ButtonDrawTemplate>
 	<Button item="CSPW_SpellBookH">
 		<ScreenID>CSPW_SpellBookH</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<TooltipReference>Opens and closes Your Spellbook</TooltipReference>
 		<Style_Checkbox>true</Style_Checkbox>
-		<Template>BDT_BookBtn</Template>	
+		<Template>BDT_CSPW_Book</Template>	
 		<Size>
 			<CX>20</CX>
 			<CY>22</CY>
@@ -332,7 +278,7 @@
 		<RelativePosition>true</RelativePosition>
 		<TooltipReference>Opens and closes Your Spellbook</TooltipReference>
 		<Style_Checkbox>true</Style_Checkbox>
-		<Template>BDT_BookBtn</Template>
+		<Template>BDT_CSPW_Book</Template>
 		<Size>
 			<CX>20</CX>
 			<CY>22</CY>
@@ -364,10 +310,10 @@
 		<ScreenID>CSPW_HorizontalOrientationTemplate</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>1</TopAnchorOffset>
-		<BottomAnchorOffset>1</BottomAnchorOffset>
-		<LeftAnchorOffset>2</LeftAnchorOffset>
-		<RightAnchorOffset>24</RightAnchorOffset>	
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<RightAnchorOffset>27</RightAnchorOffset>	
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
@@ -379,10 +325,10 @@
 		<ScreenID>CSPW_VerticalOrientationTemplate</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>2</TopAnchorOffset>
-		<BottomAnchorOffset>26</BottomAnchorOffset>
-		<LeftAnchorOffset>2</LeftAnchorOffset>
-		<RightAnchorOffset>0</RightAnchorOffset>	
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<BottomAnchorOffset>28</BottomAnchorOffset>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>	
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
@@ -424,10 +370,10 @@
 		<ScreenID>CSPW_HorizontalOrientationBook</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>7</TopAnchorOffset>
-		<BottomAnchorOffset>31</BottomAnchorOffset>
-		<LeftAnchorOffset>23</LeftAnchorOffset>
-		<RightAnchorOffset>1</RightAnchorOffset>	
+		<TopAnchorOffset>9</TopAnchorOffset>
+		<BottomAnchorOffset>33</BottomAnchorOffset>
+		<LeftAnchorOffset>25</LeftAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>	
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -441,10 +387,10 @@
 		<ScreenID>CSPW_VerticalOrientationBook</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<TopAnchorOffset>26</TopAnchorOffset>
-		<BottomAnchorOffset>2</BottomAnchorOffset>
-		<LeftAnchorOffset>9</LeftAnchorOffset>
-		<RightAnchorOffset>31</RightAnchorOffset>	
+		<TopAnchorOffset>27</TopAnchorOffset>
+		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<LeftAnchorOffset>10</LeftAnchorOffset>
+		<RightAnchorOffset>32</RightAnchorOffset>	
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>

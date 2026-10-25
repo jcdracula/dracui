@@ -156,90 +156,91 @@
       <B>240</B>
     </TextColor>
     <RelativePosition>true</RelativePosition>
-    <GaugeOffsetY>16</GaugeOffsetY>
-	<GaugeOffsetX>3</GaugeOffsetX>
-    <TextOffsetX>8</TextOffsetX>
-	<TextOffsetY>2</TextOffsetY>
+    <GaugeOffsetY>17</GaugeOffsetY>
+    <GaugeOffsetX>0</GaugeOffsetX>
+    <TextOffsetX>5</TextOffsetX>
+    <TextOffsetY>1</TextOffsetY>
     <Style_VScroll>false</Style_VScroll>
     <Style_HScroll>false</Style_HScroll>
     <Style_Transparent>false</Style_Transparent>
-    <TooltipReference />
+    <TooltipReference>Your target</TooltipReference>
     <FillTint>
-      <R>255</R>
-      <G>85</G>
-      <B>85</B>
+      <R>214</R>
+      <G>72</G>
+      <B>72</B>
     </FillTint>
     <DrawLinesFill>false</DrawLinesFill>
     <EQType>6</EQType>
     <GaugeDrawTemplate>
-      <Background>A_GaugeBackground</Background>
-      <Fill>A_GaugeFill</Fill>
-      <Lines>A_GaugeLines</Lines>
-      <LinesFill>A_GaugeLinesFill</LinesFill>
-      <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-      <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
     <TopAnchorOffset>2</TopAnchorOffset>
     <BottomAnchorOffset>27</BottomAnchorOffset>
-    <LeftAnchorOffset>2</LeftAnchorOffset>
-    <RightAnchorOffset>2</RightAnchorOffset>
+    <LeftAnchorOffset>5</LeftAnchorOffset>
+    <RightAnchorOffset>5</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Gauge item="TargetofTarget_HP">
     <ScreenID>TargetofTargettHP</ScreenID>
-    <Font>3</Font>
+    <Font>2</Font>
     <TextColor>
       <R>240</R>
       <G>240</G>
       <B>240</B>
     </TextColor>
     <RelativePosition>true</RelativePosition>
-    <GaugeOffsetY>16</GaugeOffsetY>
-	<GaugeOffsetX>3</GaugeOffsetX>
-    <TextOffsetX>8</TextOffsetX>
-	<TextOffsetY>2</TextOffsetY>
+    <GaugeOffsetY>15</GaugeOffsetY>
+    <GaugeOffsetX>0</GaugeOffsetX>
+    <TextOffsetX>5</TextOffsetX>
+    <TextOffsetY>1</TextOffsetY>
     <Style_VScroll>false</Style_VScroll>
     <Style_HScroll>false</Style_HScroll>
     <Style_Transparent>false</Style_Transparent>
-    <TooltipReference />
+    <TooltipReference>Your target's target</TooltipReference>
     <FillTint>
-      <R>255</R>
-      <G>85</G>
-      <B>85</B>
+      <R>170</R>
+      <G>62</G>
+      <B>62</B>
     </FillTint>
     <DrawLinesFill>false</DrawLinesFill>
     <EQType>27</EQType>
     <GaugeDrawTemplate>
-      <Background>A_GaugeBackground</Background>
-      <Fill>A_GaugeFill</Fill>
-      <Lines>A_GaugeLines</Lines>
-      <LinesFill>A_GaugeLinesFill</LinesFill>
-      <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-      <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>45</TopAnchorOffset>
-    <BottomAnchorOffset>70</BottomAnchorOffset>
-    <LeftAnchorOffset>2</LeftAnchorOffset>
-    <RightAnchorOffset>2</RightAnchorOffset>
+    <TopAnchorOffset>48</TopAnchorOffset>
+    <BottomAnchorOffset>71</BottomAnchorOffset>
+    <LeftAnchorOffset>5</LeftAnchorOffset>
+    <RightAnchorOffset>5</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Label item="Target_HPLabel">
     <ScreenID>HPLabel</ScreenID>
     <EQType>29</EQType>
     <RelativePosition>true</RelativePosition>
-    <Font>1</Font>
+    <Font>2</Font>
     <Text>100</Text>
-	<AppendText>%</AppendText>
+    <AppendText>%</AppendText>
     <NoWrap>true</NoWrap>
     <AlignCenter>true</AlignCenter>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>16</TopAnchorOffset>
-    <BottomAnchorOffset>26</BottomAnchorOffset>
+    <TopAnchorOffset>17</TopAnchorOffset>
+    <BottomAnchorOffset>29</BottomAnchorOffset>
     <LeftAnchorOffset>2</LeftAnchorOffset>
     <RightAnchorOffset>2</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
+    <TextColor>
+      <R>240</R>
+      <G>240</G>
+      <B>245</B>
+    </TextColor>
   </Label>
   <Button item="Target_Buff_Template">
     <ScreenID>TargetBuffSlot</ScreenID>
@@ -281,7 +282,7 @@
     <RelativePosition>true</RelativePosition>
     <AutoStretch>true</AutoStretch>
     <LeftAnchorOffset>2</LeftAnchorOffset>
-    <TopAnchorOffset>80</TopAnchorOffset>
+    <TopAnchorOffset>76</TopAnchorOffset>
     <RightAnchorOffset>4</RightAnchorOffset>
     <BottomAnchorOffset>4</BottomAnchorOffset>
     <BottomAnchorToTop>false</BottomAnchorToTop>
@@ -307,9 +308,9 @@
     <NoWrap>true</NoWrap>
     <AutoStretch>true</AutoStretch>
     <AlignLeft>true</AlignLeft>
-	<LeftAnchorOffset>10</LeftAnchorOffset>
-    <TopAnchorOffset>33</TopAnchorOffset>
-    <BottomAnchorOffset>47</BottomAnchorOffset>
+    <LeftAnchorOffset>10</LeftAnchorOffset>
+    <TopAnchorOffset>32</TopAnchorOffset>
+    <BottomAnchorOffset>46</BottomAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Label>
   <Label item="Target_AggroNameSecondaryLabel">
@@ -321,8 +322,8 @@
     <NoWrap>true</NoWrap>
     <AutoStretch>true</AutoStretch>
     <AlignCenter>true</AlignCenter>
-    <TopAnchorOffset>33</TopAnchorOffset>
-    <BottomAnchorOffset>47</BottomAnchorOffset>
+    <TopAnchorOffset>32</TopAnchorOffset>
+    <BottomAnchorOffset>46</BottomAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Label>
   <Label item="Target_AggroPctSecondaryLabel">
@@ -334,8 +335,8 @@
     <NoWrap>true</NoWrap>
     <AutoStretch>true</AutoStretch>
     <AlignRight>true</AlignRight>
-    <TopAnchorOffset>33</TopAnchorOffset>
-    <BottomAnchorOffset>47</BottomAnchorOffset>
+    <TopAnchorOffset>32</TopAnchorOffset>
+    <BottomAnchorOffset>46</BottomAnchorOffset>
     <RightAnchorOffset>10</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Label>

@@ -1,0 +1,484 @@
+<?xml version = "1.0"?>
+<XML ID = "EQInterfaceDefinitionLanguage">
+	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
+
+	<!-- ============================================================
+	     Modernized Manage Mercenaries window (shared modern theme)
+	     - wider so the title and timer fit; lists grow with the window
+	     - buttons grouped: stance actions, assist, then mercenary
+	       actions, with Dismiss in the bottom corner in red text
+	     - Auto Assist is a real checkbox so its state is obvious
+	     ============================================================ -->
+
+	<Label item="MMGW_TimeLeftLabel">
+		<ScreenID>TimeLeftLabel</ScreenID>
+		<EQType>mercenary/ManageWnd/TimeLeftLabel</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<TopAnchorOffset>6</TopAnchorOffset>
+		<RightAnchorOffset>90</RightAnchorOffset>
+		<BottomAnchorOffset>20</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<Text>Time left:</Text>
+		<TextColor>
+			<R>160</R>
+			<G>165</G>
+			<B>180</B>
+		</TextColor>
+		<TooltipReference>This is the time left until you next get charged for your mercenary.</TooltipReference>
+		<NoWrap>true</NoWrap>
+	</Label>
+	<Label item="MMGW_TimeLeftText">
+		<ScreenID>TimeLeftText</ScreenID>
+		<EQType>mercenary/ManageWnd/TimeLeftText</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>90</LeftAnchorOffset>
+		<TopAnchorOffset>6</TopAnchorOffset>
+		<RightAnchorOffset>8</RightAnchorOffset>
+		<BottomAnchorOffset>20</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Text>12m 32s</Text>
+		<TextColor>
+			<R>255</R>
+			<G>215</G>
+			<B>110</B>
+		</TextColor>
+		<TooltipReference>Time until your next upkeep charge</TooltipReference>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+	<Listbox item="MMGW_StanceListBox">
+		<ScreenID>StanceListBox</ScreenID>
+		<EQType>mercenary/ManageWnd/StanceListBox</EQType>
+		<DrawTemplate>WDT_AchPanel</DrawTemplate>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>4</LeftAnchorOffset>
+		<TopAnchorOffset>24</TopAnchorOffset>
+		<RightAnchorOffset>4</RightAnchorOffset>
+		<BottomAnchorOffset>112</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Border>true</Style_Border>
+		<Style_VScroll>true</Style_VScroll>
+		<Columns>
+			<Width>300</Width>
+			<Heading>Stance</Heading>
+		</Columns>
+	</Listbox>
+	<Button item="MMGW_SetActiveStanceButton">
+		<ScreenID>SetActiveStanceButton</ScreenID>
+		<EQType>mercenary/ManageWnd/SetActiveStanceButton</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>6</LeftAnchorOffset>
+		<TopAnchorOffset>108</TopAnchorOffset>
+		<RightAnchorOffset>112</RightAnchorOffset>
+		<BottomAnchorOffset>86</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<Text>Set Active</Text>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>Set the currently selected stance as the active stance.</TooltipReference>
+		<Template>BDT_AchFlat</Template>
+	</Button>
+	<Button item="MMGW_SetStanceHotkeyButton">
+		<ScreenID>SetStanceHotkeyButton</ScreenID>
+		<EQType>mercenary/ManageWnd/SetStanceHotkeyButton</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>112</LeftAnchorOffset>
+		<TopAnchorOffset>108</TopAnchorOffset>
+		<RightAnchorOffset>6</RightAnchorOffset>
+		<BottomAnchorOffset>86</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Text>Set Hotkey</Text>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>Set a hotkey to switch to the currently selected stance.</TooltipReference>
+		<Template>BDT_AchFlat</Template>
+	</Button>
+	<Button item="MMGW_AssistModeCheckbox">
+		<ScreenID>AssistModeCheckbox</ScreenID>
+		<EQType>mercenary/ManageWnd/AssistModeCheckbox</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>6</LeftAnchorOffset>
+		<TopAnchorOffset>82</TopAnchorOffset>
+		<RightAnchorOffset>112</RightAnchorOffset>
+		<BottomAnchorOffset>60</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<Text>Auto Assist</Text>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>true</Style_Checkbox>
+		<TooltipReference>Toggle whether your mercenary automatically assists.</TooltipReference>
+		<Template>BDT_ModernCheckbox</Template>
+		<DecalSize>
+			<CX>16</CX>
+			<CY>16</CY>
+		</DecalSize>
+		<DecalOffset>
+			<X>0</X>
+			<Y>3</Y>
+		</DecalOffset>
+		<TextAlignCenter>false</TextAlignCenter>
+		<TextOffsetX>22</TextOffsetX>
+	</Button>
+	<Button item="MMGW_CallForAssistButton">
+		<ScreenID>CallForAssistButton</ScreenID>
+		<EQType>mercenary/ManageWnd/CallForAssistButton</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>112</LeftAnchorOffset>
+		<TopAnchorOffset>82</TopAnchorOffset>
+		<RightAnchorOffset>6</RightAnchorOffset>
+		<BottomAnchorOffset>60</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Text>Call Assist</Text>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>For tank mercenaries opens up valid NPCs on the group enemy list as targets.  For healer mercenaries, overrides the range restrictions on healing pullers for 3 seconds.</TooltipReference>
+		<Template>BDT_AchFlat</Template>
+	</Button>
+	<Button item="MMGW_InfoButton">
+		<ScreenID>InfoButton</ScreenID>
+		<EQType>mercenary/ManageWnd/InfoButton</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>6</LeftAnchorOffset>
+		<TopAnchorOffset>52</TopAnchorOffset>
+		<RightAnchorOffset>112</RightAnchorOffset>
+		<BottomAnchorOffset>30</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<Text>Info</Text>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>Show info about your current mercenary.</TooltipReference>
+		<Template>BDT_AchFlat</Template>
+	</Button>
+	<Button item="MMGW_SetOwnerButton">
+		<ScreenID>SetOwnerButton</ScreenID>
+		<EQType>mercenary/ManageWnd/SetOwnerButton</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>112</LeftAnchorOffset>
+		<TopAnchorOffset>52</TopAnchorOffset>
+		<RightAnchorOffset>6</RightAnchorOffset>
+		<BottomAnchorOffset>30</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Text>Set Owner</Text>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>Set the mercenary's owner based on your current target.</TooltipReference>
+		<Template>BDT_AchFlat</Template>
+	</Button>
+	<Button item="MMGW_SuspendButton">
+		<ScreenID>SuspendButton</ScreenID>
+		<EQType>mercenary/ManageWnd/SuspendButton</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>6</LeftAnchorOffset>
+		<TopAnchorOffset>26</TopAnchorOffset>
+		<RightAnchorOffset>112</RightAnchorOffset>
+		<BottomAnchorOffset>4</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<Text>Suspend</Text>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>Suspends your current mercenary.</TooltipReference>
+		<Template>BDT_AchFlat</Template>
+	</Button>
+	<Button item="MMGW_DismissButton">
+		<ScreenID>DismissButton</ScreenID>
+		<EQType>mercenary/ManageWnd/DismissButton</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>112</LeftAnchorOffset>
+		<TopAnchorOffset>26</TopAnchorOffset>
+		<RightAnchorOffset>6</RightAnchorOffset>
+		<BottomAnchorOffset>4</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Text>Dismiss</Text>
+		<TextColor>
+			<R>255</R>
+			<G>110</G>
+			<B>110</B>
+		</TextColor>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>Dismiss your current mercenary.</TooltipReference>
+		<Template>BDT_AchFlat</Template>
+	</Button>
+	<Label item="MMGW_TotalSlotsLabel">
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<TopAnchorOffset>6</TopAnchorOffset>
+		<RightAnchorOffset>90</RightAnchorOffset>
+		<BottomAnchorOffset>20</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<Text>Total slots:</Text>
+		<TextColor>
+			<R>160</R>
+			<G>165</G>
+			<B>180</B>
+		</TextColor>
+		<TooltipReference>This is total number of mercenary slots that you currently have.</TooltipReference>
+		<NoWrap>true</NoWrap>
+	</Label>
+	<Label item="MMGW_TotalSlotsText">
+		<ScreenID>TotalSlotsText</ScreenID>
+		<EQType>mercenary/ManageWnd/TotalSlotsText</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>90</LeftAnchorOffset>
+		<TopAnchorOffset>6</TopAnchorOffset>
+		<RightAnchorOffset>8</RightAnchorOffset>
+		<BottomAnchorOffset>20</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Text>1</Text>
+		<TextColor>
+			<R>255</R>
+			<G>215</G>
+			<B>110</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+	<Listbox item="MMGW_OwnedListBox">
+		<ScreenID>OwnedListBox</ScreenID>
+		<EQType>mercenary/ManageWnd/OwnedListBox</EQType>
+		<DrawTemplate>WDT_AchPanel</DrawTemplate>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>4</LeftAnchorOffset>
+		<TopAnchorOffset>24</TopAnchorOffset>
+		<RightAnchorOffset>4</RightAnchorOffset>
+		<BottomAnchorOffset>30</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Border>true</Style_Border>
+		<Style_VScroll>true</Style_VScroll>
+		<Columns>
+			<Width>20</Width>
+		</Columns>
+		<Columns>
+			<Width>280</Width>
+			<Heading>Owned</Heading>
+		</Columns>
+	</Listbox>
+	<Button item="MMGW_SetMercenaryHotkeyButton">
+		<ScreenID>SetMercenaryHotkeyButton</ScreenID>
+		<EQType>mercenary/ManageWnd/SetMercenaryHotkeyButton</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>6</LeftAnchorOffset>
+		<TopAnchorOffset>26</TopAnchorOffset>
+		<RightAnchorOffset>112</RightAnchorOffset>
+		<BottomAnchorOffset>4</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<Text>Set Hotkey</Text>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>Set a hotkey to switch to the currently selected mercenary.</TooltipReference>
+		<Template>BDT_AchFlat</Template>
+	</Button>
+	<Button item="MMGW_SwitchButton">
+		<ScreenID>SwitchButton</ScreenID>
+		<EQType>mercenary/ManageWnd/SwitchButton</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>112</LeftAnchorOffset>
+		<TopAnchorOffset>26</TopAnchorOffset>
+		<RightAnchorOffset>6</RightAnchorOffset>
+		<BottomAnchorOffset>4</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Text>Switch</Text>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>Switches to currently selected mercenary.</TooltipReference>
+		<Template>BDT_AchFlat</Template>
+	</Button>
+	<Button item="MMGW_BuyButton">
+		<ScreenID>BuyButton</ScreenID>
+		<EQType>mercenary/ManageWnd/BuyButton</EQType>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>112</LeftAnchorOffset>
+		<TopAnchorOffset>26</TopAnchorOffset>
+		<RightAnchorOffset>6</RightAnchorOffset>
+		<BottomAnchorOffset>4</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Text>Buy Slot</Text>
+		<TextColor>
+			<R>255</R>
+			<G>233</G>
+			<B>129</B>
+		</TextColor>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>Opens the window to allow for purchase.</TooltipReference>
+		<Template>BDT_AchFlat</Template>
+	</Button>
+	<Page item="MMGW_ManagePage">
+		<ScreenID>ManagePage</ScreenID>
+		<EQType>mercenary/ManageWnd/ManagePage</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>true</Style_Transparent>
+		<TabText>Manage</TabText>
+		<TabTextActiveColor>
+			<R>255</R>
+			<G>255</G>
+			<B>0</B>
+		</TabTextActiveColor>
+		<DrawTemplate>WDT_AchModern</DrawTemplate>
+		<Style_Sizable>true</Style_Sizable>
+		<Pieces>Label:MMGW_TimeLeftLabel</Pieces>
+		<Pieces>Label:MMGW_TimeLeftText</Pieces>
+		<Pieces>Listbox:MMGW_StanceListBox</Pieces>
+		<Pieces>Button:MMGW_AssistModeCheckbox</Pieces>
+		<Pieces>Button:MMGW_CallForAssistButton</Pieces>
+		<Pieces>Button:MMGW_SetActiveStanceButton</Pieces>
+		<Pieces>Button:MMGW_SetStanceHotkeyButton</Pieces>
+		<Pieces>Button:MMGW_SetOwnerButton</Pieces>
+		<Pieces>Button:MMGW_DismissButton</Pieces>
+		<Pieces>Button:MMGW_InfoButton</Pieces>
+		<Pieces>Button:MMGW_SuspendButton</Pieces>
+	</Page>
+	<Page item="MMGW_SwitchPage">
+		<ScreenID>MMGW_SwitchPage</ScreenID>
+		<EQType>mercenary/SwitchPage</EQType>
+		<RelativePosition>true</RelativePosition>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>true</Style_Transparent>
+		<TabText>Switch</TabText>
+		<TabTextActiveColor>
+			<R>255</R>
+			<G>255</G>
+			<B>0</B>
+		</TabTextActiveColor>
+		<DrawTemplate>WDT_AchModern</DrawTemplate>
+		<Style_Sizable>true</Style_Sizable>
+		<Pieces>Label:MMGW_TotalSlotsLabel</Pieces>
+		<Pieces>Label:MMGW_TotalSlotsText</Pieces>
+		<Pieces>Listbox:MMGW_OwnedListBox</Pieces>
+		<Pieces>Button:MMGW_SwitchButton</Pieces>
+		<Pieces>Button:MMGW_BuyButton</Pieces>
+		<Pieces>Button:MMGW_SetMercenaryHotkeyButton</Pieces>
+	</Page>
+	<TabBox item="MMGW_Subwindows">
+		<ScreenID>MMGW_Subwindows</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<TabBorderTemplate>FT_DefTabBorder</TabBorderTemplate>
+		<PageBorderTemplate>FT_DefPageBorder</PageBorderTemplate>
+		<Pages>Page:MMGW_ManagePage</Pages>
+		<Pages>Page:MMGW_SwitchPage</Pages>
+		<LeftAnchorOffset>1</LeftAnchorOffset>
+		<RightAnchorOffset>0</RightAnchorOffset>
+		<TopAnchorOffset>0</TopAnchorOffset>
+		<BottomAnchorOffset>0</BottomAnchorOffset>
+	</TabBox>
+	<Screen item="MMGW_ManageWnd">
+		<ScreenID>ManageWnd</ScreenID>
+		<EQType>mercenary/ManageWnd</EQType>
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>15</X>
+			<Y>275</Y>
+		</Location>
+		<Size>
+			<CX>240</CX>
+			<CY>310</CY>
+		</Size>
+		<MinHSize>232</MinHSize>
+		<MinVSize>270</MinVSize>
+		<Text>Manage Mercenaries</Text>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<DrawTemplate>WDT_AchModern</DrawTemplate>
+		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Closebox>true</Style_Closebox>
+		<Style_Minimizebox>true</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>true</Style_Sizable>
+		<Escapable>false</Escapable>
+		<Pieces>MMGW_Subwindows</Pieces>
+	</Screen>
+</XML>

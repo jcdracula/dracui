@@ -3,7 +3,7 @@
 	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
 
 	<!-- ============================================================
-	     Modernized Inventory tab layout
+	     Modernized Inventory window (shared modern theme)
 	     Left: character info | Center: paper doll | Right: wallet + bags
 	     Uses only stock textures/templates, so no extra files are needed.
 	     ============================================================ -->
@@ -473,7 +473,7 @@
 			<CY>172</CY>
 		</Size>
 		<TooltipReference>Drop Item Here to Auto Equip</TooltipReference>
-		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<DrawTemplate>WDT_AchPanel</DrawTemplate>
 		<Style_Titlebar>false</Style_Titlebar>
 		<Style_Closebox>false</Style_Closebox>
 		<Style_Minimizebox>false</Style_Minimizebox>
@@ -495,7 +495,7 @@
 		</Size>
 		<Text>Consume Krono</Text>
 		<TooltipReference>Consume the Krono in the slot to the left</TooltipReference>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<!-- START CHAR INFO -->
 	<Label item="IW_Name">
@@ -1942,11 +1942,11 @@
 			<B>129</B>
 		</TextColor>
 		<TooltipReference>Upgrade current character to a fully equipped Heroic Character.</TooltipReference>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Combobox item="IW_HeroicUpgradeSelection">
 		<ScreenID>IW_HeroicUpgradeSelection</ScreenID>
-		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<DrawTemplate>WDT_AchPanel</DrawTemplate>
 		<AutoStretchList>true</AutoStretchList>
 		<TooltipReference>Select which level of Heroic Character to use.</TooltipReference>
 		<RelativePosition>true</RelativePosition>
@@ -2037,7 +2037,7 @@
 		</Size>
 		<Text>Reclaim Crystals</Text>
 		<TooltipReference>Reclaim Dragons of Norrath Crystal Currencies</TooltipReference>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Button item="IW_Money0">
 		<ScreenID>IW_Money0</ScreenID>
@@ -2191,7 +2191,7 @@
 		</Size>
 		<Text>Face</Text>
 		<TooltipReference>Change your face and hair</TooltipReference>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Button item="IW_Tinting">
 		<ScreenID>IW_Tinting</ScreenID>
@@ -2207,7 +2207,7 @@
 		</Size>
 		<Text>Dye</Text>
 		<TooltipReference>Dye your armor</TooltipReference>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Button item="IW_FindItemButton">
 		<ScreenID>IW_FindItemButton</ScreenID>
@@ -2235,7 +2235,7 @@
 		<TextAlignCenter>false</TextAlignCenter>
 		<TextAlignVCenter>true</TextAlignVCenter>
 		<TextOffsetX>38</TextOffsetX>
-		<Template>BDT_FindItem</Template>
+		<Template>BDT_AchFlatFind</Template>
 	</Button>
 	<Button item="IW_Destroy">
 		<ScreenID>IW_Destroy</ScreenID>
@@ -2256,7 +2256,7 @@
 			<B>110</B>
 		</TextColor>
 		<TooltipReference>Destroy the item on your cursor (cannot be undone)</TooltipReference>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<!-- bottom toolbar -->
 	<Button item="IW_Skills">
@@ -2273,7 +2273,7 @@
 		</Size>
 		<Text>Skills</Text>
 		<TooltipReference>Open the Skills window</TooltipReference>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Button item="IW_AltAdvBtn">
 		<ScreenID>IW_AltAdvBtn</ScreenID>
@@ -2289,7 +2289,7 @@
 		</Size>
 		<Text>Alt. Adv.</Text>
 		<TooltipReference>Open the Alternate Advancement window</TooltipReference>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Button item="IW_Achievements">
 		<ScreenID>IW_Achievements</ScreenID>
@@ -2305,7 +2305,7 @@
 		</Size>
 		<Text>Achievements</Text>
 		<TooltipReference>Open the Achievements window</TooltipReference>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Button item="IW_KeyRings">
 		<ScreenID>IW_KeyRings</ScreenID>
@@ -2321,7 +2321,7 @@
 		</Size>
 		<Text>Key Rings</Text>
 		<TooltipReference>Open your Key Rings (mounts, illusions, familiars)</TooltipReference>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Button item="IW_PlotItems">
 		<ScreenID>IW_PlotItems</ScreenID>
@@ -2337,7 +2337,7 @@
 		</Size>
 		<Text>Plot Items</Text>
 		<TooltipReference>Open your Plot Items</TooltipReference>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Button item="IW_DoneButton">
 		<ScreenID>DoneButton</ScreenID>
@@ -2353,12 +2353,13 @@
 		</Size>
 		<Text>Done</Text>
 		<TooltipReference>Close the inventory</TooltipReference>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Page item="IW_InvPage">
 		<ScreenID>InvPage</ScreenID>
 		<RelativePosition>true</RelativePosition>
-		<DrawTemplate>WDT_Def</DrawTemplate>
+		<Style_Transparent>true</Style_Transparent>
+		<DrawTemplate>WDT_AchModern</DrawTemplate>
 		<TabText>Inventory</TabText>
 		<TabTextActiveColor>
 			<R>255</R>
@@ -6303,7 +6304,8 @@
 	<Page item="IW_StatPage">
 		<ScreenID>StatPage</ScreenID>
 		<RelativePosition>true</RelativePosition>
-		<DrawTemplate>WDT_Def</DrawTemplate>
+		<Style_Transparent>true</Style_Transparent>
+		<DrawTemplate>WDT_AchModern</DrawTemplate>
 		<TabText>Stats</TabText>
 		<TabTextActiveColor>
 			<R>255</R>
@@ -6326,7 +6328,7 @@
 	<!-- START ALT CURR -->
 	<Listbox item="IW_AltCurr_PointList">
 		<ScreenID>AltCurr_PointList</ScreenID>
-		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<DrawTemplate>WDT_AchPanel</DrawTemplate>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
@@ -6361,7 +6363,7 @@
 	</Listbox>
 	<STMLbox item="IW_AltCurr_PointInfo">
 		<ScreenID>IW_AltCurr_PointInfo</ScreenID>
-		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<DrawTemplate>WDT_AchPanel</DrawTemplate>
 		<AutoStretch>true</AutoStretch>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
@@ -6389,7 +6391,7 @@
 		<Style_Checkbox>true</Style_Checkbox>
 		<Text>Show currencies that you don't have.</Text>
 		<TooltipReference>Toggle whether you want to display currencies that you have.</TooltipReference>
-		<Template>BDT_CheckboxWithText</Template>
+		<Template>BDT_ModernCheckbox</Template>
 		<DecalSize>
 			<CX>16</CX>
 			<CY>16</CY>
@@ -6411,7 +6413,7 @@
 		<BottomAnchorOffset>4</BottomAnchorOffset>
 		<TooltipReference>Click here to convert the highlighted point type into a physical item.</TooltipReference>
 		<Text>Create</Text>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Button item="IW_AltCurr_ReclaimButton">
 		<ScreenID>AltCurr_ReclaimButton</ScreenID>
@@ -6427,7 +6429,7 @@
 		<BottomAnchorOffset>4</BottomAnchorOffset>
 		<TooltipReference>Click here to convert your held item or any items of the highlighted point type into points.</TooltipReference>
 		<Text>Reclaim</Text>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Button item="IW_AltCurr_ReclaimAllButton">
 		<ScreenID>AltCurr_ReclaimAllButton</ScreenID>
@@ -6443,12 +6445,13 @@
 		<BottomAnchorOffset>4</BottomAnchorOffset>
 		<TooltipReference>Click here to convert all currency items into points.</TooltipReference>
 		<Text>Reclaim All</Text>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Page item="IW_AltCurrPage">
 		<ScreenID>AltCurrPage</ScreenID>
 		<RelativePosition>true</RelativePosition>
-		<DrawTemplate>WDT_Def</DrawTemplate>
+		<Style_Transparent>true</Style_Transparent>
+		<DrawTemplate>WDT_AchModern</DrawTemplate>
 		<TabText>Alt. Currency</TabText>
 		<TabTextActiveColor>
 			<R>255</R>
@@ -7849,7 +7852,8 @@
 	<Page item="IW_MercenaryInvPage">
 		<ScreenID>MercenaryInvPage</ScreenID>
 		<RelativePosition>true</RelativePosition>
-		<DrawTemplate>WDT_Def</DrawTemplate>
+		<Style_Transparent>true</Style_Transparent>
+		<DrawTemplate>WDT_AchModern</DrawTemplate>
 		<TabText>Merc</TabText>
 		<TabTextActiveColor>
 			<R>255</R>
@@ -8220,31 +8224,35 @@
 
 	<Button item="IWP_SaveEquip">
 		<ScreenID>IWP_SaveEquip</ScreenID>
+		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>5</X>
 			<Y>360</Y>
 		</Location>
 		<Size>
-			<CX>80</CX>
+			<CX>84</CX>
 			<CY>20</CY>
 		</Size>
 		<Text>Save Set</Text>
-		<Template>BDT_Normal</Template>
+		<TooltipReference>Save the items you're wearing as this persona's equipment set</TooltipReference>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Button item="IWP_LoadEquip">
 		<ScreenID>IWP_LoadEquip</ScreenID>
+		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>97</X>
+			<X>93</X>
 			<Y>360</Y>
 		</Location>
 		<Size>
-			<CX>80</CX>
+			<CX>84</CX>
 			<CY>20</CY>
 		</Size>
 		<Text>Load Set</Text>
-		<Template>BDT_Normal</Template>
+		<TooltipReference>Equip this persona's saved equipment set</TooltipReference>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 
 	<Button item="IWP_AutoLoadSaved">
@@ -8253,21 +8261,27 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>5</X>
-			<Y>384</Y>
+			<Y>386</Y>
 		</Location>
 		<Size>
-			<CX>210</CX>
-			<CY>20</CY>
+			<CX>176</CX>
+			<CY>18</CY>
 		</Size>
 		<Style_Checkbox>true</Style_Checkbox>
-		<Text>Auto load saved equipment set</Text>
-		<Template>BDT_CheckboxWithText</Template>
+		<Text>Auto-load saved set</Text>
+		<TooltipReference>Automatically equip the saved equipment set when you switch to this persona</TooltipReference>
+		<NoWrap>true</NoWrap>
+		<Template>BDT_ModernCheckbox</Template>
 		<DecalSize>
 			<CX>16</CX>
 			<CY>16</CY>
 		</DecalSize>
+		<DecalOffset>
+			<X>0</X>
+			<Y>1</Y>
+		</DecalOffset>
 		<TextAlignCenter>false</TextAlignCenter>
-		<TextOffsetX>20</TextOffsetX>
+		<TextOffsetX>22</TextOffsetX>
 	</Button>
 	<Button item="IWP_AutoSave">
 		<ScreenID>IWP_AutoSave</ScreenID>
@@ -8275,21 +8289,27 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>5</X>
-			<Y>406</Y>
+			<Y>404</Y>
 		</Location>
 		<Size>
-			<CX>210</CX>
-			<CY>20</CY>
+			<CX>176</CX>
+			<CY>18</CY>
 		</Size>
 		<Style_Checkbox>true</Style_Checkbox>
-		<Text>Auto save current equipment set</Text>
-		<Template>BDT_CheckboxWithText</Template>
+		<Text>Auto-save current set</Text>
+		<TooltipReference>Automatically save what you're wearing as this persona's set when you switch away</TooltipReference>
+		<NoWrap>true</NoWrap>
+		<Template>BDT_ModernCheckbox</Template>
 		<DecalSize>
 			<CX>16</CX>
 			<CY>16</CY>
 		</DecalSize>
+		<DecalOffset>
+			<X>0</X>
+			<Y>1</Y>
+		</DecalOffset>
 		<TextAlignCenter>false</TextAlignCenter>
-		<TextOffsetX>20</TextOffsetX>
+		<TextOffsetX>22</TextOffsetX>
 	</Button>
 	<Button item="IWP_UseLockedSlots">
 		<ScreenID>IWP_UseLockedSlots</ScreenID>
@@ -8297,21 +8317,27 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>5</X>
-			<Y>428</Y>
+			<Y>422</Y>
 		</Location>
 		<Size>
-			<CX>210</CX>
-			<CY>20</CY>
+			<CX>176</CX>
+			<CY>18</CY>
 		</Size>
 		<Style_Checkbox>true</Style_Checkbox>
-		<Text>Use equipment in locked slots</Text>
-		<Template>BDT_CheckboxWithText</Template>
+		<Text>Use gear in locked slots</Text>
+		<TooltipReference>Allow equipment sets to use items from locked inventory slots</TooltipReference>
+		<NoWrap>true</NoWrap>
+		<Template>BDT_ModernCheckbox</Template>
 		<DecalSize>
 			<CX>16</CX>
 			<CY>16</CY>
 		</DecalSize>
+		<DecalOffset>
+			<X>0</X>
+			<Y>1</Y>
+		</DecalOffset>
 		<TextAlignCenter>false</TextAlignCenter>
-		<TextOffsetX>20</TextOffsetX>
+		<TextOffsetX>22</TextOffsetX>
 	</Button>
 	<StaticAnimation item="PersonaAnim">
 		<ScreenID>PersonaAnim</ScreenID>
@@ -8337,7 +8363,7 @@
 			<CY>168</CY>
 		</Size>
 		<TooltipReference>Drop Item Here to Auto Equip</TooltipReference>
-		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<DrawTemplate>WDT_AchPanel</DrawTemplate>
 		<Style_Titlebar>false</Style_Titlebar>
 		<Style_Closebox>false</Style_Closebox>
 		<Style_Minimizebox>false</Style_Minimizebox>
@@ -8348,7 +8374,7 @@
 
 	<Listbox item="IWP_PersonaList">
 		<ScreenID>IWP_PersonaList</ScreenID>
-		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<DrawTemplate>WDT_AchPanel</DrawTemplate>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>0</X>
@@ -8356,39 +8382,46 @@
 		</Location>
 		<Size>
 			<CX>0</CX>
-			<CY>300</CY>
+			<CY>410</CY>
 		</Size>
+		<TooltipReference>Select a class, then click Create Class to create or switch to that persona</TooltipReference>
 		<Style_Border>true</Style_Border>
 		<Style_VScroll>true</Style_VScroll>
 		<Columns>
-			<Width>150</Width>
+			<Width>175</Width>
 			<Heading>Class</Heading>
 		</Columns>
 		<Columns>
-			<Width>50</Width>
+			<Width>60</Width>
 			<Heading>Level</Heading>
 		</Columns>
 	</Listbox>
 	<Button item="IWP_CreateClass">
 		<ScreenID>IWP_CreateClass</ScreenID>
+		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>135</X>
+			<X>149</X>
+			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>90</CX>
+			<CX>110</CX>
 			<CY>20</CY>
 		</Size>
 		<Text>Create Class</Text>
 		<TooltipReference>Create or swap to an Alternate Persona.</TooltipReference>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Button item="IWP_AltSlotPurchase">
 		<ScreenID>IWP_AltSlotPurchase</ScreenID>
 		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
 		<Size>
-			<CX>130</CX>
+			<CX>140</CX>
 			<CY>20</CY>
 		</Size>
 		<Text>Purchase Alt-Slot</Text>
@@ -8397,98 +8430,27 @@
 			<G>233</G>
 			<B>129</B>
 		</TextColor>
-		<BackgroundTextureTint>
-			<R>0</R>
-			<G>255</G>
-			<B>0</B>
-		</BackgroundTextureTint>
 		<TooltipReference>Purchase an additional Alternate Persona slot.</TooltipReference>
-		<Template>BDT_Normal</Template>
+		<Template>BDT_AchFlat</Template>
 	</Button>
 	<Screen item="IWP_PersonaButtons">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>220</CX>
+			<CX>259</CX>
 			<CY>20</CY>
 		</Size>
 		<Style_Sizable>false</Style_Sizable>
 		<Pieces>IWP_AltSlotPurchase</Pieces>
 		<Pieces>IWP_CreateClass</Pieces>
 	</Screen>
-	<!-- <Button item="IWP_AutoLoadSaved">
-		<ScreenID>IWP_AutoLoadSaved</ScreenID>
-		<Font>2</Font>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>210</CX>
-			<CY>20</CY>
-		</Size>
-		<Style_Checkbox>true</Style_Checkbox>
-		<Text>Auto load saved equipment set</Text>
-		<Template>BDT_CheckboxWithText</Template>
-		<DecalSize>
-			<CX>16</CX>
-			<CY>16</CY>
-		</DecalSize>
-		<TextAlignCenter>false</TextAlignCenter>
-		<TextOffsetX>20</TextOffsetX>
-	</Button>	
-	<Button item="IWP_AutoSave">
-		<ScreenID>IWP_AutoSave</ScreenID>
-		<Font>2</Font>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>210</CX>
-			<CY>20</CY>
-		</Size>
-		<Style_Checkbox>true</Style_Checkbox>
-		<Text>Auto save current equipment set</Text>
-		<Template>BDT_CheckboxWithText</Template>
-		<DecalSize>
-			<CX>16</CX>
-			<CY>16</CY>
-		</DecalSize>
-		<TextAlignCenter>false</TextAlignCenter>
-		<TextOffsetX>20</TextOffsetX>
-	</Button>
-	<Button item="IWP_UseLockedSlots">
-		<ScreenID>IWP_UseLockedSlots</ScreenID>
-		<Font>2</Font>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>210</CX>
-			<CY>20</CY>
-		</Size>
-		<Style_Checkbox>true</Style_Checkbox>
-		<Text>Use equipment in locked slots</Text>
-		<Template>BDT_CheckboxWithText</Template>
-		<DecalSize>
-			<CX>16</CX>
-			<CY>16</CY>
-		</DecalSize>
-		<TextAlignCenter>false</TextAlignCenter>
-		<TextOffsetX>20</TextOffsetX>
-	</Button> !-->
 	<VerticalLayoutBox item="IWP_PersonaRightSide">
 		<ScreenID>PersonaRightSide</ScreenID>
-		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<DrawTemplate>WDT_AchPanel</DrawTemplate>
 		<AutoStretch>true</AutoStretch>
 		<LeftAnchorOffset>183</LeftAnchorOffset>
 		<TopAnchorOffset>4</TopAnchorOffset>
 		<RightAnchorOffset>4</RightAnchorOffset>
-		<BottomAnchorOffset>400</BottomAnchorOffset>
+		<BottomAnchorOffset>440</BottomAnchorOffset>
 		<TopAnchorToTop>true</TopAnchorToTop>
 		<BottomAnchorToTop>true</BottomAnchorToTop>
 		<LeftAnchorToLeft>true</LeftAnchorToLeft>
@@ -8501,9 +8463,6 @@
 		<ResizeLast>false</ResizeLast>
 		<Pieces>IWP_PersonaList</Pieces>
 		<Pieces>Screen:IWP_PersonaButtons</Pieces>
-		<!--<Pieces>IWP_AutoLoadSaved</Pieces>
-		<Pieces>IWP_AutoSave</Pieces>
-		<Pieces>IWP_UseLockedSlots</Pieces>!-->
 	</VerticalLayoutBox>
 
 	<Page item="IW_PersonaPage">
@@ -8511,8 +8470,8 @@
 		<RelativePosition>true</RelativePosition>
 		<Style_VScroll>false</Style_VScroll>
 		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
-		<DrawTemplate>WDT_Def</DrawTemplate>
+		<Style_Transparent>true</Style_Transparent>
+		<DrawTemplate>WDT_AchModern</DrawTemplate>
 		<TabText>Persona</TabText>
 		<TabTextActiveColor>
 			<R>255</R>
@@ -8592,7 +8551,7 @@
 		</Size>
 		<Text>Inventory</Text>
 		<TooltipReference>Inventory</TooltipReference>
-		<DrawTemplate>WDT_Rounded</DrawTemplate>
+		<DrawTemplate>WDT_AchModern</DrawTemplate>
 		<Style_Titlebar>true</Style_Titlebar>
 		<Style_Qmarkbox>true</Style_Qmarkbox>
 		<Style_Closebox>true</Style_Closebox>

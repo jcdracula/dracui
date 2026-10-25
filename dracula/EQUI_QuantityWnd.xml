@@ -1,0 +1,85 @@
+<?xml version = "1.0"?>
+<XML ID = "EQInterfaceDefinitionLanguage">
+	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
+
+	<!-- ============================================================
+	     Modernized Quantity window (shared modern theme)
+	     - wider slider spanning the window, using the modern slider art
+	     - amount box and Accept button share one row, same height
+	     ============================================================ -->
+
+	<Slider item = "QTYW_Slider">
+		<ScreenID>QTYW_Slider</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>10</X>
+			<Y>8</Y>
+		</Location>
+		<Size>
+			<CX>164</CX>
+			<CY>20</CY>
+		</Size>
+		<TooltipReference>Drag to choose how many</TooltipReference>
+		<SliderArt>SDT_ModernSlider</SliderArt>
+	</Slider>
+
+	<Editbox item = "QTYW_SliderInput">
+		<ScreenID>QTYW_SliderInput</ScreenID>
+		<DrawTemplate>WDT_AchPanel</DrawTemplate>
+		<RelativePosition>true</RelativePosition>
+		<Style_Border>true</Style_Border>
+		<TooltipReference>Or type an exact amount</TooltipReference>
+		<Location>
+			<X>8</X>
+			<Y>36</Y>
+		</Location>
+		<Size>
+			<CX>84</CX>
+			<CY>22</CY>
+		</Size>
+	</Editbox>
+
+	<Button item = "QTYW_Accept_Button">
+		<ScreenID>QTYW_Accept_Button</ScreenID>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>98</X>
+			<Y>36</Y>
+		</Location>
+		<Size>
+			<CX>78</CX>
+			<CY>22</CY>
+		</Size>
+		<Style_Transparent>false</Style_Transparent>
+		<TooltipReference>Use this amount</TooltipReference>
+		<Style_Checkbox>false</Style_Checkbox>
+		<Text>Accept</Text>
+		<Template>BDT_AchFlat</Template>
+	</Button>
+
+	<Screen item = "QuantityWnd">
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>300</X>
+			<Y>10</Y>
+		</Location>
+		<Size>
+			<CX>190</CX>
+			<CY>94</CY>
+		</Size>
+		<Text>Quantity</Text>
+		<Style_Transparent>false</Style_Transparent>
+		<DrawTemplate>WDT_AchModern</DrawTemplate>
+		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Qmarkbox>true</Style_Qmarkbox>
+		<Style_Closebox>true</Style_Closebox>
+		<Style_Minimizebox>false</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>false</Style_Sizable>
+		<Pieces>QTYW_Slider</Pieces>
+		<Pieces>QTYW_SliderInput</Pieces>
+		<Pieces>QTYW_Accept_Button</Pieces>
+	</Screen>
+
+</XML>

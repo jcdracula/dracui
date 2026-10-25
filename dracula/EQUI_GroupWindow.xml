@@ -10,12 +10,13 @@
     <TooltipReference>Select a player and click to invite into the group</TooltipReference>
     <Style_Checkbox>false</Style_Checkbox>
     <Text>Invite</Text>
-    <Font>1</Font>
-    <Template>BDT_SmallNormal</Template>
+    <Font>2</Font>
+    <Template>BDT_AchFlat</Template>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>25</TopAnchorOffset>
-    <BottomAnchorOffset>5</BottomAnchorOffset>
-    <RightAnchorOffset>60</RightAnchorOffset>
+    <TopAnchorOffset>26</TopAnchorOffset>
+    <BottomAnchorOffset>6</BottomAnchorOffset>
+    <RightAnchorOffset>66</RightAnchorOffset>
+    <RightAnchorToLeft>true</RightAnchorToLeft>
     <LeftAnchorOffset>6</LeftAnchorOffset>
     <TopAnchorToTop>false</TopAnchorToTop>
     <BottomAnchorToTop>false</BottomAnchorToTop>
@@ -28,13 +29,13 @@
     <Style_Transparent>false</Style_Transparent>
     <TooltipReference>Click to disband your target from the group</TooltipReference>
     <Style_Checkbox>false</Style_Checkbox>
-    <Template>BDT_SmallNormal</Template>
+    <Template>BDT_AchFlat</Template>
     <Text>Disband</Text>
-    <Font>1</Font>
+    <Font>2</Font>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>25</TopAnchorOffset>
-    <BottomAnchorOffset>5</BottomAnchorOffset>
-    <LeftAnchorOffset>60</LeftAnchorOffset>
+    <TopAnchorOffset>26</TopAnchorOffset>
+    <BottomAnchorOffset>6</BottomAnchorOffset>
+    <LeftAnchorOffset>67</LeftAnchorOffset>
     <RightAnchorOffset>6</RightAnchorOffset>
     <TopAnchorToTop>false</TopAnchorToTop>
     <BottomAnchorToTop>false</BottomAnchorToTop>
@@ -50,12 +51,13 @@
     <TooltipReference>Accept an invitation to group</TooltipReference>
     <Style_Checkbox>false</Style_Checkbox>
     <Text>Follow</Text>
-    <Font>1</Font>
-    <Template>BDT_Normal</Template>
+    <Font>2</Font>
+    <Template>BDT_AchFlat</Template>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>25</TopAnchorOffset>
-    <BottomAnchorOffset>5</BottomAnchorOffset>
-    <RightAnchorOffset>60</RightAnchorOffset>
+    <TopAnchorOffset>26</TopAnchorOffset>
+    <BottomAnchorOffset>6</BottomAnchorOffset>
+    <RightAnchorOffset>66</RightAnchorOffset>
+    <RightAnchorToLeft>true</RightAnchorToLeft>
     <LeftAnchorOffset>6</LeftAnchorOffset>
     <TopAnchorToTop>false</TopAnchorToTop>
     <BottomAnchorToTop>false</BottomAnchorToTop>
@@ -68,21 +70,25 @@
     <Style_Transparent>false</Style_Transparent>
     <TooltipReference>Refuse an invitation to group</TooltipReference>
     <Style_Checkbox>false</Style_Checkbox>
-    <Template>BDT_SmallNormal</Template>
+    <Template>BDT_AchFlat</Template>
     <Text>Decline</Text>
-    <Font>1</Font>
+    <Font>2</Font>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>25</TopAnchorOffset>
-    <BottomAnchorOffset>5</BottomAnchorOffset>
-    <LeftAnchorOffset>60</LeftAnchorOffset>
+    <TopAnchorOffset>26</TopAnchorOffset>
+    <BottomAnchorOffset>6</BottomAnchorOffset>
+    <LeftAnchorOffset>67</LeftAnchorOffset>
     <RightAnchorOffset>6</RightAnchorOffset>
     <TopAnchorToTop>false</TopAnchorToTop>
     <BottomAnchorToTop>false</BottomAnchorToTop>
     <LeftAnchorToLeft>false</LeftAnchorToLeft>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Button>
-  <!-- ===== Party member cells (Slate Glass rework) =====
-       HP bar 10px, mana/endurance 3px each, cluster centred with equal side margins. -->
+  <!-- ===== Party member cells (Slate Glass) =====
+       Name over a 9px health bar (theme gauge art, as on the target window), then 3px mana and
+       3px endurance bars, each on a faint track so an empty bar still shows, 1px apart. All three
+       bars have the same 2px end caps, so their edges and coloured fills line up.
+       Members are 35px tall on a 38px pitch from the top; buttons are flat theme buttons in
+       two halves with a 4px gap at the default width. -->
   <!-- Member 1 -->
   <Gauge item="GW_Gauge1">
     <ScreenID>Gauge1</ScreenID>
@@ -91,7 +97,7 @@
       <G>240</G>
       <B>240</B>
     </TextColor>
-    <GaugeOffsetY>15</GaugeOffsetY>
+    <GaugeOffsetY>16</GaugeOffsetY>
     <RelativePosition>true</RelativePosition>
     <FillTint>
       <R>255</R>
@@ -100,14 +106,14 @@
     </FillTint>
     <EQType>11</EQType>
     <GaugeDrawTemplate>
-      <Fill>A_GaugeFill</Fill>
-      <Background>A_GaugeBackground</Background>
-      <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-      <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
     <TopAnchorOffset>0</TopAnchorOffset>
-    <BottomAnchorOffset>26</BottomAnchorOffset>
+    <BottomAnchorOffset>25</BottomAnchorOffset>
     <LeftAnchorOffset>1</LeftAnchorOffset>
     <RightAnchorOffset>1</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -115,7 +121,7 @@
   <Gauge item="GW_ManaGauge1">
     <ScreenID>ManaGauge1</ScreenID>
     <TextOffsetY>-50</TextOffsetY>
-    <GaugeOffsetY>-1</GaugeOffsetY>
+    <GaugeOffsetY>0</GaugeOffsetY>
     <RelativePosition>true</RelativePosition>
     <FillTint>
       <R>139</R>
@@ -124,19 +130,22 @@
     </FillTint>
     <EQType>31</EQType>
     <GaugeDrawTemplate>
-      <Fill>A_GaugeFill</Fill>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>26</TopAnchorOffset>
-    <BottomAnchorOffset>29</BottomAnchorOffset>
-    <LeftAnchorOffset>5</LeftAnchorOffset>
-    <RightAnchorOffset>5</RightAnchorOffset>
+    <TopAnchorOffset>27</TopAnchorOffset>
+    <BottomAnchorOffset>30</BottomAnchorOffset>
+    <LeftAnchorOffset>1</LeftAnchorOffset>
+    <RightAnchorOffset>1</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Gauge item="GW_STAGauge1">
     <ScreenID>STAGauge1</ScreenID>
     <TextOffsetY>-50</TextOffsetY>
-    <GaugeOffsetY>-1</GaugeOffsetY>
+    <GaugeOffsetY>0</GaugeOffsetY>
     <RelativePosition>true</RelativePosition>
     <FillTint>
       <R>241</R>
@@ -145,21 +154,24 @@
     </FillTint>
     <EQType>36</EQType>
     <GaugeDrawTemplate>
-      <Fill>A_GaugeFill</Fill>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>29</TopAnchorOffset>
-    <BottomAnchorOffset>32</BottomAnchorOffset>
-    <LeftAnchorOffset>5</LeftAnchorOffset>
-    <RightAnchorOffset>5</RightAnchorOffset>
+    <TopAnchorOffset>31</TopAnchorOffset>
+    <BottomAnchorOffset>34</BottomAnchorOffset>
+    <LeftAnchorOffset>1</LeftAnchorOffset>
+    <RightAnchorOffset>1</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Screen item="GW_Member1">
     <ScreenID>GW_Member1</ScreenID>
     <RelativePosition>true</RelativePosition>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>11</TopAnchorOffset>
-    <BottomAnchorOffset>44</BottomAnchorOffset>
+    <TopAnchorOffset>8</TopAnchorOffset>
+    <BottomAnchorOffset>43</BottomAnchorOffset>
     <LeftAnchorOffset>6</LeftAnchorOffset>
     <RightAnchorOffset>6</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -178,7 +190,7 @@
       <G>240</G>
       <B>240</B>
     </TextColor>
-    <GaugeOffsetY>15</GaugeOffsetY>
+    <GaugeOffsetY>16</GaugeOffsetY>
     <RelativePosition>true</RelativePosition>
     <FillTint>
       <R>255</R>
@@ -187,14 +199,14 @@
     </FillTint>
     <EQType>12</EQType>
     <GaugeDrawTemplate>
-      <Fill>A_GaugeFill</Fill>
-      <Background>A_GaugeBackground</Background>
-      <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-      <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
     <TopAnchorOffset>0</TopAnchorOffset>
-    <BottomAnchorOffset>26</BottomAnchorOffset>
+    <BottomAnchorOffset>25</BottomAnchorOffset>
     <LeftAnchorOffset>1</LeftAnchorOffset>
     <RightAnchorOffset>1</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -202,7 +214,7 @@
   <Gauge item="GW_ManaGauge2">
     <ScreenID>ManaGauge2</ScreenID>
     <TextOffsetY>-50</TextOffsetY>
-    <GaugeOffsetY>-1</GaugeOffsetY>
+    <GaugeOffsetY>0</GaugeOffsetY>
     <RelativePosition>true</RelativePosition>
     <FillTint>
       <R>139</R>
@@ -211,19 +223,22 @@
     </FillTint>
     <EQType>32</EQType>
     <GaugeDrawTemplate>
-      <Fill>A_GaugeFill</Fill>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>26</TopAnchorOffset>
-    <BottomAnchorOffset>29</BottomAnchorOffset>
-    <LeftAnchorOffset>5</LeftAnchorOffset>
-    <RightAnchorOffset>5</RightAnchorOffset>
+    <TopAnchorOffset>27</TopAnchorOffset>
+    <BottomAnchorOffset>30</BottomAnchorOffset>
+    <LeftAnchorOffset>1</LeftAnchorOffset>
+    <RightAnchorOffset>1</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Gauge item="GW_STAGauge2">
     <ScreenID>STAGauge2</ScreenID>
     <TextOffsetY>-50</TextOffsetY>
-    <GaugeOffsetY>-1</GaugeOffsetY>
+    <GaugeOffsetY>0</GaugeOffsetY>
     <RelativePosition>true</RelativePosition>
     <FillTint>
       <R>241</R>
@@ -232,21 +247,24 @@
     </FillTint>
     <EQType>37</EQType>
     <GaugeDrawTemplate>
-      <Fill>A_GaugeFill</Fill>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>29</TopAnchorOffset>
-    <BottomAnchorOffset>32</BottomAnchorOffset>
-    <LeftAnchorOffset>5</LeftAnchorOffset>
-    <RightAnchorOffset>5</RightAnchorOffset>
+    <TopAnchorOffset>31</TopAnchorOffset>
+    <BottomAnchorOffset>34</BottomAnchorOffset>
+    <LeftAnchorOffset>1</LeftAnchorOffset>
+    <RightAnchorOffset>1</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Screen item="GW_Member2">
     <ScreenID>GW_Member2</ScreenID>
     <RelativePosition>true</RelativePosition>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>47</TopAnchorOffset>
-    <BottomAnchorOffset>80</BottomAnchorOffset>
+    <TopAnchorOffset>46</TopAnchorOffset>
+    <BottomAnchorOffset>81</BottomAnchorOffset>
     <LeftAnchorOffset>6</LeftAnchorOffset>
     <RightAnchorOffset>6</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -265,7 +283,7 @@
       <G>240</G>
       <B>240</B>
     </TextColor>
-    <GaugeOffsetY>15</GaugeOffsetY>
+    <GaugeOffsetY>16</GaugeOffsetY>
     <RelativePosition>true</RelativePosition>
     <FillTint>
       <R>255</R>
@@ -274,14 +292,14 @@
     </FillTint>
     <EQType>13</EQType>
     <GaugeDrawTemplate>
-      <Fill>A_GaugeFill</Fill>
-      <Background>A_GaugeBackground</Background>
-      <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-      <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
     <TopAnchorOffset>0</TopAnchorOffset>
-    <BottomAnchorOffset>26</BottomAnchorOffset>
+    <BottomAnchorOffset>25</BottomAnchorOffset>
     <LeftAnchorOffset>1</LeftAnchorOffset>
     <RightAnchorOffset>1</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -289,7 +307,7 @@
   <Gauge item="GW_ManaGauge3">
     <ScreenID>ManaGauge3</ScreenID>
     <TextOffsetY>-50</TextOffsetY>
-    <GaugeOffsetY>-1</GaugeOffsetY>
+    <GaugeOffsetY>0</GaugeOffsetY>
     <RelativePosition>true</RelativePosition>
     <FillTint>
       <R>139</R>
@@ -298,19 +316,22 @@
     </FillTint>
     <EQType>33</EQType>
     <GaugeDrawTemplate>
-      <Fill>A_GaugeFill</Fill>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>26</TopAnchorOffset>
-    <BottomAnchorOffset>29</BottomAnchorOffset>
-    <LeftAnchorOffset>5</LeftAnchorOffset>
-    <RightAnchorOffset>5</RightAnchorOffset>
+    <TopAnchorOffset>27</TopAnchorOffset>
+    <BottomAnchorOffset>30</BottomAnchorOffset>
+    <LeftAnchorOffset>1</LeftAnchorOffset>
+    <RightAnchorOffset>1</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Gauge item="GW_STAGauge3">
     <ScreenID>STAGauge3</ScreenID>
     <TextOffsetY>-50</TextOffsetY>
-    <GaugeOffsetY>-1</GaugeOffsetY>
+    <GaugeOffsetY>0</GaugeOffsetY>
     <RelativePosition>true</RelativePosition>
     <FillTint>
       <R>241</R>
@@ -319,21 +340,24 @@
     </FillTint>
     <EQType>38</EQType>
     <GaugeDrawTemplate>
-      <Fill>A_GaugeFill</Fill>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>29</TopAnchorOffset>
-    <BottomAnchorOffset>32</BottomAnchorOffset>
-    <LeftAnchorOffset>5</LeftAnchorOffset>
-    <RightAnchorOffset>5</RightAnchorOffset>
+    <TopAnchorOffset>31</TopAnchorOffset>
+    <BottomAnchorOffset>34</BottomAnchorOffset>
+    <LeftAnchorOffset>1</LeftAnchorOffset>
+    <RightAnchorOffset>1</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Screen item="GW_Member3">
     <ScreenID>GW_Member3</ScreenID>
     <RelativePosition>true</RelativePosition>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>83</TopAnchorOffset>
-    <BottomAnchorOffset>116</BottomAnchorOffset>
+    <TopAnchorOffset>84</TopAnchorOffset>
+    <BottomAnchorOffset>119</BottomAnchorOffset>
     <LeftAnchorOffset>6</LeftAnchorOffset>
     <RightAnchorOffset>6</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -352,7 +376,7 @@
       <G>240</G>
       <B>240</B>
     </TextColor>
-    <GaugeOffsetY>15</GaugeOffsetY>
+    <GaugeOffsetY>16</GaugeOffsetY>
     <RelativePosition>true</RelativePosition>
     <FillTint>
       <R>255</R>
@@ -361,14 +385,14 @@
     </FillTint>
     <EQType>14</EQType>
     <GaugeDrawTemplate>
-      <Fill>A_GaugeFill</Fill>
-      <Background>A_GaugeBackground</Background>
-      <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-      <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
     <TopAnchorOffset>0</TopAnchorOffset>
-    <BottomAnchorOffset>26</BottomAnchorOffset>
+    <BottomAnchorOffset>25</BottomAnchorOffset>
     <LeftAnchorOffset>1</LeftAnchorOffset>
     <RightAnchorOffset>1</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -376,7 +400,7 @@
   <Gauge item="GW_ManaGauge4">
     <ScreenID>ManaGauge4</ScreenID>
     <TextOffsetY>-50</TextOffsetY>
-    <GaugeOffsetY>-1</GaugeOffsetY>
+    <GaugeOffsetY>0</GaugeOffsetY>
     <RelativePosition>true</RelativePosition>
     <FillTint>
       <R>139</R>
@@ -385,19 +409,22 @@
     </FillTint>
     <EQType>34</EQType>
     <GaugeDrawTemplate>
-      <Fill>A_GaugeFill</Fill>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>26</TopAnchorOffset>
-    <BottomAnchorOffset>29</BottomAnchorOffset>
-    <LeftAnchorOffset>5</LeftAnchorOffset>
-    <RightAnchorOffset>5</RightAnchorOffset>
+    <TopAnchorOffset>27</TopAnchorOffset>
+    <BottomAnchorOffset>30</BottomAnchorOffset>
+    <LeftAnchorOffset>1</LeftAnchorOffset>
+    <RightAnchorOffset>1</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Gauge item="GW_STAGauge4">
     <ScreenID>STAGauge4</ScreenID>
     <TextOffsetY>-50</TextOffsetY>
-    <GaugeOffsetY>-1</GaugeOffsetY>
+    <GaugeOffsetY>0</GaugeOffsetY>
     <RelativePosition>true</RelativePosition>
     <FillTint>
       <R>241</R>
@@ -406,21 +433,24 @@
     </FillTint>
     <EQType>39</EQType>
     <GaugeDrawTemplate>
-      <Fill>A_GaugeFill</Fill>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>29</TopAnchorOffset>
-    <BottomAnchorOffset>32</BottomAnchorOffset>
-    <LeftAnchorOffset>5</LeftAnchorOffset>
-    <RightAnchorOffset>5</RightAnchorOffset>
+    <TopAnchorOffset>31</TopAnchorOffset>
+    <BottomAnchorOffset>34</BottomAnchorOffset>
+    <LeftAnchorOffset>1</LeftAnchorOffset>
+    <RightAnchorOffset>1</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Screen item="GW_Member4">
     <ScreenID>GW_Member4</ScreenID>
     <RelativePosition>true</RelativePosition>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>119</TopAnchorOffset>
-    <BottomAnchorOffset>152</BottomAnchorOffset>
+    <TopAnchorOffset>122</TopAnchorOffset>
+    <BottomAnchorOffset>157</BottomAnchorOffset>
     <LeftAnchorOffset>6</LeftAnchorOffset>
     <RightAnchorOffset>6</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -439,7 +469,7 @@
       <G>240</G>
       <B>240</B>
     </TextColor>
-    <GaugeOffsetY>15</GaugeOffsetY>
+    <GaugeOffsetY>16</GaugeOffsetY>
     <RelativePosition>true</RelativePosition>
     <FillTint>
       <R>255</R>
@@ -448,14 +478,14 @@
     </FillTint>
     <EQType>15</EQType>
     <GaugeDrawTemplate>
-      <Fill>A_GaugeFill</Fill>
-      <Background>A_GaugeBackground</Background>
-      <EndCapLeft>A_GaugeEndCapLeft</EndCapLeft>
-      <EndCapRight>A_GaugeEndCapRight</EndCapRight>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
     <TopAnchorOffset>0</TopAnchorOffset>
-    <BottomAnchorOffset>26</BottomAnchorOffset>
+    <BottomAnchorOffset>25</BottomAnchorOffset>
     <LeftAnchorOffset>1</LeftAnchorOffset>
     <RightAnchorOffset>1</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -463,7 +493,7 @@
   <Gauge item="GW_ManaGauge5">
     <ScreenID>ManaGauge5</ScreenID>
     <TextOffsetY>-50</TextOffsetY>
-    <GaugeOffsetY>-1</GaugeOffsetY>
+    <GaugeOffsetY>0</GaugeOffsetY>
     <RelativePosition>true</RelativePosition>
     <FillTint>
       <R>139</R>
@@ -472,19 +502,22 @@
     </FillTint>
     <EQType>35</EQType>
     <GaugeDrawTemplate>
-      <Fill>A_GaugeFill</Fill>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>26</TopAnchorOffset>
-    <BottomAnchorOffset>29</BottomAnchorOffset>
-    <LeftAnchorOffset>5</LeftAnchorOffset>
-    <RightAnchorOffset>5</RightAnchorOffset>
+    <TopAnchorOffset>27</TopAnchorOffset>
+    <BottomAnchorOffset>30</BottomAnchorOffset>
+    <LeftAnchorOffset>1</LeftAnchorOffset>
+    <RightAnchorOffset>1</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Gauge item="GW_STAGauge5">
     <ScreenID>STAGauge5</ScreenID>
     <TextOffsetY>-50</TextOffsetY>
-    <GaugeOffsetY>-1</GaugeOffsetY>
+    <GaugeOffsetY>0</GaugeOffsetY>
     <RelativePosition>true</RelativePosition>
     <FillTint>
       <R>241</R>
@@ -493,21 +526,24 @@
     </FillTint>
     <EQType>40</EQType>
     <GaugeDrawTemplate>
-      <Fill>A_GaugeFill</Fill>
+      <Background>A_ACHM_GaugeBackground</Background>
+      <Fill>A_ACHM_GaugeFill</Fill>
+      <EndCapLeft>A_ACHM_GaugeEndCapLeft</EndCapLeft>
+      <EndCapRight>A_ACHM_GaugeEndCapRight</EndCapRight>
     </GaugeDrawTemplate>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>29</TopAnchorOffset>
-    <BottomAnchorOffset>32</BottomAnchorOffset>
-    <LeftAnchorOffset>5</LeftAnchorOffset>
-    <RightAnchorOffset>5</RightAnchorOffset>
+    <TopAnchorOffset>31</TopAnchorOffset>
+    <BottomAnchorOffset>34</BottomAnchorOffset>
+    <LeftAnchorOffset>1</LeftAnchorOffset>
+    <RightAnchorOffset>1</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
   </Gauge>
   <Screen item="GW_Member5">
     <ScreenID>GW_Member5</ScreenID>
     <RelativePosition>true</RelativePosition>
     <AutoStretch>true</AutoStretch>
-    <TopAnchorOffset>155</TopAnchorOffset>
-    <BottomAnchorOffset>188</BottomAnchorOffset>
+    <TopAnchorOffset>160</TopAnchorOffset>
+    <BottomAnchorOffset>195</BottomAnchorOffset>
     <LeftAnchorOffset>6</LeftAnchorOffset>
     <RightAnchorOffset>6</RightAnchorOffset>
     <RightAnchorToLeft>false</RightAnchorToLeft>
