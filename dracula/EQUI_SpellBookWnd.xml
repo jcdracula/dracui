@@ -13,7 +13,7 @@
 	     - "PAGE" captions with the game's page numbers beside them, in gold
 	     - footer: page arrows at each corner (dim when there's no page to turn to) and
 	       the memorize / scribe bar centred between them
-	     Art: sbw_list.png (EQUI_Animations.xml); tile templates in EQUI_Templates.xml
+	     Art: wnd_pieces.dds (EQUI_Animations.xml); tile templates in EQUI_Templates.xml
 	     ============================================================ -->
 	<!-- Spells -->
 	<Button item="SBW_Spell0">

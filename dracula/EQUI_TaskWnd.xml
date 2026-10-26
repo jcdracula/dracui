@@ -2,20 +2,18 @@
 <XML ID = "EQInterfaceDefinitionLanguage">
   <Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
 
-  <!-- Custom pieces for this window only (texture: taskwnd_pieces.png) -->
-  <TextureInfo item="taskwnd_pieces.png">
-    <Size>
-      <CX>32</CX>
-      <CY>32</CY>
-    </Size>
-  </TextureInfo>
+
+  <!-- Column headers: the lists now use their own headings (they line up with the columns and follow them
+       if you resize a column). The old overlay header labels / ticks / guides were fixed in place and
+       drifted out of line with the real columns. Time Left widened so it no longer runs into Zone. -->
+  <!-- Custom pieces for this window only (texture: wnd_pieces.dds) -->
   <Ui2DAnimation item="A_TW_Clear">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>taskwnd_pieces.png</Texture>
+      <Texture>wnd_pieces.dds</Texture>
       <Location>
-        <X>1</X>
-        <Y>1</Y>
+        <X>848</X>
+        <Y>724</Y>
       </Location>
       <Size>
         <CX>1</CX>
@@ -31,10 +29,10 @@
   <Ui2DAnimation item="A_TW_TabEdge">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>taskwnd_pieces.png</Texture>
+      <Texture>wnd_pieces.dds</Texture>
       <Location>
-        <X>5</X>
-        <Y>1</Y>
+        <X>853</X>
+        <Y>724</Y>
       </Location>
       <Size>
         <CX>1</CX>
@@ -50,52 +48,14 @@
   <Ui2DAnimation item="A_TW_Divider">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>taskwnd_pieces.png</Texture>
+      <Texture>wnd_pieces.dds</Texture>
       <Location>
-        <X>17</X>
-        <Y>1</Y>
+        <X>696</X>
+        <Y>724</Y>
       </Location>
       <Size>
         <CX>1</CX>
         <CY>2</CY>
-      </Size>
-      <Hotspot>
-        <X>0</X>
-        <Y>0</Y>
-      </Hotspot>
-      <Duration>1000</Duration>
-    </Frames>
-  </Ui2DAnimation>
-  <Ui2DAnimation item="A_TW_ColGuide">
-    <Cycle>true</Cycle>
-    <Frames>
-      <Texture>taskwnd_pieces.png</Texture>
-      <Location>
-        <X>21</X>
-        <Y>1</Y>
-      </Location>
-      <Size>
-        <CX>1</CX>
-        <CY>1</CY>
-      </Size>
-      <Hotspot>
-        <X>0</X>
-        <Y>0</Y>
-      </Hotspot>
-      <Duration>1000</Duration>
-    </Frames>
-  </Ui2DAnimation>
-  <Ui2DAnimation item="A_TW_HdrTick">
-    <Cycle>true</Cycle>
-    <Frames>
-      <Texture>taskwnd_pieces.png</Texture>
-      <Location>
-        <X>25</X>
-        <Y>1</Y>
-      </Location>
-      <Size>
-        <CX>1</CX>
-        <CY>1</CY>
       </Size>
       <Hotspot>
         <X>0</X>
@@ -413,7 +373,7 @@
     <Style_Transparent>false</Style_Transparent>
     <Style_Checkbox>true</Style_Checkbox>
     <Text />
-    <Template>BDT_Checkbox</Template>
+    <Template>BDT_Checkbox12</Template>
   </Button>
 
   <Label item ="TASK_TaskLabel">
@@ -518,32 +478,32 @@
     <LeftAnchorToLeft>true</LeftAnchorToLeft>
     <RightAnchorToLeft>false</RightAnchorToLeft>
     <Columns>
-      <Width>22</Width>
+      <Width>20</Width>
       <Heading></Heading>
     </Columns>
     <Columns>
-      <Width>22</Width>
+      <Width>20</Width>
       <Heading></Heading>
     </Columns>
     <Columns>
       <Width>230</Width>
-      <Heading></Heading>
+      <Heading>Task Title</Heading>
     </Columns>
     <Columns>
-      <Width>72</Width>
-      <Heading></Heading>
+      <Width>80</Width>
+      <Heading>Time Left</Heading>
     </Columns>
     <Columns>
-      <Width>130</Width>
-      <Heading></Heading>
-    </Columns>
-    <Columns>
-      <Width>34</Width>
-      <Heading></Heading>
+      <Width>140</Width>
+      <Heading>Zone</Heading>
     </Columns>
     <Columns>
       <Width>34</Width>
-      <Heading></Heading>
+      <Heading>Min</Heading>
+    </Columns>
+    <Columns>
+      <Width>34</Width>
+      <Heading>Max</Heading>
     </Columns>
     <Style_Border>true</Style_Border>
     <TextColor>
@@ -554,298 +514,6 @@
     <Style_VScroll>true</Style_VScroll>
   </Listbox>
 
-    <StaticAnimation item="TASKTaskList_Tick0">
-    <ScreenID>TASKTaskList_Tick0</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>27</LeftAnchorOffset>
-    <TopAnchorOffset>31</TopAnchorOffset>
-    <RightAnchorOffset>28</RightAnchorOffset>
-    <BottomAnchorOffset>49</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_HdrTick</Animation>
-  </StaticAnimation>
-  <StaticAnimation item="TASKTaskList_Guide0">
-    <ScreenID>TASKTaskList_Guide0</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>27</LeftAnchorOffset>
-    <TopAnchorOffset>51</TopAnchorOffset>
-    <RightAnchorOffset>28</RightAnchorOffset>
-    <BottomAnchorOffset>4</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>false</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_ColGuide</Animation>
-  </StaticAnimation>
-  <StaticAnimation item="TASKTaskList_Tick1">
-    <ScreenID>TASKTaskList_Tick1</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>49</LeftAnchorOffset>
-    <TopAnchorOffset>31</TopAnchorOffset>
-    <RightAnchorOffset>50</RightAnchorOffset>
-    <BottomAnchorOffset>49</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_HdrTick</Animation>
-  </StaticAnimation>
-  <StaticAnimation item="TASKTaskList_Guide1">
-    <ScreenID>TASKTaskList_Guide1</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>49</LeftAnchorOffset>
-    <TopAnchorOffset>51</TopAnchorOffset>
-    <RightAnchorOffset>50</RightAnchorOffset>
-    <BottomAnchorOffset>4</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>false</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_ColGuide</Animation>
-  </StaticAnimation>
-  <Label item="TASKTaskList_Head2">
-    <ScreenID>TASKTaskList_Head2</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>52</LeftAnchorOffset>
-    <TopAnchorOffset>32</TopAnchorOffset>
-    <RightAnchorOffset>278</RightAnchorOffset>
-    <BottomAnchorOffset>48</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Task Title</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>false</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="TASKTaskList_Tick2">
-    <ScreenID>TASKTaskList_Tick2</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>279</LeftAnchorOffset>
-    <TopAnchorOffset>31</TopAnchorOffset>
-    <RightAnchorOffset>280</RightAnchorOffset>
-    <BottomAnchorOffset>49</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_HdrTick</Animation>
-  </StaticAnimation>
-  <StaticAnimation item="TASKTaskList_Guide2">
-    <ScreenID>TASKTaskList_Guide2</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>279</LeftAnchorOffset>
-    <TopAnchorOffset>51</TopAnchorOffset>
-    <RightAnchorOffset>280</RightAnchorOffset>
-    <BottomAnchorOffset>4</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>false</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_ColGuide</Animation>
-  </StaticAnimation>
-  <Label item="TASKTaskList_Head3">
-    <ScreenID>TASKTaskList_Head3</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>282</LeftAnchorOffset>
-    <TopAnchorOffset>32</TopAnchorOffset>
-    <RightAnchorOffset>350</RightAnchorOffset>
-    <BottomAnchorOffset>48</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Time Left</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>false</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="TASKTaskList_Tick3">
-    <ScreenID>TASKTaskList_Tick3</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>351</LeftAnchorOffset>
-    <TopAnchorOffset>31</TopAnchorOffset>
-    <RightAnchorOffset>352</RightAnchorOffset>
-    <BottomAnchorOffset>49</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_HdrTick</Animation>
-  </StaticAnimation>
-  <StaticAnimation item="TASKTaskList_Guide3">
-    <ScreenID>TASKTaskList_Guide3</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>351</LeftAnchorOffset>
-    <TopAnchorOffset>51</TopAnchorOffset>
-    <RightAnchorOffset>352</RightAnchorOffset>
-    <BottomAnchorOffset>4</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>false</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_ColGuide</Animation>
-  </StaticAnimation>
-  <Label item="TASKTaskList_Head4">
-    <ScreenID>TASKTaskList_Head4</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>354</LeftAnchorOffset>
-    <TopAnchorOffset>32</TopAnchorOffset>
-    <RightAnchorOffset>480</RightAnchorOffset>
-    <BottomAnchorOffset>48</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Zone</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>false</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="TASKTaskList_Tick4">
-    <ScreenID>TASKTaskList_Tick4</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>481</LeftAnchorOffset>
-    <TopAnchorOffset>31</TopAnchorOffset>
-    <RightAnchorOffset>482</RightAnchorOffset>
-    <BottomAnchorOffset>49</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_HdrTick</Animation>
-  </StaticAnimation>
-  <StaticAnimation item="TASKTaskList_Guide4">
-    <ScreenID>TASKTaskList_Guide4</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>481</LeftAnchorOffset>
-    <TopAnchorOffset>51</TopAnchorOffset>
-    <RightAnchorOffset>482</RightAnchorOffset>
-    <BottomAnchorOffset>4</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>false</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_ColGuide</Animation>
-  </StaticAnimation>
-  <Label item="TASKTaskList_Head5">
-    <ScreenID>TASKTaskList_Head5</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>484</LeftAnchorOffset>
-    <TopAnchorOffset>32</TopAnchorOffset>
-    <RightAnchorOffset>514</RightAnchorOffset>
-    <BottomAnchorOffset>48</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Min</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>false</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="TASKTaskList_Tick5">
-    <ScreenID>TASKTaskList_Tick5</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>515</LeftAnchorOffset>
-    <TopAnchorOffset>31</TopAnchorOffset>
-    <RightAnchorOffset>516</RightAnchorOffset>
-    <BottomAnchorOffset>49</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_HdrTick</Animation>
-  </StaticAnimation>
-  <StaticAnimation item="TASKTaskList_Guide5">
-    <ScreenID>TASKTaskList_Guide5</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>515</LeftAnchorOffset>
-    <TopAnchorOffset>51</TopAnchorOffset>
-    <RightAnchorOffset>516</RightAnchorOffset>
-    <BottomAnchorOffset>4</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>false</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_ColGuide</Animation>
-  </StaticAnimation>
-  <Label item="TASKTaskList_Head6">
-    <ScreenID>TASKTaskList_Head6</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>518</LeftAnchorOffset>
-    <TopAnchorOffset>32</TopAnchorOffset>
-    <RightAnchorOffset>548</RightAnchorOffset>
-    <BottomAnchorOffset>48</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Max</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>false</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="TASKTaskList_HdrLine">
-    <ScreenID>TASKTaskList_HdrLine</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>5</LeftAnchorOffset>
-    <TopAnchorOffset>49</TopAnchorOffset>
-    <RightAnchorOffset>5</RightAnchorOffset>
-    <BottomAnchorOffset>51</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>false</RightAnchorToLeft>
-    <Animation>A_TW_Divider</Animation>
-  </StaticAnimation>
 
   <Screen item = "TASK_TaskWnd">
     <ScreenID>TASK_TaskWnd</ScreenID>
@@ -871,24 +539,6 @@
     <Pieces>TASK_TaskLabel</Pieces>
     <Pieces>TASK_CountLabel</Pieces>
     <Pieces>TASK_TaskList</Pieces>
-    <Pieces>TASKTaskList_Tick0</Pieces>
-    <Pieces>TASKTaskList_Guide0</Pieces>
-    <Pieces>TASKTaskList_Tick1</Pieces>
-    <Pieces>TASKTaskList_Guide1</Pieces>
-    <Pieces>TASKTaskList_Head2</Pieces>
-    <Pieces>TASKTaskList_Tick2</Pieces>
-    <Pieces>TASKTaskList_Guide2</Pieces>
-    <Pieces>TASKTaskList_Head3</Pieces>
-    <Pieces>TASKTaskList_Tick3</Pieces>
-    <Pieces>TASKTaskList_Guide3</Pieces>
-    <Pieces>TASKTaskList_Head4</Pieces>
-    <Pieces>TASKTaskList_Tick4</Pieces>
-    <Pieces>TASKTaskList_Guide4</Pieces>
-    <Pieces>TASKTaskList_Head5</Pieces>
-    <Pieces>TASKTaskList_Tick5</Pieces>
-    <Pieces>TASKTaskList_Guide5</Pieces>
-    <Pieces>TASKTaskList_Head6</Pieces>
-    <Pieces>TASKTaskList_HdrLine</Pieces>
     <Pieces>TASK_TaskTimerLabel</Pieces>
     <Pieces>TASK_TaskTimer</Pieces>
     <Pieces>TASK_CheckBoxTemplate</Pieces>
@@ -990,16 +640,16 @@
     <RightAnchorToLeft>false</RightAnchorToLeft>
     <MinVSize>62</MinVSize>
     <Columns>
-      <Width>260</Width>
-      <Heading></Heading>
+      <Width>300</Width>
+      <Heading>Objective</Heading>
     </Columns>
     <Columns>
       <Width>60</Width>
-      <Heading></Heading>
+      <Heading>Status</Heading>
     </Columns>
     <Columns>
-      <Width>200</Width>
-      <Heading></Heading>
+      <Width>160</Width>
+      <Heading>Zone</Heading>
     </Columns>
     <Style_Border>true</Style_Border>
     <TextColor>
@@ -1010,142 +660,6 @@
     <Style_VScroll>true</Style_VScroll>
   </Listbox>
 
-    <Label item="TASKTaskElementList_Head0">
-    <ScreenID>TASKTaskElementList_Head0</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>8</LeftAnchorOffset>
-    <TopAnchorOffset>32</TopAnchorOffset>
-    <RightAnchorOffset>264</RightAnchorOffset>
-    <BottomAnchorOffset>48</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Objective Instructions</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>false</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="TASKTaskElementList_Tick0">
-    <ScreenID>TASKTaskElementList_Tick0</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>265</LeftAnchorOffset>
-    <TopAnchorOffset>31</TopAnchorOffset>
-    <RightAnchorOffset>266</RightAnchorOffset>
-    <BottomAnchorOffset>49</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_HdrTick</Animation>
-  </StaticAnimation>
-  <StaticAnimation item="TASKTaskElementList_Guide0">
-    <ScreenID>TASKTaskElementList_Guide0</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>265</LeftAnchorOffset>
-    <TopAnchorOffset>51</TopAnchorOffset>
-    <RightAnchorOffset>266</RightAnchorOffset>
-    <BottomAnchorOffset>4</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>false</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_ColGuide</Animation>
-  </StaticAnimation>
-  <Label item="TASKTaskElementList_Head1">
-    <ScreenID>TASKTaskElementList_Head1</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>265</LeftAnchorOffset>
-    <TopAnchorOffset>32</TopAnchorOffset>
-    <RightAnchorOffset>325</RightAnchorOffset>
-    <BottomAnchorOffset>48</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Status</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>true</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="TASKTaskElementList_Tick1">
-    <ScreenID>TASKTaskElementList_Tick1</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>325</LeftAnchorOffset>
-    <TopAnchorOffset>31</TopAnchorOffset>
-    <RightAnchorOffset>326</RightAnchorOffset>
-    <BottomAnchorOffset>49</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_HdrTick</Animation>
-  </StaticAnimation>
-  <StaticAnimation item="TASKTaskElementList_Guide1">
-    <ScreenID>TASKTaskElementList_Guide1</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>325</LeftAnchorOffset>
-    <TopAnchorOffset>51</TopAnchorOffset>
-    <RightAnchorOffset>326</RightAnchorOffset>
-    <BottomAnchorOffset>4</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>false</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_ColGuide</Animation>
-  </StaticAnimation>
-  <Label item="TASKTaskElementList_Head2">
-    <ScreenID>TASKTaskElementList_Head2</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>328</LeftAnchorOffset>
-    <TopAnchorOffset>32</TopAnchorOffset>
-    <RightAnchorOffset>524</RightAnchorOffset>
-    <BottomAnchorOffset>48</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Zone</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>false</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="TASKTaskElementList_HdrLine">
-    <ScreenID>TASKTaskElementList_HdrLine</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>5</LeftAnchorOffset>
-    <TopAnchorOffset>49</TopAnchorOffset>
-    <RightAnchorOffset>5</RightAnchorOffset>
-    <BottomAnchorOffset>51</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>false</RightAnchorToLeft>
-    <Animation>A_TW_Divider</Animation>
-  </StaticAnimation>
 
   <Screen item = "TASK_TaskElementWnd">
     <ScreenID>TASK_TaskElementWnd</ScreenID>
@@ -1170,14 +684,6 @@
     <Style_Sizable>false</Style_Sizable>
     <Pieces>TASK_TaskElementLabel</Pieces>
     <Pieces>TASK_TaskElementList</Pieces>
-    <Pieces>TASKTaskElementList_Head0</Pieces>
-    <Pieces>TASKTaskElementList_Tick0</Pieces>
-    <Pieces>TASKTaskElementList_Guide0</Pieces>
-    <Pieces>TASKTaskElementList_Head1</Pieces>
-    <Pieces>TASKTaskElementList_Tick1</Pieces>
-    <Pieces>TASKTaskElementList_Guide1</Pieces>
-    <Pieces>TASKTaskElementList_Head2</Pieces>
-    <Pieces>TASKTaskElementList_HdrLine</Pieces>
     <Pieces>TASK_MonsterButton</Pieces>
     <Pieces>TASK_AbandonButton</Pieces>
     <Pieces>TASK_PreviewRewardButton</Pieces>
@@ -1236,10 +742,15 @@
     <TooltipReference/>
     <DrawTemplate>WDT_Def</DrawTemplate>
     <TabText>Current Tasks</TabText>
+    <TabTextColor>
+      <R>146</R>
+      <G>158</G>
+      <B>180</B>
+    </TabTextColor>
     <TabTextActiveColor>
-      <R>255</R>
-      <G>255</G>
-      <B>0</B>
+      <R>236</R>
+      <G>214</G>
+      <B>160</B>
     </TabTextActiveColor>
     <Style_Sizable>true</Style_Sizable>
     <Pieces>VerticalLayoutBox:TASK_Layout</Pieces>
@@ -1288,11 +799,11 @@
     </Columns>
     <Columns>
       <Width>260</Width>
-      <Heading></Heading>
+      <Heading>Quest Title</Heading>
     </Columns>
     <Columns>
       <Width>220</Width>
-      <Heading></Heading>
+      <Heading>Completion</Heading>
     </Columns>
     <Style_Border>true</Style_Border>
     <TextColor>
@@ -1303,120 +814,6 @@
     <Style_VScroll>true</Style_VScroll>
   </Listbox>
 
-    <StaticAnimation item="QUESTTaskList_Tick0">
-    <ScreenID>QUESTTaskList_Tick0</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>45</LeftAnchorOffset>
-    <TopAnchorOffset>31</TopAnchorOffset>
-    <RightAnchorOffset>46</RightAnchorOffset>
-    <BottomAnchorOffset>49</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_HdrTick</Animation>
-  </StaticAnimation>
-  <StaticAnimation item="QUESTTaskList_Guide0">
-    <ScreenID>QUESTTaskList_Guide0</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>45</LeftAnchorOffset>
-    <TopAnchorOffset>51</TopAnchorOffset>
-    <RightAnchorOffset>46</RightAnchorOffset>
-    <BottomAnchorOffset>4</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>false</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_ColGuide</Animation>
-  </StaticAnimation>
-  <Label item="QUESTTaskList_Head1">
-    <ScreenID>QUESTTaskList_Head1</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>48</LeftAnchorOffset>
-    <TopAnchorOffset>32</TopAnchorOffset>
-    <RightAnchorOffset>304</RightAnchorOffset>
-    <BottomAnchorOffset>48</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Quest Title</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>false</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="QUESTTaskList_Tick1">
-    <ScreenID>QUESTTaskList_Tick1</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>305</LeftAnchorOffset>
-    <TopAnchorOffset>31</TopAnchorOffset>
-    <RightAnchorOffset>306</RightAnchorOffset>
-    <BottomAnchorOffset>49</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_HdrTick</Animation>
-  </StaticAnimation>
-  <StaticAnimation item="QUESTTaskList_Guide1">
-    <ScreenID>QUESTTaskList_Guide1</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>305</LeftAnchorOffset>
-    <TopAnchorOffset>51</TopAnchorOffset>
-    <RightAnchorOffset>306</RightAnchorOffset>
-    <BottomAnchorOffset>4</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>false</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_ColGuide</Animation>
-  </StaticAnimation>
-  <Label item="QUESTTaskList_Head2">
-    <ScreenID>QUESTTaskList_Head2</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>308</LeftAnchorOffset>
-    <TopAnchorOffset>32</TopAnchorOffset>
-    <RightAnchorOffset>524</RightAnchorOffset>
-    <BottomAnchorOffset>48</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Completion</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>false</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="QUESTTaskList_HdrLine">
-    <ScreenID>QUESTTaskList_HdrLine</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>5</LeftAnchorOffset>
-    <TopAnchorOffset>49</TopAnchorOffset>
-    <RightAnchorOffset>5</RightAnchorOffset>
-    <BottomAnchorOffset>51</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>false</RightAnchorToLeft>
-    <Animation>A_TW_Divider</Animation>
-  </StaticAnimation>
 
   <Screen item = "QUEST_TaskWnd">
     <ScreenID>QUEST_TaskWnd</ScreenID>
@@ -1441,13 +838,6 @@
     <Style_Sizable>false</Style_Sizable>
     <Pieces>QUEST_TaskLabel</Pieces>
     <Pieces>QUEST_TaskList</Pieces>
-    <Pieces>QUESTTaskList_Tick0</Pieces>
-    <Pieces>QUESTTaskList_Guide0</Pieces>
-    <Pieces>QUESTTaskList_Head1</Pieces>
-    <Pieces>QUESTTaskList_Tick1</Pieces>
-    <Pieces>QUESTTaskList_Guide1</Pieces>
-    <Pieces>QUESTTaskList_Head2</Pieces>
-    <Pieces>QUESTTaskList_HdrLine</Pieces>
   </Screen>
 
   <Label item ="QUEST_TaskElementLabel">
@@ -1487,16 +877,16 @@
     <LeftAnchorToLeft>true</LeftAnchorToLeft>
     <RightAnchorToLeft>false</RightAnchorToLeft>
     <Columns>
-      <Width>260</Width>
-      <Heading></Heading>
+      <Width>300</Width>
+      <Heading>Objective</Heading>
     </Columns>
     <Columns>
       <Width>60</Width>
-      <Heading></Heading>
+      <Heading>Status</Heading>
     </Columns>
     <Columns>
-      <Width>200</Width>
-      <Heading></Heading>
+      <Width>160</Width>
+      <Heading>Zone</Heading>
     </Columns>
     <Style_Border>true</Style_Border>
     <TextColor>
@@ -1507,142 +897,6 @@
     <Style_VScroll>true</Style_VScroll>
   </Listbox>
 
-    <Label item="QUESTTaskElementList_Head0">
-    <ScreenID>QUESTTaskElementList_Head0</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>8</LeftAnchorOffset>
-    <TopAnchorOffset>32</TopAnchorOffset>
-    <RightAnchorOffset>264</RightAnchorOffset>
-    <BottomAnchorOffset>48</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Objective Instructions</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>false</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="QUESTTaskElementList_Tick0">
-    <ScreenID>QUESTTaskElementList_Tick0</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>265</LeftAnchorOffset>
-    <TopAnchorOffset>31</TopAnchorOffset>
-    <RightAnchorOffset>266</RightAnchorOffset>
-    <BottomAnchorOffset>49</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_HdrTick</Animation>
-  </StaticAnimation>
-  <StaticAnimation item="QUESTTaskElementList_Guide0">
-    <ScreenID>QUESTTaskElementList_Guide0</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>265</LeftAnchorOffset>
-    <TopAnchorOffset>51</TopAnchorOffset>
-    <RightAnchorOffset>266</RightAnchorOffset>
-    <BottomAnchorOffset>4</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>false</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_ColGuide</Animation>
-  </StaticAnimation>
-  <Label item="QUESTTaskElementList_Head1">
-    <ScreenID>QUESTTaskElementList_Head1</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>265</LeftAnchorOffset>
-    <TopAnchorOffset>32</TopAnchorOffset>
-    <RightAnchorOffset>325</RightAnchorOffset>
-    <BottomAnchorOffset>48</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Status</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>true</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="QUESTTaskElementList_Tick1">
-    <ScreenID>QUESTTaskElementList_Tick1</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>325</LeftAnchorOffset>
-    <TopAnchorOffset>31</TopAnchorOffset>
-    <RightAnchorOffset>326</RightAnchorOffset>
-    <BottomAnchorOffset>49</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_HdrTick</Animation>
-  </StaticAnimation>
-  <StaticAnimation item="QUESTTaskElementList_Guide1">
-    <ScreenID>QUESTTaskElementList_Guide1</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>325</LeftAnchorOffset>
-    <TopAnchorOffset>51</TopAnchorOffset>
-    <RightAnchorOffset>326</RightAnchorOffset>
-    <BottomAnchorOffset>4</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>false</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_ColGuide</Animation>
-  </StaticAnimation>
-  <Label item="QUESTTaskElementList_Head2">
-    <ScreenID>QUESTTaskElementList_Head2</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>328</LeftAnchorOffset>
-    <TopAnchorOffset>32</TopAnchorOffset>
-    <RightAnchorOffset>524</RightAnchorOffset>
-    <BottomAnchorOffset>48</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Zone</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>false</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="QUESTTaskElementList_HdrLine">
-    <ScreenID>QUESTTaskElementList_HdrLine</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>5</LeftAnchorOffset>
-    <TopAnchorOffset>49</TopAnchorOffset>
-    <RightAnchorOffset>5</RightAnchorOffset>
-    <BottomAnchorOffset>51</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>false</RightAnchorToLeft>
-    <Animation>A_TW_Divider</Animation>
-  </StaticAnimation>
 
   <Screen item = "QUEST_TaskElementWnd">
     <ScreenID>QUEST_TaskElementWnd</ScreenID>
@@ -1667,14 +921,6 @@
     <Style_Sizable>false</Style_Sizable>
     <Pieces>QUEST_TaskElementLabel</Pieces>
     <Pieces>QUEST_TaskElementList</Pieces>
-    <Pieces>QUESTTaskElementList_Head0</Pieces>
-    <Pieces>QUESTTaskElementList_Tick0</Pieces>
-    <Pieces>QUESTTaskElementList_Guide0</Pieces>
-    <Pieces>QUESTTaskElementList_Head1</Pieces>
-    <Pieces>QUESTTaskElementList_Tick1</Pieces>
-    <Pieces>QUESTTaskElementList_Guide1</Pieces>
-    <Pieces>QUESTTaskElementList_Head2</Pieces>
-    <Pieces>QUESTTaskElementList_HdrLine</Pieces>
   </Screen>
 
   <VerticalLayoutBox item = "QUEST_Layout">
@@ -1710,10 +956,15 @@
     <TooltipReference/>
     <DrawTemplate>WDT_Def</DrawTemplate>
     <TabText>Quest History</TabText>
+    <TabTextColor>
+      <R>146</R>
+      <G>158</G>
+      <B>180</B>
+    </TabTextColor>
     <TabTextActiveColor>
-      <R>255</R>
-      <G>255</G>
-      <B>0</B>
+      <R>236</R>
+      <G>214</G>
+      <B>160</B>
     </TabTextActiveColor>
     <Style_Sizable>true</Style_Sizable>
     <Pieces>VerticalLayoutBox:QUEST_Layout</Pieces>
@@ -1742,15 +993,15 @@
     <Style_VScroll>true</Style_VScroll>
     <Columns>
       <Width>150</Width>
-      <Heading></Heading>
+      <Heading>Member</Heading>
     </Columns>
     <Columns>
       <Width>110</Width>
-      <Heading></Heading>
+      <Heading>Role</Heading>
     </Columns>
     <Columns>
       <Width>200</Width>
-      <Heading></Heading>
+      <Heading>Template</Heading>
     </Columns>
   </Listbox>
   <!-- END members -->
@@ -2056,142 +1307,6 @@
   </Label>
 
   <!-- Shared Task page -->
-    <Label item="STASKMemberList_Head0">
-    <ScreenID>STASKMemberList_Head0</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>48</LeftAnchorOffset>
-    <TopAnchorOffset>26</TopAnchorOffset>
-    <RightAnchorOffset>194</RightAnchorOffset>
-    <BottomAnchorOffset>42</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Member</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>false</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="STASKMemberList_Tick0">
-    <ScreenID>STASKMemberList_Tick0</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>195</LeftAnchorOffset>
-    <TopAnchorOffset>25</TopAnchorOffset>
-    <RightAnchorOffset>196</RightAnchorOffset>
-    <BottomAnchorOffset>43</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_HdrTick</Animation>
-  </StaticAnimation>
-  <StaticAnimation item="STASKMemberList_Guide0">
-    <ScreenID>STASKMemberList_Guide0</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>195</LeftAnchorOffset>
-    <TopAnchorOffset>45</TopAnchorOffset>
-    <RightAnchorOffset>196</RightAnchorOffset>
-    <BottomAnchorOffset>64</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>false</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_ColGuide</Animation>
-  </StaticAnimation>
-  <Label item="STASKMemberList_Head1">
-    <ScreenID>STASKMemberList_Head1</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>198</LeftAnchorOffset>
-    <TopAnchorOffset>26</TopAnchorOffset>
-    <RightAnchorOffset>304</RightAnchorOffset>
-    <BottomAnchorOffset>42</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Role</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>false</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="STASKMemberList_Tick1">
-    <ScreenID>STASKMemberList_Tick1</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>305</LeftAnchorOffset>
-    <TopAnchorOffset>25</TopAnchorOffset>
-    <RightAnchorOffset>306</RightAnchorOffset>
-    <BottomAnchorOffset>43</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_HdrTick</Animation>
-  </StaticAnimation>
-  <StaticAnimation item="STASKMemberList_Guide1">
-    <ScreenID>STASKMemberList_Guide1</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>305</LeftAnchorOffset>
-    <TopAnchorOffset>45</TopAnchorOffset>
-    <RightAnchorOffset>306</RightAnchorOffset>
-    <BottomAnchorOffset>64</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>false</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Animation>A_TW_ColGuide</Animation>
-  </StaticAnimation>
-  <Label item="STASKMemberList_Head2">
-    <ScreenID>STASKMemberList_Head2</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>308</LeftAnchorOffset>
-    <TopAnchorOffset>26</TopAnchorOffset>
-    <RightAnchorOffset>504</RightAnchorOffset>
-    <BottomAnchorOffset>42</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>true</RightAnchorToLeft>
-    <Text>Template</Text>
-    <TextColor>
-      <R>211</R>
-      <G>214</G>
-      <B>221</B>
-    </TextColor>
-    <NoWrap>true</NoWrap>
-    <AlignCenter>false</AlignCenter>
-    <AlignRight>false</AlignRight>
-  </Label>
-  <StaticAnimation item="STASKMemberList_HdrLine">
-    <ScreenID>STASKMemberList_HdrLine</ScreenID>
-    <RelativePosition>true</RelativePosition>
-    <AutoStretch>true</AutoStretch>
-    <LeftAnchorOffset>45</LeftAnchorOffset>
-    <TopAnchorOffset>43</TopAnchorOffset>
-    <RightAnchorOffset>45</RightAnchorOffset>
-    <BottomAnchorOffset>45</BottomAnchorOffset>
-    <TopAnchorToTop>true</TopAnchorToTop>
-    <BottomAnchorToTop>true</BottomAnchorToTop>
-    <LeftAnchorToLeft>true</LeftAnchorToLeft>
-    <RightAnchorToLeft>false</RightAnchorToLeft>
-    <Animation>A_TW_Divider</Animation>
-  </StaticAnimation>
 
   <Page item = "TaskSharedTaskPage">
     <ScreenID>TaskSharedTaskPage</ScreenID>
@@ -2205,21 +1320,18 @@
     <TooltipReference/>
     <DrawTemplate>WDT_Def</DrawTemplate>
     <TabText>Shared Task</TabText>
+    <TabTextColor>
+      <R>146</R>
+      <G>158</G>
+      <B>180</B>
+    </TabTextColor>
     <TabTextActiveColor>
-      <R>255</R>
-      <G>255</G>
-      <B>0</B>
+      <R>236</R>
+      <G>214</G>
+      <B>160</B>
     </TabTextActiveColor>
     <Style_Sizable>true</Style_Sizable>
     <Pieces>STASK_MemberList</Pieces>
-    <Pieces>STASKMemberList_Head0</Pieces>
-    <Pieces>STASKMemberList_Tick0</Pieces>
-    <Pieces>STASKMemberList_Guide0</Pieces>
-    <Pieces>STASKMemberList_Head1</Pieces>
-    <Pieces>STASKMemberList_Tick1</Pieces>
-    <Pieces>STASKMemberList_Guide1</Pieces>
-    <Pieces>STASKMemberList_Head2</Pieces>
-    <Pieces>STASKMemberList_HdrLine</Pieces>
     <Pieces>STASK_AddPlayerButton</Pieces>
     <Pieces>STASK_RemovePlayerButton</Pieces>
     <Pieces>STASK_MakeLeaderButton</Pieces>

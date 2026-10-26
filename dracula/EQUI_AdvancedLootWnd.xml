@@ -598,7 +598,7 @@
       <CY>16</CY>
     </Size>
     <Style_Checkbox>true</Style_Checkbox>
-    <Template>BDT_Checkbox</Template>
+    <Template>BDT_Checkbox16</Template>
   </Button>
 
   <Button item="ADLW_ItemBtnTemplate">

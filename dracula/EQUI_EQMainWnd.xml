@@ -8,22 +8,16 @@
 	     - menu: near-solid slate panels (WDT_MenuGlass) with the HUD glow frame; every item is a flat
 	       row that lifts with a gold bar on hover (category items had no hover before; command items
 	       were bevelled buttons); slim 1px dividers; slim chevrons for submenus
-	     Art: eqm_pieces.png, menu icons: menuicons01.tga
+	     Art: hud_pieces.dds, menu icons: menuicons01.dds
 	     ============================================================ -->
 
-	<TextureInfo item = "menuicons01.tga">
+	<TextureInfo item = "menuicons01.dds">
 		<Size>
 			<CX>256</CX>
 			<CY>256</CY>
 		</Size>
 	</TextureInfo>
 
-	<TextureInfo item = "eqm_pieces.png">
-		<Size>
-			<CX>256</CX>
-			<CY>256</CY>
-		</Size>
-	</TextureInfo>
 
 	<Ui2DAnimation item = "A_MenuIcons">
 		<Cycle>false</Cycle>
@@ -32,7 +26,7 @@
 		<CellHeight>24</CellHeight>
 		<CellWidth>24</CellWidth>
 		<Frames>
-			<Texture>menuicons01.tga</Texture>
+			<Texture>menuicons01.dds</Texture>
 			<Location>
 				<X>0</X>
 				<Y>0</Y>
@@ -49,14 +43,14 @@
 		</Frames>
 	</Ui2DAnimation>
 	
-	<!-- Modern-theme EQ menu buttons and menu pieces (eqm_pieces.png) -->
+	<!-- Modern-theme EQ menu buttons and menu pieces (hud_pieces.dds) -->
 	<Ui2DAnimation item = "A_CascadeMenuSeparator">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>212</X>
-				<Y>128</Y>
+				<X>1000</X>
+				<Y>109</Y>
 			</Location>
 			<Size>
 				<CX>4</CX>
@@ -72,10 +66,10 @@
 	<Ui2DAnimation item = "A_CascadeSubmenuIndicator">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>200</X>
-				<Y>128</Y>
+				<X>814</X>
+				<Y>84</Y>
 			</Location>
 			<Size>
 				<CX>10</CX>
@@ -91,10 +85,10 @@
 	<Ui2DAnimation item = "A_EQBtnNormal">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>0</X>
-				<Y>0</Y>
+				<X>2</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>42</CX>
@@ -110,10 +104,10 @@
 	<Ui2DAnimation item = "A_EQBtnFlyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>42</X>
-				<Y>0</Y>
+				<X>48</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>42</CX>
@@ -129,10 +123,10 @@
 	<Ui2DAnimation item = "A_EQBtnPressed">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>84</X>
-				<Y>0</Y>
+				<X>94</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>42</CX>
@@ -148,10 +142,10 @@
 	<Ui2DAnimation item = "A_EQBtnPressedFlyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>126</X>
-				<Y>0</Y>
+				<X>140</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>42</CX>
@@ -167,10 +161,10 @@
 	<Ui2DAnimation item = "A_EQBtnDisabled">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>168</X>
-				<Y>0</Y>
+				<X>186</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>42</CX>
@@ -186,10 +180,10 @@
 	<Ui2DAnimation item = "A_EQM_SCBtnNormal">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>0</X>
-				<Y>42</Y>
+				<X>232</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>42</CX>
@@ -205,10 +199,10 @@
 	<Ui2DAnimation item = "A_EQM_SCBtnFlyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>42</X>
-				<Y>42</Y>
+				<X>278</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>42</CX>
@@ -224,10 +218,10 @@
 	<Ui2DAnimation item = "A_EQM_SCBtnPressed">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>84</X>
-				<Y>42</Y>
+				<X>324</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>42</CX>
@@ -243,10 +237,10 @@
 	<Ui2DAnimation item = "A_EQM_SCBtnDisabled">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>126</X>
-				<Y>42</Y>
+				<X>370</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>42</CX>
@@ -262,10 +256,10 @@
 	<Ui2DAnimation item = "A_EQM_SCFlashSaleNormal">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>0</X>
-				<Y>84</Y>
+				<X>416</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>42</CX>
@@ -281,10 +275,10 @@
 	<Ui2DAnimation item = "A_EQM_SCFlashSaleFlyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>42</X>
-				<Y>84</Y>
+				<X>462</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>42</CX>
@@ -300,10 +294,10 @@
 	<Ui2DAnimation item = "A_EQM_SCFlashSalePressed">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>84</X>
-				<Y>84</Y>
+				<X>508</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>42</CX>
@@ -319,10 +313,10 @@
 	<Ui2DAnimation item = "A_EQM_SCFlashSaleDisabled">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>126</X>
-				<Y>84</Y>
+				<X>370</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>42</CX>
@@ -338,10 +332,10 @@
 	<Ui2DAnimation item = "A_EQM_MenuRowHover">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>0</X>
-				<Y>128</Y>
+				<X>436</X>
+				<Y>48</Y>
 			</Location>
 			<Size>
 				<CX>192</CX>
@@ -357,10 +351,10 @@
 	<Ui2DAnimation item = "A_EQM_MenuRowPressed">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>eqm_pieces.png</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>0</X>
-				<Y>154</Y>
+				<X>632</X>
+				<Y>48</Y>
 			</Location>
 			<Size>
 				<CX>192</CX>

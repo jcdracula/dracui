@@ -4,10 +4,10 @@
 	<Ui2DAnimation item="A_CombatButton1Normal">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>0</X>
-				<Y>0</Y>
+				<X>554</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -23,10 +23,10 @@
 	<Ui2DAnimation item="A_CombatButton1Pressed">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>80</X>
-				<Y>0</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -42,10 +42,10 @@
 	<Ui2DAnimation item="A_CombatButton1Flyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>40</X>
-				<Y>0</Y>
+				<X>642</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -61,10 +61,10 @@
 	<Ui2DAnimation item="A_CombatButton1PressedFlyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>120</X>
-				<Y>0</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -80,10 +80,10 @@
 	<Ui2DAnimation item="A_CombatButton1Disabled">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>160</X>
-				<Y>0</Y>
+				<X>730</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -99,10 +99,10 @@
 	<Ui2DAnimation item="A_CombatButton2Normal">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>0</X>
-				<Y>40</Y>
+				<X>554</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -118,10 +118,10 @@
 	<Ui2DAnimation item="A_CombatButton2Pressed">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>80</X>
-				<Y>40</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -137,10 +137,10 @@
 	<Ui2DAnimation item="A_CombatButton2Flyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>40</X>
-				<Y>40</Y>
+				<X>642</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -156,10 +156,10 @@
 	<Ui2DAnimation item="A_CombatButton2PressedFlyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>120</X>
-				<Y>40</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -175,10 +175,10 @@
 	<Ui2DAnimation item="A_CombatButton2Disabled">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>160</X>
-				<Y>40</Y>
+				<X>730</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -194,10 +194,10 @@
 	<Ui2DAnimation item="A_CombatButton3Normal">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>0</X>
-				<Y>80</Y>
+				<X>554</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -213,10 +213,10 @@
 	<Ui2DAnimation item="A_CombatButton3Pressed">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>80</X>
-				<Y>80</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -232,10 +232,10 @@
 	<Ui2DAnimation item="A_CombatButton3Flyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>40</X>
-				<Y>80</Y>
+				<X>642</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -251,10 +251,10 @@
 	<Ui2DAnimation item="A_CombatButton3PressedFlyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>120</X>
-				<Y>80</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -270,10 +270,10 @@
 	<Ui2DAnimation item="A_CombatButton3Disabled">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>160</X>
-				<Y>80</Y>
+				<X>730</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -289,10 +289,10 @@
 	<Ui2DAnimation item="A_CombatButton4Normal">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>0</X>
-				<Y>120</Y>
+				<X>554</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -308,10 +308,10 @@
 	<Ui2DAnimation item="A_CombatButton4Pressed">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>80</X>
-				<Y>120</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -327,10 +327,10 @@
 	<Ui2DAnimation item="A_CombatButton4Flyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>40</X>
-				<Y>120</Y>
+				<X>642</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -346,10 +346,10 @@
 	<Ui2DAnimation item="A_CombatButton4PressedFlyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>120</X>
-				<Y>120</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -365,10 +365,10 @@
 	<Ui2DAnimation item="A_CombatButton4Disabled">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>160</X>
-				<Y>120</Y>
+				<X>730</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -384,10 +384,10 @@
 	<Ui2DAnimation item="A_CombatButton5Normal">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>0</X>
-				<Y>160</Y>
+				<X>554</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -403,10 +403,10 @@
 	<Ui2DAnimation item="A_CombatButton5Pressed">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>80</X>
-				<Y>160</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -422,10 +422,10 @@
 	<Ui2DAnimation item="A_CombatButton5Flyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>40</X>
-				<Y>160</Y>
+				<X>642</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -441,10 +441,10 @@
 	<Ui2DAnimation item="A_CombatButton5PressedFlyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>120</X>
-				<Y>160</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -460,10 +460,10 @@
 	<Ui2DAnimation item="A_CombatButton5Disabled">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>160</X>
-				<Y>160</Y>
+				<X>730</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -479,10 +479,10 @@
 	<Ui2DAnimation item="A_CombatButton6Normal">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>0</X>
-				<Y>200</Y>
+				<X>554</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -498,10 +498,10 @@
 	<Ui2DAnimation item="A_CombatButton6Pressed">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>80</X>
-				<Y>200</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -517,10 +517,10 @@
 	<Ui2DAnimation item="A_CombatButton6Flyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>40</X>
-				<Y>200</Y>
+				<X>642</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -536,10 +536,10 @@
 	<Ui2DAnimation item="A_CombatButton6PressedFlyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>120</X>
-				<Y>200</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -555,10 +555,10 @@
 	<Ui2DAnimation item="A_CombatButton6Disabled">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>160</X>
-				<Y>200</Y>
+				<X>730</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -574,10 +574,10 @@
 	<Ui2DAnimation item="A_CombatButton7Normal">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces07.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>0</X>
-				<Y>0</Y>
+				<X>554</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -593,10 +593,10 @@
 	<Ui2DAnimation item="A_CombatButton7Pressed">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces07.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>80</X>
-				<Y>0</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -612,10 +612,10 @@
 	<Ui2DAnimation item="A_CombatButton7Flyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces07.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>40</X>
-				<Y>0</Y>
+				<X>642</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -631,10 +631,10 @@
 	<Ui2DAnimation item="A_CombatButton7PressedFlyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces07.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>120</X>
-				<Y>0</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -650,10 +650,10 @@
 	<Ui2DAnimation item="A_CombatButton7Disabled">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces07.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>160</X>
-				<Y>0</Y>
+				<X>730</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -669,10 +669,10 @@
 	<Ui2DAnimation item="A_CombatButton8Normal">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces07.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>0</X>
-				<Y>40</Y>
+				<X>554</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -688,10 +688,10 @@
 	<Ui2DAnimation item="A_CombatButton8Pressed">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces07.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>80</X>
-				<Y>40</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -707,10 +707,10 @@
 	<Ui2DAnimation item="A_CombatButton8Flyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces07.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>40</X>
-				<Y>40</Y>
+				<X>642</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -726,10 +726,10 @@
 	<Ui2DAnimation item="A_CombatButton8PressedFlyby">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces07.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>120</X>
-				<Y>40</Y>
+				<X>598</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>
@@ -745,10 +745,10 @@
 	<Ui2DAnimation item="A_CombatButton8Disabled">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces07.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>160</X>
-				<Y>40</Y>
+				<X>730</X>
+				<Y>2</Y>
 			</Location>
 			<Size>
 				<CX>40</CX>

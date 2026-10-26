@@ -6,10 +6,10 @@
   <Ui2DAnimation item="A_HotButton1Normal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>0</Y>
+        <X>554</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -25,10 +25,10 @@
   <Ui2DAnimation item="A_HotButton1Pressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>44</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -44,10 +44,10 @@
   <Ui2DAnimation item="A_HotButton1Flyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>642</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -63,10 +63,10 @@
   <Ui2DAnimation item="A_HotButton1PressedFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -82,10 +82,10 @@
   <Ui2DAnimation item="A_HotButton1Disabled">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>160</X>
-        <Y>0</Y>
+        <X>686</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -101,10 +101,10 @@
   <Ui2DAnimation item="A_HotButton2Normal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>0</Y>
+        <X>554</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -120,10 +120,10 @@
   <Ui2DAnimation item="A_HotButton2Pressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>44</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -139,10 +139,10 @@
   <Ui2DAnimation item="A_HotButton2Flyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>642</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -158,10 +158,10 @@
   <Ui2DAnimation item="A_HotButton2PressedFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -177,10 +177,10 @@
   <Ui2DAnimation item="A_HotButton2Disabled">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>160</X>
-        <Y>40</Y>
+        <X>686</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -196,10 +196,10 @@
   <Ui2DAnimation item="A_HotButton3Normal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>0</Y>
+        <X>554</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -215,10 +215,10 @@
   <Ui2DAnimation item="A_HotButton3Pressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>44</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -234,10 +234,10 @@
   <Ui2DAnimation item="A_HotButton3Flyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>642</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -253,10 +253,10 @@
   <Ui2DAnimation item="A_HotButton3PressedFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -272,10 +272,10 @@
   <Ui2DAnimation item="A_HotButton3Disabled">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>160</X>
-        <Y>80</Y>
+        <X>686</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -291,10 +291,10 @@
   <Ui2DAnimation item="A_HotButton4Normal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>0</Y>
+        <X>554</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -310,10 +310,10 @@
   <Ui2DAnimation item="A_HotButton4Pressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>44</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -329,10 +329,10 @@
   <Ui2DAnimation item="A_HotButton4Flyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>642</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -348,10 +348,10 @@
   <Ui2DAnimation item="A_HotButton4PressedFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -367,10 +367,10 @@
   <Ui2DAnimation item="A_HotButton4Disabled">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>160</X>
-        <Y>120</Y>
+        <X>686</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -386,10 +386,10 @@
   <Ui2DAnimation item="A_HotButton5Normal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>0</Y>
+        <X>554</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -405,10 +405,10 @@
   <Ui2DAnimation item="A_HotButton5Pressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>44</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -424,10 +424,10 @@
   <Ui2DAnimation item="A_HotButton5Flyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>642</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -443,10 +443,10 @@
   <Ui2DAnimation item="A_HotButton5PressedFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -462,10 +462,10 @@
   <Ui2DAnimation item="A_HotButton5Disabled">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>160</X>
-        <Y>160</Y>
+        <X>686</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -481,10 +481,10 @@
   <Ui2DAnimation item="A_HotButton6Normal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>0</Y>
+        <X>554</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -500,10 +500,10 @@
   <Ui2DAnimation item="A_HotButton6Pressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>44</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -519,10 +519,10 @@
   <Ui2DAnimation item="A_HotButton6Flyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>642</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -538,10 +538,10 @@
   <Ui2DAnimation item="A_HotButton6PressedFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -557,10 +557,10 @@
   <Ui2DAnimation item="A_HotButton6Disabled">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>160</X>
-        <Y>200</Y>
+        <X>686</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -576,10 +576,10 @@
   <Ui2DAnimation item="A_HotButton7Normal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>0</Y>
+        <X>554</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -595,10 +595,10 @@
   <Ui2DAnimation item="A_HotButton7Pressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>44</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -614,10 +614,10 @@
   <Ui2DAnimation item="A_HotButton7Flyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>642</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -633,10 +633,10 @@
   <Ui2DAnimation item="A_HotButton7PressedFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -652,10 +652,10 @@
   <Ui2DAnimation item="A_HotButton7Disabled">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces07.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>160</X>
-        <Y>0</Y>
+        <X>730</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -671,10 +671,10 @@
   <Ui2DAnimation item="A_HotButton8Normal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>0</Y>
+        <X>554</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -690,10 +690,10 @@
   <Ui2DAnimation item="A_HotButton8Pressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>44</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -709,10 +709,10 @@
   <Ui2DAnimation item="A_HotButton8Flyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>642</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -728,10 +728,10 @@
   <Ui2DAnimation item="A_HotButton8PressedFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -747,10 +747,10 @@
   <Ui2DAnimation item="A_HotButton8Disabled">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces07.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>160</X>
-        <Y>40</Y>
+        <X>730</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -766,10 +766,10 @@
   <Ui2DAnimation item="A_HotButton9Normal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>0</Y>
+        <X>554</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -785,10 +785,10 @@
   <Ui2DAnimation item="A_HotButton9Pressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>44</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -804,10 +804,10 @@
   <Ui2DAnimation item="A_HotButton9Flyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>642</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -823,10 +823,10 @@
   <Ui2DAnimation item="A_HotButton9PressedFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -842,10 +842,10 @@
   <Ui2DAnimation item="A_HotButton9Disabled">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces07.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>160</X>
-        <Y>80</Y>
+        <X>730</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -861,10 +861,10 @@
   <Ui2DAnimation item="A_HotButton10Normal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>0</Y>
+        <X>554</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -880,10 +880,10 @@
   <Ui2DAnimation item="A_HotButton10Pressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>44</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -899,10 +899,10 @@
   <Ui2DAnimation item="A_HotButton10Flyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>642</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -918,10 +918,10 @@
   <Ui2DAnimation item="A_HotButton10PressedFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -937,10 +937,10 @@
   <Ui2DAnimation item="A_HotButton10Disabled">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces07.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>160</X>
-        <Y>120</Y>
+        <X>730</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -956,10 +956,10 @@
   <Ui2DAnimation item="A_HotButton11Normal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>0</Y>
+        <X>554</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -975,10 +975,10 @@
   <Ui2DAnimation item="A_HotButton11Pressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>44</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -994,10 +994,10 @@
   <Ui2DAnimation item="A_HotButton11Flyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>642</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -1013,10 +1013,10 @@
   <Ui2DAnimation item="A_HotButton11PressedFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -1032,10 +1032,10 @@
   <Ui2DAnimation item="A_HotButton11Disabled">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces07.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>160</X>
-        <Y>160</Y>
+        <X>730</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -1051,10 +1051,10 @@
   <Ui2DAnimation item="A_HotButton12Normal">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>0</Y>
+        <X>554</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -1070,10 +1070,10 @@
   <Ui2DAnimation item="A_HotButton12Pressed">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>44</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -1089,10 +1089,10 @@
   <Ui2DAnimation item="A_HotButton12Flyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>642</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -1108,10 +1108,10 @@
   <Ui2DAnimation item="A_HotButton12PressedFlyby">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces06.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>88</Y>
+        <X>598</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -1127,10 +1127,10 @@
   <Ui2DAnimation item="A_HotButton12Disabled">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>window_pieces07.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>160</X>
-        <Y>200</Y>
+        <X>730</X>
+        <Y>2</Y>
       </Location>
       <Size>
         <CX>40</CX>

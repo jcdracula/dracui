@@ -10,7 +10,7 @@
 	       Background is laid over the icon while it's unavailable/casting (kept fully clear)
 	     - flat spellbook button: steel book outline, gold on hover and while the book is open
 	     - even 3px padding around the gems (they used to touch the top and bottom edges)
-	     Art: csw_pieces.png (EQUI_Animations.xml), button template BDT_CSPW_Book (EQUI_Templates.xml)
+	     Art: hud_pieces.dds (EQUI_Animations.xml), button template BDT_CSPW_Book (EQUI_Templates.xml)
 	     ============================================================ -->
 	<SpellGem item="CSPW_Spell0">
 		<ScreenID>CSPW_Spell0</ScreenID>

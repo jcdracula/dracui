@@ -5,10 +5,10 @@
 	<Ui2DAnimation item="A_RW_Divider">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>achm_pieces.png</Texture>
+			<Texture>wnd_pieces.dds</Texture>
 			<Location>
-				<X>194</X>
-				<Y>0</Y>
+				<X>691</X>
+				<Y>724</Y>
 			</Location>
 			<Size>
 				<CX>1</CX>
@@ -24,10 +24,10 @@
 	<Ui2DAnimation item="A_RW_ColGuide">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>achm_pieces.png</Texture>
+			<Texture>wnd_pieces.dds</Texture>
 			<Location>
-				<X>190</X>
-				<Y>0</Y>
+				<X>838</X>
+				<Y>724</Y>
 			</Location>
 			<Size>
 				<CX>1</CX>
@@ -43,10 +43,10 @@
 	<Ui2DAnimation item="A_RW_HdrTick">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>achm_pieces.png</Texture>
+			<Texture>wnd_pieces.dds</Texture>
 			<Location>
-				<X>192</X>
-				<Y>0</Y>
+				<X>843</X>
+				<Y>724</Y>
 			</Location>
 			<Size>
 				<CX>1</CX>

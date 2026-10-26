@@ -251,7 +251,7 @@
     </Titlebar>
   </WindowDrawTemplate>
   <WindowDrawTemplate item="WDT_Def">
-    <Background>wnd_bg_light_rock.png</Background>
+    <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
         <Normal>A_VSBUpNormal</Normal>
@@ -352,27 +352,27 @@
       <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
     </TileBox>
     <Border>
-      <TopLeft>A_BorderFrameTopLeft</TopLeft>
-      <Top>A_BorderFrameTop</Top>
-      <TopRight>A_BorderFrameTopRight</TopRight>
-      <RightTop>A_BorderFrameRightTop</RightTop>
-      <Right>A_BorderFrameRight</Right>
-      <RightBottom>A_BorderFrameRightBottom</RightBottom>
-      <BottomRight>A_BorderFrameBottomRight</BottomRight>
-      <Bottom>A_BorderFrameBottom</Bottom>
-      <BottomLeft>A_BorderFrameBottomLeft</BottomLeft>
-      <LeftTop>A_BorderFrameLeftTop</LeftTop>
-      <Left>A_BorderFrameLeft</Left>
-      <LeftBottom>A_BorderFrameLeftBottom</LeftBottom>
+      <TopLeft>A_ACHM_FrameTopLeft</TopLeft>
+      <Top>A_ACHM_FrameTop</Top>
+      <TopRight>A_ACHM_FrameTopRight</TopRight>
+      <RightTop>A_ACHM_FrameRight</RightTop>
+      <Right>A_ACHM_FrameRight</Right>
+      <RightBottom>A_ACHM_FrameRight</RightBottom>
+      <BottomRight>A_ACHM_FrameBottomRight</BottomRight>
+      <Bottom>A_ACHM_FrameBottom</Bottom>
+      <BottomLeft>A_ACHM_FrameBottomLeft</BottomLeft>
+      <LeftTop>A_ACHM_FrameLeft</LeftTop>
+      <Left>A_ACHM_FrameLeft</Left>
+      <LeftBottom>A_ACHM_FrameLeft</LeftBottom>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
       <OverlapBottom>0</OverlapBottom>
     </Border>
     <Titlebar>
-      <Right>A_WindowTitleRight</Right>
-      <Left>A_WindowTitleLeft</Left>
-      <Middle>A_WindowTitleMiddle</Middle>
+      <Right>A_ACHM_TitleRight</Right>
+      <Left>A_ACHM_TitleLeft</Left>
+      <Middle>A_ACHM_TitleMiddle</Middle>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
@@ -380,7 +380,7 @@
     </Titlebar>
   </WindowDrawTemplate>
   <WindowDrawTemplate item="WDT_Marketplace">
-    <Background>Achievement_unlock_color.tga</Background>
+    <Background>achm_bg.png</Background>
     <BackgroundDrawType>0</BackgroundDrawType>
     <VSBTemplate>
       <UpButton>
@@ -482,27 +482,27 @@
       <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
     </TileBox>
     <Border>
-      <TopLeft>A_BorderFrameTopLeft</TopLeft>
-      <Top>A_BorderFrameTop</Top>
-      <TopRight>A_BorderFrameTopRight</TopRight>
-      <RightTop>A_BorderFrameRightTop</RightTop>
-      <Right>A_BorderFrameRight</Right>
-      <RightBottom>A_BorderFrameRightBottom</RightBottom>
-      <BottomRight>A_BorderFrameBottomRight</BottomRight>
-      <Bottom>A_BorderFrameBottom</Bottom>
-      <BottomLeft>A_BorderFrameBottomLeft</BottomLeft>
-      <LeftTop>A_BorderFrameLeftTop</LeftTop>
-      <Left>A_BorderFrameLeft</Left>
-      <LeftBottom>A_BorderFrameLeftBottom</LeftBottom>
+      <TopLeft>A_ACHM_FrameTopLeft</TopLeft>
+      <Top>A_ACHM_FrameTop</Top>
+      <TopRight>A_ACHM_FrameTopRight</TopRight>
+      <RightTop>A_ACHM_FrameRight</RightTop>
+      <Right>A_ACHM_FrameRight</Right>
+      <RightBottom>A_ACHM_FrameRight</RightBottom>
+      <BottomRight>A_ACHM_FrameBottomRight</BottomRight>
+      <Bottom>A_ACHM_FrameBottom</Bottom>
+      <BottomLeft>A_ACHM_FrameBottomLeft</BottomLeft>
+      <LeftTop>A_ACHM_FrameLeft</LeftTop>
+      <Left>A_ACHM_FrameLeft</Left>
+      <LeftBottom>A_ACHM_FrameLeft</LeftBottom>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
       <OverlapBottom>0</OverlapBottom>
     </Border>
     <Titlebar>
-      <Right>A_WindowTitleRight</Right>
-      <Left>A_WindowTitleLeft</Left>
-      <Middle>A_WindowTitleMiddle</Middle>
+      <Right>A_ACHM_TitleRight</Right>
+      <Left>A_ACHM_TitleLeft</Left>
+      <Middle>A_ACHM_TitleMiddle</Middle>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
@@ -1829,8 +1829,11 @@
       <OverlapBottom>0</OverlapBottom>
     </Titlebar>
   </WindowDrawTemplate>
+  <!-- Every titled non-HUD window template (WDT_Rounded, WDT_Def, the filigree and marketplace templates) uses the
+       same modern chrome as WDT_AchModern: achm_bg background, 1px A_ACHM_Frame border, A_ACHM_Title title bar.
+       HUD windows keep WDT_RoundedNoTitle (glow frame). -->
   <WindowDrawTemplate item="WDT_Rounded">
-    <Background>wnd_bg_dark_rock.png</Background>
+    <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
         <Normal>A_VSBUpNormal</Normal>
@@ -1931,27 +1934,27 @@
       <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
     </TileBox>
     <Border>
-      <TopLeft>A_RoundedFrameWithTitleTopLeft</TopLeft>
-      <Top>A_RoundedFrameWithTitleTop</Top>
-      <TopRight>A_RoundedFrameWithTitleTopRight</TopRight>
-      <RightTop>A_RoundedFrameWithTitleRightTop</RightTop>
-      <Right>A_RoundedFrameRight</Right>
-      <RightBottom>A_RoundedFrameRightBottom</RightBottom>
-      <BottomRight>A_RoundedFrameBottomRight</BottomRight>
-      <Bottom>A_RoundedFrameBottom</Bottom>
-      <BottomLeft>A_RoundedFrameBottomLeft</BottomLeft>
-      <LeftTop>A_RoundedFrameWithTitleLeftTop</LeftTop>
-      <Left>A_RoundedFrameLeft</Left>
-      <LeftBottom>A_RoundedFrameLeftBottom</LeftBottom>
+      <TopLeft>A_ACHM_FrameTopLeft</TopLeft>
+      <Top>A_ACHM_FrameTop</Top>
+      <TopRight>A_ACHM_FrameTopRight</TopRight>
+      <RightTop>A_ACHM_FrameRight</RightTop>
+      <Right>A_ACHM_FrameRight</Right>
+      <RightBottom>A_ACHM_FrameRight</RightBottom>
+      <BottomRight>A_ACHM_FrameBottomRight</BottomRight>
+      <Bottom>A_ACHM_FrameBottom</Bottom>
+      <BottomLeft>A_ACHM_FrameBottomLeft</BottomLeft>
+      <LeftTop>A_ACHM_FrameLeft</LeftTop>
+      <Left>A_ACHM_FrameLeft</Left>
+      <LeftBottom>A_ACHM_FrameLeft</LeftBottom>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
       <OverlapBottom>0</OverlapBottom>
     </Border>
     <Titlebar>
-      <Right>A_RoundedFrameTitleRight</Right>
-      <Left>A_RoundedFrameTitleLeft</Left>
-      <Middle>A_RoundedFrameTitleMiddle</Middle>
+      <Right>A_ACHM_TitleRight</Right>
+      <Left>A_ACHM_TitleLeft</Left>
+      <Middle>A_ACHM_TitleMiddle</Middle>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
@@ -2349,7 +2352,7 @@
   </WindowDrawTemplate>
   <!-- Filigree Border -->
   <WindowDrawTemplate item="WDT_Filigree">
-    <Background>wnd_bg_light_rock.png</Background>
+    <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
         <Normal>A_VSBUpNormal</Normal>
@@ -2450,27 +2453,27 @@
       <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
     </TileBox>
     <Border>
-      <Right>A_FiligreeFrameRight</Right>
-      <RightBottom>A_FiligreeFrameRightBottom</RightBottom>
-      <BottomRight>A_FiligreeFrameBottomRight</BottomRight>
-      <Bottom>A_FiligreeFrameBottom</Bottom>
-      <BottomLeft>A_FiligreeFrameBottomLeft</BottomLeft>
-      <LeftTop>A_FiligreeFrameLeftTop</LeftTop>
-      <Left>A_FiligreeFrameLeft</Left>
-      <LeftBottom>A_FiligreeFrameLeftBottom</LeftBottom>
+      <TopLeft>A_ACHM_FrameTopLeft</TopLeft>
+      <Top>A_ACHM_FrameTop</Top>
+      <TopRight>A_ACHM_FrameTopRight</TopRight>
+      <RightTop>A_ACHM_FrameRight</RightTop>
+      <Right>A_ACHM_FrameRight</Right>
+      <RightBottom>A_ACHM_FrameRight</RightBottom>
+      <BottomRight>A_ACHM_FrameBottomRight</BottomRight>
+      <Bottom>A_ACHM_FrameBottom</Bottom>
+      <BottomLeft>A_ACHM_FrameBottomLeft</BottomLeft>
+      <LeftTop>A_ACHM_FrameLeft</LeftTop>
+      <Left>A_ACHM_FrameLeft</Left>
+      <LeftBottom>A_ACHM_FrameLeft</LeftBottom>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
       <OverlapBottom>0</OverlapBottom>
-      <Top>A_FiligreeFrameTop</Top>
-      <TopLeft>A_FiligreeFrameTopLeft</TopLeft>
-      <TopRight>A_FiligreeFrameTopRight</TopRight>
-      <RightTop>A_FiligreeFrameRightTop</RightTop>
     </Border>
     <Titlebar>
-      <Right>A_FiligreeFrameTitleRight</Right>
-      <Left>A_FiligreeFrameTitleLeft</Left>
-      <Middle>A_FiligreeFrameTitleMiddle</Middle>
+      <Right>A_ACHM_TitleRight</Right>
+      <Left>A_ACHM_TitleLeft</Left>
+      <Middle>A_ACHM_TitleMiddle</Middle>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
@@ -2479,7 +2482,7 @@
   </WindowDrawTemplate>
   <!-- ********** -->
   <WindowDrawTemplate item="WDT_FiligreeThin">
-    <Background>wnd_bg_light_rock.png</Background>
+    <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
         <Normal>A_VSBUpNormal</Normal>
@@ -2580,27 +2583,27 @@
       <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
     </TileBox>
     <Border>
-      <Right>A_FiligreeThinFrameRight</Right>
-      <RightBottom>A_FiligreeThinFrameRightBottom</RightBottom>
-      <BottomRight>A_FiligreeFrameBottomRight</BottomRight>
-      <Bottom>A_FiligreeFrameBottom</Bottom>
-      <BottomLeft>A_FiligreeFrameBottomLeft</BottomLeft>
-      <LeftTop>A_FiligreeThinFrameLeftTop</LeftTop>
-      <Left>A_FiligreeThinFrameLeft</Left>
-      <LeftBottom>A_FiligreeThinFrameLeftBottom</LeftBottom>
+      <TopLeft>A_ACHM_FrameTopLeft</TopLeft>
+      <Top>A_ACHM_FrameTop</Top>
+      <TopRight>A_ACHM_FrameTopRight</TopRight>
+      <RightTop>A_ACHM_FrameRight</RightTop>
+      <Right>A_ACHM_FrameRight</Right>
+      <RightBottom>A_ACHM_FrameRight</RightBottom>
+      <BottomRight>A_ACHM_FrameBottomRight</BottomRight>
+      <Bottom>A_ACHM_FrameBottom</Bottom>
+      <BottomLeft>A_ACHM_FrameBottomLeft</BottomLeft>
+      <LeftTop>A_ACHM_FrameLeft</LeftTop>
+      <Left>A_ACHM_FrameLeft</Left>
+      <LeftBottom>A_ACHM_FrameLeft</LeftBottom>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
       <OverlapBottom>0</OverlapBottom>
-      <Top>A_FiligreeFrameTop</Top>
-      <TopLeft>A_FiligreeFrameTopLeft</TopLeft>
-      <TopRight>A_FiligreeFrameTopRight</TopRight>
-      <RightTop>A_FiligreeThinFrameRightTop</RightTop>
     </Border>
     <Titlebar>
-      <Right>A_FiligreeFrameTitleRight</Right>
-      <Left>A_FiligreeFrameTitleLeft</Left>
-      <Middle>A_FiligreeFrameTitleMiddle</Middle>
+      <Right>A_ACHM_TitleRight</Right>
+      <Left>A_ACHM_TitleLeft</Left>
+      <Middle>A_ACHM_TitleMiddle</Middle>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
@@ -2609,7 +2612,7 @@
   </WindowDrawTemplate>
   <!-- Filigree No Title Border -->
   <WindowDrawTemplate item="WDT_Filigree2">
-    <Background>wnd_bg_light_rock.png</Background>
+    <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
         <Normal>A_VSBUpNormal</Normal>
@@ -2710,27 +2713,27 @@
       <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
     </TileBox>
     <Border>
-      <Right>A_Filigree2Right</Right>
-      <RightBottom>A_Filigree2RightBottom</RightBottom>
-      <BottomRight>A_Filigree2BottomRight</BottomRight>
-      <Bottom>A_Filigree2Bottom</Bottom>
-      <BottomLeft>A_Filigree2BottomLeft</BottomLeft>
-      <LeftTop>A_Filigree2LeftTop</LeftTop>
-      <Left>A_Filigree2Left</Left>
-      <LeftBottom>A_Filigree2LeftBottom</LeftBottom>
+      <TopLeft>A_ACHM_FrameTopLeft</TopLeft>
+      <Top>A_ACHM_FrameTop</Top>
+      <TopRight>A_ACHM_FrameTopRight</TopRight>
+      <RightTop>A_ACHM_FrameRight</RightTop>
+      <Right>A_ACHM_FrameRight</Right>
+      <RightBottom>A_ACHM_FrameRight</RightBottom>
+      <BottomRight>A_ACHM_FrameBottomRight</BottomRight>
+      <Bottom>A_ACHM_FrameBottom</Bottom>
+      <BottomLeft>A_ACHM_FrameBottomLeft</BottomLeft>
+      <LeftTop>A_ACHM_FrameLeft</LeftTop>
+      <Left>A_ACHM_FrameLeft</Left>
+      <LeftBottom>A_ACHM_FrameLeft</LeftBottom>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
       <OverlapBottom>0</OverlapBottom>
-      <Top>A_Filigree2Top</Top>
-      <TopLeft>A_Filigree2TopLeft</TopLeft>
-      <TopRight>A_Filigree2TopRight</TopRight>
-      <RightTop>A_Filigree2RightTop</RightTop>
     </Border>
     <Titlebar>
-      <Right>A_Filigree2TitleRight</Right>
-      <Left>A_Filigree2TitleLeft</Left>
-      <Middle>A_Filigree2TitleMiddle</Middle>
+      <Right>A_ACHM_TitleRight</Right>
+      <Left>A_ACHM_TitleLeft</Left>
+      <Middle>A_ACHM_TitleMiddle</Middle>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
@@ -2740,7 +2743,7 @@
   <!-- ********** -->
   <!-- Filigree No Title Border -->
   <WindowDrawTemplate item="WDT_Filigree3">
-    <Background>wnd_bg_light_rock.png</Background>
+    <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
         <Normal>A_VSBUpNormal</Normal>
@@ -2841,27 +2844,27 @@
       <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
     </TileBox>
     <Border>
-      <Right>A_Filigree3Right</Right>
-      <RightBottom>A_Filigree3RightBottom</RightBottom>
-      <BottomRight>A_Filigree3BottomRight</BottomRight>
-      <Bottom>A_Filigree3Bottom</Bottom>
-      <BottomLeft>A_Filigree3BottomLeft</BottomLeft>
-      <LeftTop>A_Filigree3LeftTop</LeftTop>
-      <Left>A_Filigree3Left</Left>
-      <LeftBottom>A_Filigree3LeftBottom</LeftBottom>
+      <TopLeft>A_ACHM_FrameTopLeft</TopLeft>
+      <Top>A_ACHM_FrameTop</Top>
+      <TopRight>A_ACHM_FrameTopRight</TopRight>
+      <RightTop>A_ACHM_FrameRight</RightTop>
+      <Right>A_ACHM_FrameRight</Right>
+      <RightBottom>A_ACHM_FrameRight</RightBottom>
+      <BottomRight>A_ACHM_FrameBottomRight</BottomRight>
+      <Bottom>A_ACHM_FrameBottom</Bottom>
+      <BottomLeft>A_ACHM_FrameBottomLeft</BottomLeft>
+      <LeftTop>A_ACHM_FrameLeft</LeftTop>
+      <Left>A_ACHM_FrameLeft</Left>
+      <LeftBottom>A_ACHM_FrameLeft</LeftBottom>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
       <OverlapBottom>0</OverlapBottom>
-      <Top>A_Filigree3Top</Top>
-      <TopLeft>A_Filigree3TopLeft</TopLeft>
-      <TopRight>A_Filigree3TopRight</TopRight>
-      <RightTop>A_Filigree3RightTop</RightTop>
     </Border>
     <Titlebar>
-      <Right>A_Filigree3TitleRight</Right>
-      <Left>A_Filigree3TitleLeft</Left>
-      <Middle>A_Filigree3TitleMiddle</Middle>
+      <Right>A_ACHM_TitleRight</Right>
+      <Left>A_ACHM_TitleLeft</Left>
+      <Middle>A_ACHM_TitleMiddle</Middle>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
@@ -2870,7 +2873,7 @@
   </WindowDrawTemplate>
   <!-- ********** -->
   <WindowDrawTemplate item="WDT_SimpleFilgree">
-    <Background>RE_bkg.tga</Background>
+    <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
         <Normal>A_VSBUpNormal</Normal>
@@ -2971,27 +2974,27 @@
       <PressedFlyby>A_TileBtnPressedFlyby</PressedFlyby>
     </TileBox>
     <Border>
-      <TopLeft>A_SimpleFilgreeTopLeft</TopLeft>
-      <Top>A_SimpleFilgreeTop</Top>
-      <TopRight>A_SimpleFilgreeTopRight</TopRight>
-      <RightTop>A_SimpleFilgreeRight</RightTop>
-      <Right>A_SimpleFilgreeRight</Right>
-      <RightBottom>A_SimpleFilgreeRight</RightBottom>
-      <BottomRight>A_SimpleFilgreeBottomRight</BottomRight>
-      <Bottom>A_SimpleFilgreeBottom</Bottom>
-      <BottomLeft>A_SimpleFilgreeBottomLeft</BottomLeft>
-      <LeftTop>A_SimpleFilgreeLeft</LeftTop>
-      <Left>A_SimpleFilgreeLeft</Left>
-      <LeftBottom>A_SimpleFilgreeLeft</LeftBottom>
+      <TopLeft>A_ACHM_FrameTopLeft</TopLeft>
+      <Top>A_ACHM_FrameTop</Top>
+      <TopRight>A_ACHM_FrameTopRight</TopRight>
+      <RightTop>A_ACHM_FrameRight</RightTop>
+      <Right>A_ACHM_FrameRight</Right>
+      <RightBottom>A_ACHM_FrameRight</RightBottom>
+      <BottomRight>A_ACHM_FrameBottomRight</BottomRight>
+      <Bottom>A_ACHM_FrameBottom</Bottom>
+      <BottomLeft>A_ACHM_FrameBottomLeft</BottomLeft>
+      <LeftTop>A_ACHM_FrameLeft</LeftTop>
+      <Left>A_ACHM_FrameLeft</Left>
+      <LeftBottom>A_ACHM_FrameLeft</LeftBottom>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
       <OverlapBottom>0</OverlapBottom>
     </Border>
     <Titlebar>
-      <Right>A_WindowTitleRight</Right>
-      <Left>A_ChatWindowTitleLeft</Left>
-      <Middle>A_WindowTitleMiddle</Middle>
+      <Right>A_ACHM_TitleRight</Right>
+      <Left>A_ACHM_TitleLeft</Left>
+      <Middle>A_ACHM_TitleMiddle</Middle>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
@@ -3012,7 +3015,7 @@
     <EndCapLeft>A_SliderEndCapLeft</EndCapLeft>
   </SliderDrawTemplate>
   <!-- Compact field for dropdowns the game sizes itself (~15px tall): same dark fill as the chat field
-       with a 1px steel outline, so the border doesn't eat into the text -->
+       with a 1px steel outline (top/bottom 1px; sides 4px so the text isn't flush to the edge) -->
   <WindowDrawTemplate item="WDT_ComboField">
     <Background>chat_field.png</Background>
     <VSBTemplate>
@@ -3080,18 +3083,18 @@
       </MiddleTint>
     </HSBTemplate>
     <Border>
-      <TopLeft>A_IDW_FieldCorner</TopLeft>
+      <TopLeft>A_IDW_FieldCornerL</TopLeft>
       <Top>A_IDW_FieldEdge</Top>
-      <TopRight>A_IDW_FieldCorner</TopRight>
-      <RightTop>A_IDW_FieldEdge</RightTop>
-      <Right>A_IDW_FieldEdge</Right>
-      <RightBottom>A_IDW_FieldEdge</RightBottom>
-      <BottomRight>A_IDW_FieldCorner</BottomRight>
+      <TopRight>A_IDW_FieldCornerR</TopRight>
+      <RightTop>A_IDW_FieldSideR</RightTop>
+      <Right>A_IDW_FieldSideR</Right>
+      <RightBottom>A_IDW_FieldSideR</RightBottom>
+      <BottomRight>A_IDW_FieldCornerR</BottomRight>
       <Bottom>A_IDW_FieldEdge</Bottom>
-      <BottomLeft>A_IDW_FieldCorner</BottomLeft>
-      <LeftTop>A_IDW_FieldEdge</LeftTop>
-      <Left>A_IDW_FieldEdge</Left>
-      <LeftBottom>A_IDW_FieldEdge</LeftBottom>
+      <BottomLeft>A_IDW_FieldCornerL</BottomLeft>
+      <LeftTop>A_IDW_FieldSideL</LeftTop>
+      <Left>A_IDW_FieldSideL</Left>
+      <LeftBottom>A_IDW_FieldSideL</LeftBottom>
       <OverlapLeft>0</OverlapLeft>
       <OverlapTop>0</OverlapTop>
       <OverlapRight>0</OverlapRight>
@@ -3338,6 +3341,22 @@
     <OverlapRight>0</OverlapRight>
     <OverlapBottom>0</OverlapBottom>
   </FrameTemplate>
+  <!-- Primary action button (e.g. Find Items): gold rim at rest, gold tint on hover / press -->
+  <ButtonDrawTemplate item="BDT_Primary">
+    <Normal>A_BtnFlyby</Normal>
+    <Pressed>A_BtnPressed</Pressed>
+    <Flyby>A_BtnPressedFlyby</Flyby>
+    <Disabled>A_BtnDisabled</Disabled>
+    <PressedFlyby>A_BtnPressed</PressedFlyby>
+  </ButtonDrawTemplate>
+  <!-- Destructive action button: red rim, red tint on hover -->
+  <ButtonDrawTemplate item="BDT_Danger">
+    <Normal>A_DangerBtnNormal</Normal>
+    <Pressed>A_DangerBtnPressed</Pressed>
+    <Flyby>A_DangerBtnFlyby</Flyby>
+    <Disabled>A_DangerBtnDisabled</Disabled>
+    <PressedFlyby>A_DangerBtnPressed</PressedFlyby>
+  </ButtonDrawTemplate>
   <ButtonDrawTemplate item="BDT_Normal">
     <Normal>A_BtnNormal</Normal>
     <Pressed>A_BtnPressed</Pressed>
@@ -3366,6 +3385,31 @@
     <Disabled>A_SquareBtnDisabled</Disabled>
     <PressedFlyby>A_SquareBtnPressedFlyby</PressedFlyby>
   </ButtonDrawTemplate>
+  <!-- Checkboxes sized to match where they are used (no stretching): 10, 12, 16px and 11px transparent -->
+  <ButtonDrawTemplate item="BDT_Checkbox10">
+    <Normal>A_CheckBox10Normal</Normal>
+    <Pressed>A_CheckBox10Pressed</Pressed>
+    <Disabled>A_CheckBox10NormalDisabled</Disabled>
+    <PressedDisabled>A_CheckBox10PressedDisabled</PressedDisabled>
+  </ButtonDrawTemplate>
+  <ButtonDrawTemplate item="BDT_Checkbox12">
+    <Normal>A_CheckBox12Normal</Normal>
+    <Pressed>A_CheckBox12Pressed</Pressed>
+    <Disabled>A_CheckBox12NormalDisabled</Disabled>
+    <PressedDisabled>A_CheckBox12PressedDisabled</PressedDisabled>
+  </ButtonDrawTemplate>
+  <ButtonDrawTemplate item="BDT_Checkbox16">
+    <Normal>A_ACHM_CheckOff</Normal>
+    <Pressed>A_ACHM_CheckOn</Pressed>
+    <Disabled>A_ACHM_CheckOffDisabled</Disabled>
+    <PressedDisabled>A_ACHM_CheckOnDisabled</PressedDisabled>
+  </ButtonDrawTemplate>
+  <ButtonDrawTemplate item="BDT_CheckboxTransparent11">
+    <Normal>A_TransparentCheckBox11Normal</Normal>
+    <Pressed>A_TransparentCheckBox11Pressed</Pressed>
+    <Disabled>A_TransparentCheckBox11Normal</Disabled>
+    <PressedDisabled>A_TransparentCheckBox11Pressed</PressedDisabled>
+  </ButtonDrawTemplate>
   <ButtonDrawTemplate item="BDT_Checkbox">
     <Normal>A_CheckBoxNormal</Normal>
     <Pressed>A_CheckBoxPressed</Pressed>
@@ -3378,10 +3422,10 @@
     <PressedDisabled>A_TransparentCheckBoxPressed</PressedDisabled>
   </ButtonDrawTemplate>
   <ButtonDrawTemplate item="BDT_CheckboxWithText">
-    <NormalDecal>A_CheckBoxNormal</NormalDecal>
-    <PressedDecal>A_CheckBoxPressed</PressedDecal>
-    <DisabledDecal>A_CheckBoxNormalDisabled</DisabledDecal>
-    <PressedDisabledDecal>A_CheckBoxPressedDisabled</PressedDisabledDecal>
+    <NormalDecal>A_ACHM_CheckOff</NormalDecal>
+    <PressedDecal>A_ACHM_CheckOn</PressedDecal>
+    <DisabledDecal>A_ACHM_CheckOffDisabled</DisabledDecal>
+    <PressedDisabledDecal>A_ACHM_CheckOnDisabled</PressedDisabledDecal>
   </ButtonDrawTemplate>
   <ButtonDrawTemplate item="BDT_Radio">
     <Normal>A_RadioBtnNormal</Normal>
@@ -3540,7 +3584,7 @@
     <NormalDecal>A_DragItem</NormalDecal>
   </ButtonDrawTemplate>
   <!-- Spell book tile. The game picks BDT_BlueBuff (beneficial) / BDT_RedBuff (detrimental) by name,
-       so these keep that colour coding (icon rim + dot); hover outlines the row in gold. Art: sbw_list.png -->
+       so these keep that colour coding (icon rim + dot); hover outlines the row in gold. Art: wnd_pieces.dds -->
   <ButtonDrawTemplate item="BDT_BlueBuff">
     <Normal>A_SBW_TileBlueNormal</Normal>
     <Flyby>A_SBW_TileBlueFlyby</Flyby>
@@ -3549,7 +3593,7 @@
     <NormalDecal>A_DragItem</NormalDecal>
   </ButtonDrawTemplate>
   <!-- Spell book tile. The game picks BDT_BlueBuff (beneficial) / BDT_RedBuff (detrimental) by name,
-       so these keep that colour coding (icon rim + dot); hover outlines the row in gold. Art: sbw_list.png -->
+       so these keep that colour coding (icon rim + dot); hover outlines the row in gold. Art: wnd_pieces.dds -->
   <ButtonDrawTemplate item="BDT_RedBuff">
     <Normal>A_SBW_TileRedNormal</Normal>
     <Flyby>A_SBW_TileRedFlyby</Flyby>
@@ -3561,9 +3605,6 @@
     <Normal>A_BuffTileNeutral</Normal>
     <NormalDecal>A_DragItem</NormalDecal>
   </ButtonDrawTemplate>
-  <ButtonDrawTemplate item="BDT_BuffSlotEmpty">
-    <Normal>A_BuffSlotEmpty</Normal>
-  </ButtonDrawTemplate>
   <!-- Slate Glass buff window: slate card per buff (gold edge on hover), faint outline for empty slots -->
   <ButtonDrawTemplate item="BDT_ModernBuff">
     <Normal>A_BUFF_Active</Normal>
@@ -3571,9 +3612,6 @@
     <Pressed>A_BUFF_ActiveHover</Pressed>
     <PressedFlyby>A_BUFF_ActiveHover</PressedFlyby>
     <NormalDecal>A_DragItem</NormalDecal>
-  </ButtonDrawTemplate>
-  <ButtonDrawTemplate item="BDT_ModernBuffSlot">
-    <Normal>A_BUFF_Empty</Normal>
   </ButtonDrawTemplate>
   <!-- Slate Glass spellbook button (spell bar): steel book outline, gold on hover and while the book is open -->
   <ButtonDrawTemplate item="BDT_CSPW_Book">
@@ -3668,7 +3706,7 @@
     <OverlapRight>1</OverlapRight>
     <OverlapBottom>0</OverlapBottom>
   </FrameTemplate>
-  <!-- Slate Glass chat window (chat_pieces.png):
+  <!-- Slate Glass chat window (hud_pieces.dds):
        WDT_ChatGlass  - chat text area: no visible frame (the container's glow frame is the only one),
                         4px clear padding, slim scrollbar with gold-on-hover chevrons
        WDT_ChatField  - chat input: dark glass fill, fine steel outline, 4px padding
@@ -3944,7 +3982,7 @@
     <OverlapRight>0</OverlapRight>
     <OverlapBottom>0</OverlapBottom>
   </FrameTemplate>
-  <!-- Shared modern theme (slate frame, panels, flat buttons). Textures: achm_pieces.png, achm_bg.png, achm_panel.png -->
+  <!-- Shared modern theme (slate frame, panels, flat buttons). Textures: wnd_pieces.dds, achm_bg.png, achm_panel.png -->
   <WindowDrawTemplate item="WDT_AchModern">
     <Background>achm_bg.png</Background>
     <VSBTemplate>

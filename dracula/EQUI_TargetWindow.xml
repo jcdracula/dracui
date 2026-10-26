@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
   <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
-  <TextureInfo item="TargetBox.png">
-    <Size>
-      <CX>128</CX>
-      <CY>32</CY>
-    </Size>
-  </TextureInfo>
   <Ui2DAnimation item="A_TargetBoxTop">
     <Cycle>false</Cycle>
     <Frames>
-      <Texture>TargetBox.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>2</X>
-        <Y>0</Y>
+        <X>76</X>
+        <Y>123</Y>
       </Location>
       <Size>
         <CX>124</CX>
@@ -24,10 +18,10 @@
   <Ui2DAnimation item="A_TargetBoxBottom">
     <Cycle>false</Cycle>
     <Frames>
-      <Texture>TargetBox.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>2</X>
-        <Y>30</Y>
+        <X>204</X>
+        <Y>123</Y>
       </Location>
       <Size>
         <CX>124</CX>
@@ -38,10 +32,10 @@
   <Ui2DAnimation item="A_TargetBoxLeft">
     <Cycle>false</Cycle>
     <Frames>
-      <Texture>TargetBox.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>0</Y>
+        <X>206</X>
+        <Y>48</Y>
       </Location>
       <Size>
         <CX>2</CX>
@@ -52,10 +46,10 @@
   <Ui2DAnimation item="A_TargetBoxRight">
     <Cycle>false</Cycle>
     <Frames>
-      <Texture>TargetBox.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>126</X>
-        <Y>0</Y>
+        <X>212</X>
+        <Y>48</Y>
       </Location>
       <Size>
         <CX>2</CX>
@@ -66,10 +60,10 @@
   <Ui2DAnimation item="A_TargetBoxFill">
     <Cycle>false</Cycle>
     <Frames>
-      <Texture>TargetBox.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>2</X>
-        <Y>2</Y>
+        <X>218</X>
+        <Y>48</Y>
       </Location>
       <Size>
         <CX>124</CX>

@@ -9,15 +9,15 @@
        number and icon; health % right-aligned inside the health bar. The aggro label spans the
        whole slot content (111x32) because the game draws the current-target box around it. -->
   <!-- Bars use the theme's gauge art (A_ACHM_Gauge*), as on the target, group and player windows.
-       Role icons / slot boxes come from TargetRole.png (restyled in place; same 16px grid). -->
+       Role icons / slot boxes come from TargetRole.dds (restyled in place; same 16px grid). -->
   <!-- 4-row mana / endurance fill: 3 opaque rows + 1 transparent row, so the gauge background shows as a bottom edge -->
   <Ui2DAnimation item="A_ETWThinFill">
     <Cycle>false</Cycle>
     <Frames>
-      <Texture>gauges.png</Texture>
+      <Texture>hud_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>18</Y>
+        <X>842</X>
+        <Y>109</Y>
       </Location>
       <Size>
         <CX>100</CX>

@@ -87,7 +87,7 @@
 		<Style_Checkbox>true</Style_Checkbox>
 		<Style_Transparent>true</Style_Transparent>
 		<Text />
-		<Template>BDT_CheckboxTransparent</Template>
+		<Template>BDT_CheckboxTransparent11</Template>
 	</Button>
 
 	<Label item="ACH_AchievementSub_Label">
@@ -151,7 +151,7 @@
 		<Style_Transparent>true</Style_Transparent>
 		<TooltipReference>Compared player's progress</TooltipReference>
 		<Text />
-		<Template>BDT_CheckboxTransparent</Template>
+		<Template>BDT_CheckboxTransparent11</Template>
 	</Button>
 	
 	<Button item ="ACH_AchievementViewRewardButton">
@@ -237,7 +237,7 @@
 		<TooltipReference>Show achievements you are working on</TooltipReference>
 		<Style_Transparent>false</Style_Transparent>
 		<Style_Checkbox>true</Style_Checkbox>
-		<Template>BDT_Checkbox</Template>
+		<Template>BDT_Checkbox10</Template>
 	</Button>
 
 	<Label item="ACH_OpenButtonLabel">
@@ -274,7 +274,7 @@
 		<TooltipReference>Show achievements you have finished</TooltipReference>
 		<Style_Transparent>false</Style_Transparent>
 		<Style_Checkbox>true</Style_Checkbox>
-		<Template>BDT_Checkbox</Template>
+		<Template>BDT_Checkbox10</Template>
 	</Button>
 
 	<Label item="ACH_CompleteButtonLabel">
@@ -311,7 +311,7 @@
 		<TooltipReference>Show achievements you have not unlocked yet</TooltipReference>
 		<Style_Transparent>false</Style_Transparent>
 		<Style_Checkbox>true</Style_Checkbox>
-		<Template>BDT_Checkbox</Template>
+		<Template>BDT_Checkbox10</Template>
 	</Button>
 
 	<Label item="ACH_LockedButtonLabel">

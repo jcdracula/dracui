@@ -4,10 +4,10 @@
 	<Ui2DAnimation item="PetBlueIconBackground">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>208</X>
-				<Y>200</Y>
+				<X>234</X>
+				<Y>109</Y>
 			</Location>
 			<Size>
 				<CX>8</CX>
@@ -23,10 +23,10 @@
 	<Ui2DAnimation item="PetRedIconBackground">
 		<Cycle>true</Cycle>
 		<Frames>
-			<Texture>window_pieces06.tga</Texture>
+			<Texture>hud_pieces.dds</Texture>
 			<Location>
-				<X>200</X>
-				<Y>200</Y>
+				<X>246</X>
+				<Y>109</Y>
 			</Location>
 			<Size>
 				<CX>8</CX>

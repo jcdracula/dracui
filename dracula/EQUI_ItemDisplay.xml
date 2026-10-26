@@ -8,20 +8,20 @@
        - item icon in a slate well with a steel rim, drawn as its own piece behind the icon
          (the game doesn't draw the icon button's own background art)
        - socket slots are small rounded wells with a "+" while empty
-       - "Modified" uses the theme's gold checkbox; compare list uses a compact slate field with a 1px outline (the game sizes it ~15px tall,
+       - "Modified" uses the theme's gold checkbox; compare list uses a compact slate field with a 1px outline (the game sizes it ~15px tall, so it uses font 2 to keep descenders inside;
          so a thicker border clips the item name) and a slim chevron button
        - item effects / description sit in an inset slate panel with the slim scrollbar
        - tabs: soft gold for the active tab, muted steel for the other
        The game decides each row's height and order, so rows stay where the game puts them.
-       Art: idw_pieces.png; templates WDT_ItemPanel, WDT_ChatField, BDT_ModernCheckbox
+       Art: wnd_pieces.dds; templates WDT_ItemPanel, WDT_ChatField, BDT_ModernCheckbox
        ============================================================ -->
   <Ui2DAnimation item="A_IDW_IconWell">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>idw_pieces.png</Texture>
+      <Texture>wnd_pieces.dds</Texture>
       <Location>
-        <X>0</X>
-        <Y>0</Y>
+        <X>547</X>
+        <Y>262</Y>
       </Location>
       <Size>
         <CX>44</CX>
@@ -37,10 +37,10 @@
   <Ui2DAnimation item="A_IDW_SocketWell">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>idw_pieces.png</Texture>
+      <Texture>wnd_pieces.dds</Texture>
       <Location>
-        <X>48</X>
-        <Y>0</Y>
+        <X>178</X>
+        <Y>370</Y>
       </Location>
       <Size>
         <CX>40</CX>
@@ -56,10 +56,10 @@
   <Ui2DAnimation item="A_IDW_SocketWellSmall">
     <Cycle>true</Cycle>
     <Frames>
-      <Texture>idw_pieces.png</Texture>
+      <Texture>wnd_pieces.dds</Texture>
       <Location>
-        <X>92</X>
-        <Y>0</Y>
+        <X>80</X>
+        <Y>664</Y>
       </Location>
       <Size>
         <CX>20</CX>
@@ -103,6 +103,89 @@
 	<NoWrap>true</NoWrap>
   </Label>
   
+  <!-- the game draws the Modified checkbox in a 15 x 15 area, so it gets its own 15px art -->
+  <Ui2DAnimation item="A_IDW_Check15Off">
+    <Cycle>true</Cycle>
+    <Frames>
+      <Texture>wnd_pieces.dds</Texture>
+      <Location>
+        <X>639</X>
+        <Y>735</Y>
+      </Location>
+      <Size>
+        <CX>15</CX>
+        <CY>15</CY>
+      </Size>
+      <Hotspot>
+        <X>0</X>
+        <Y>0</Y>
+      </Hotspot>
+      <Duration>1000</Duration>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="A_IDW_Check15On">
+    <Cycle>true</Cycle>
+    <Frames>
+      <Texture>wnd_pieces.dds</Texture>
+      <Location>
+        <X>658</X>
+        <Y>735</Y>
+      </Location>
+      <Size>
+        <CX>15</CX>
+        <CY>15</CY>
+      </Size>
+      <Hotspot>
+        <X>0</X>
+        <Y>0</Y>
+      </Hotspot>
+      <Duration>1000</Duration>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="A_IDW_Check15OffDisabled">
+    <Cycle>true</Cycle>
+    <Frames>
+      <Texture>wnd_pieces.dds</Texture>
+      <Location>
+        <X>677</X>
+        <Y>735</Y>
+      </Location>
+      <Size>
+        <CX>15</CX>
+        <CY>15</CY>
+      </Size>
+      <Hotspot>
+        <X>0</X>
+        <Y>0</Y>
+      </Hotspot>
+      <Duration>1000</Duration>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="A_IDW_Check15OnDisabled">
+    <Cycle>true</Cycle>
+    <Frames>
+      <Texture>wnd_pieces.dds</Texture>
+      <Location>
+        <X>696</X>
+        <Y>735</Y>
+      </Location>
+      <Size>
+        <CX>15</CX>
+        <CY>15</CY>
+      </Size>
+      <Hotspot>
+        <X>0</X>
+        <Y>0</Y>
+      </Hotspot>
+      <Duration>1000</Duration>
+    </Frames>
+  </Ui2DAnimation>
+  <ButtonDrawTemplate item="BDT_IDW_Check15">
+    <NormalDecal>A_IDW_Check15Off</NormalDecal>
+    <PressedDecal>A_IDW_Check15On</PressedDecal>
+    <DisabledDecal>A_IDW_Check15OffDisabled</DisabledDecal>
+    <PressedDisabledDecal>A_IDW_Check15OnDisabled</PressedDisabledDecal>
+  </ButtonDrawTemplate>
   <Button item="IDW_ModButton">
 		<ScreenID>IDW_ModButton</ScreenID>
 		<!--<Font>3</Font>-->
@@ -112,19 +195,19 @@
 			<Y>135</Y>
 		</Location>
 		<Size>
-			<CX>16</CX>
-			<CY>16</CY>
+			<CX>15</CX>
+			<CY>15</CY>
 		</Size>
 		<Text></Text>
 		<Style_Checkbox>true</Style_Checkbox>
-		<Template>BDT_ModernCheckbox</Template>
+		<Template>BDT_IDW_Check15</Template>
 		<DecalOffset>
 			<X>0</X>
 			<Y>0</Y>
 		</DecalOffset>
 		<DecalSize>
-			<CX>16</CX>
-			<CY>16</CY>
+			<CX>15</CX>
+			<CY>15</CY>
 		</DecalSize>
 		<!--<SoundPressed/>-->
 		<!--<SoundUp/>-->
@@ -133,6 +216,7 @@
   
 	<Combobox item="IDW_ItemCompareList">
 		<ScreenID>IDW_ItemCompareList</ScreenID>
+		<Font>2</Font>
 		<DrawTemplate>WDT_ComboField</DrawTemplate>
 		<AutoStretchList>true</AutoStretchList>
 		<TooltipReference>Compare stats with equipped items</TooltipReference>

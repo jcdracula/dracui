@@ -2504,8 +2504,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>HP</Text>
 		<NoWrap>true</NoWrap>
@@ -2517,12 +2517,12 @@
 		<EQType>17</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>58</X>
+			<X>78</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>55</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -2533,12 +2533,12 @@
 	<Label item="IWS_HPDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>115</X>
+			<X>135</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -2549,12 +2549,12 @@
 		<EQType>18</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>120</X>
+			<X>140</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>55</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -2565,8 +2565,8 @@
 	<Screen item="IWS_HPScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_HP</Pieces>
 		<Pieces>IWS_CurrentHP</Pieces>
@@ -2580,8 +2580,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Mana</Text>
 		<NoWrap>true</NoWrap>
@@ -2593,12 +2593,12 @@
 		<EQType>124</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>58</X>
+			<X>78</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>55</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -2609,12 +2609,12 @@
 	<Label item="IWS_ManaDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>115</X>
+			<X>135</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -2625,12 +2625,12 @@
 		<EQType>125</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>120</X>
+			<X>140</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>55</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -2641,8 +2641,8 @@
 	<Screen item="IWS_ManaScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Mana</Pieces>
 		<Pieces>IWS_CurrentMana</Pieces>
@@ -2656,8 +2656,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Endurance</Text>
 		<NoWrap>true</NoWrap>
@@ -2669,12 +2669,12 @@
 		<EQType>126</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>58</X>
+			<X>78</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>55</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -2685,12 +2685,12 @@
 	<Label item="IWS_EnduranceDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>115</X>
+			<X>135</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -2701,12 +2701,12 @@
 		<EQType>127</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>120</X>
+			<X>140</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>55</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -2717,8 +2717,8 @@
 	<Screen item="IWS_EnduranceScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Endurance</Pieces>
 		<Pieces>IWS_CurrentEndurance</Pieces>
@@ -2732,8 +2732,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Armor Class</Text>
 		<NoWrap>true</NoWrap>
@@ -2745,12 +2745,12 @@
 		<EQType>22</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>58</X>
+			<X>78</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>55</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -2762,12 +2762,12 @@
 	<Label item="IWS_ACDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>115</X>
+			<X>135</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -2778,12 +2778,12 @@
 		<EQType>403</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>120</X>
+			<X>140</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>55</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -2795,8 +2795,8 @@
 	<Screen item="IWS_ArmorClassScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_ArmorClass</Pieces>
 		<Pieces>IWS_CurrentMitigation</Pieces>
@@ -2810,8 +2810,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Attack</Text>
 		<NoWrap>true</NoWrap>
@@ -2823,12 +2823,12 @@
 		<EQType>23</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>58</X>
+			<X>78</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>55</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -2840,12 +2840,12 @@
 	<Label item="IWS_ATKDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>115</X>
+			<X>135</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -2856,12 +2856,12 @@
 		<EQType>402</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>120</X>
+			<X>140</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>55</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -2873,8 +2873,8 @@
 	<Screen item="IWS_AttackScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Attack</Pieces>
 		<Pieces>IWS_CurrentOffense</Pieces>
@@ -2888,8 +2888,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Haste</Text>
 		<NoWrap>true</NoWrap>
@@ -2901,12 +2901,12 @@
 		<EQType>211</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>80</X>
+			<X>100</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>65</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -2917,12 +2917,12 @@
 	<Label item="IWS_HastePercent">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>145</X>
+			<X>165</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>15</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>%</Text>
 		<NoWrap>true</NoWrap>
@@ -2932,8 +2932,8 @@
 	<Screen item="IWS_HasteScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Haste</Pieces>
 		<Pieces>IWS_CurrentHaste</Pieces>
@@ -2946,8 +2946,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Velocity</Text>
 		<NoWrap>true</NoWrap>
@@ -2959,12 +2959,12 @@
 		<EQType>401</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>80</X>
+			<X>100</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>65</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -2975,8 +2975,8 @@
 	<Screen item="IWS_VelocityScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Velocity</Pieces>
 		<Pieces>IWS_CurrentVelocity</Pieces>
@@ -2984,8 +2984,8 @@
 	<Screen item="IWS_RegenSpacerScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>8</CY>
+			<CX>195</CX>
+			<CY>4</CY>
 		</Size>
 	</Screen>
 	<Label item="IWS_RegenLabel">
@@ -2995,8 +2995,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Regen</Text>
 		<TextColor>
@@ -3011,8 +3011,8 @@
 	<Screen item="IWS_RegenLabelScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_RegenLabel</Pieces>
 	</Screen>
@@ -3023,8 +3023,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Combat HP Regen</Text>
 		<NoWrap>true</NoWrap>
@@ -3036,12 +3036,12 @@
 		<EQType>212</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>85</X>
+			<X>105</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>75</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3052,8 +3052,8 @@
 	<Screen item="IWS_CombatHPRegenScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_CombatHPRegen</Pieces>
 		<Pieces>IWS_CurrentCombatHPRegen</Pieces>
@@ -3065,8 +3065,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Combat Mana Regen</Text>
 		<NoWrap>true</NoWrap>
@@ -3078,12 +3078,12 @@
 		<EQType>213</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>85</X>
+			<X>105</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>75</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3094,8 +3094,8 @@
 	<Screen item="IWS_CombatManaRegenScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_CombatManaRegen</Pieces>
 		<Pieces>IWS_CurrentCombatManaRegen</Pieces>
@@ -3107,8 +3107,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Combat End Regen</Text>
 		<NoWrap>true</NoWrap>
@@ -3120,12 +3120,12 @@
 		<EQType>214</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>85</X>
+			<X>105</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>75</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3136,8 +3136,8 @@
 	<Screen item="IWS_CombatEndRegenScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_CombatEndRegen</Pieces>
 		<Pieces>IWS_CurrentCombatEndRegen</Pieces>
@@ -3145,8 +3145,8 @@
 	<Screen item="IWS_StatsSpacerScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>8</CY>
+			<CX>195</CX>
+			<CY>4</CY>
 		</Size>
 	</Screen>
 	<Label item="IWS_StatsLabel">
@@ -3156,8 +3156,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Stats</Text>
 		<TextColor>
@@ -3172,8 +3172,8 @@
 	<Screen item="IWS_StatsLabelScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_StatsLabel</Pieces>
 	</Screen>
@@ -3184,8 +3184,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Strength</Text>
 		<NoWrap>true</NoWrap>
@@ -3197,12 +3197,12 @@
 		<EQType>238</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>67</X>
+			<X>87</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3213,12 +3213,12 @@
 	<Label item="IWS_StrengthDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>103</X>
+			<X>123</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -3229,12 +3229,12 @@
 		<EQType>264</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>108</X>
+			<X>128</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3245,12 +3245,12 @@
 	<Label item="IWS_StrengthPlus">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>135</X>
+			<X>155</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>10</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>+</Text>
 		<TextColor>
@@ -3267,12 +3267,12 @@
 		<EQType>251</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>142</X>
+			<X>162</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>30</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<TextColor>
@@ -3288,8 +3288,8 @@
 	<Screen item="IWS_StrengthScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Strength</Pieces>
 		<Pieces>IWS_CurrentStrength</Pieces>
@@ -3305,8 +3305,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Stamina</Text>
 		<NoWrap>true</NoWrap>
@@ -3318,12 +3318,12 @@
 		<EQType>239</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>67</X>
+			<X>87</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3334,12 +3334,12 @@
 	<Label item="IWS_StaminaDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>103</X>
+			<X>123</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -3350,12 +3350,12 @@
 		<EQType>265</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>108</X>
+			<X>128</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3366,12 +3366,12 @@
 	<Label item="IWS_StaminaPlus">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>135</X>
+			<X>155</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>10</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>+</Text>
 		<TextColor>
@@ -3388,12 +3388,12 @@
 		<EQType>252</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>142</X>
+			<X>162</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>30</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<TextColor>
@@ -3409,8 +3409,8 @@
 	<Screen item="IWS_StaminaScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Stamina</Pieces>
 		<Pieces>IWS_CurrentStamina</Pieces>
@@ -3426,8 +3426,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Intelligence</Text>
 		<NoWrap>true</NoWrap>
@@ -3439,12 +3439,12 @@
 		<EQType>243</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>67</X>
+			<X>87</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3455,12 +3455,12 @@
 	<Label item="IWS_IntelligenceDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>103</X>
+			<X>123</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -3471,12 +3471,12 @@
 		<EQType>269</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>108</X>
+			<X>128</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3487,12 +3487,12 @@
 	<Label item="IWS_IntelligencePlus">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>135</X>
+			<X>155</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>10</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>+</Text>
 		<TextColor>
@@ -3509,12 +3509,12 @@
 		<EQType>256</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>142</X>
+			<X>162</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>30</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<TextColor>
@@ -3530,8 +3530,8 @@
 	<Screen item="IWS_IntelligenceScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Intelligence</Pieces>
 		<Pieces>IWS_CurrentIntelligence</Pieces>
@@ -3547,8 +3547,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Wisdom</Text>
 		<NoWrap>true</NoWrap>
@@ -3560,12 +3560,12 @@
 		<EQType>242</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>67</X>
+			<X>87</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3576,12 +3576,12 @@
 	<Label item="IWS_WisdomDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>103</X>
+			<X>123</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -3592,12 +3592,12 @@
 		<EQType>268</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>108</X>
+			<X>128</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3608,12 +3608,12 @@
 	<Label item="IWS_WisdomPlus">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>135</X>
+			<X>155</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>10</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>+</Text>
 		<TextColor>
@@ -3630,12 +3630,12 @@
 		<EQType>255</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>142</X>
+			<X>162</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>30</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<TextColor>
@@ -3651,8 +3651,8 @@
 	<Screen item="IWS_WisdomScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Wisdom</Pieces>
 		<Pieces>IWS_CurrentWisdom</Pieces>
@@ -3668,8 +3668,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Agility</Text>
 		<NoWrap>true</NoWrap>
@@ -3681,12 +3681,12 @@
 		<EQType>241</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>67</X>
+			<X>87</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3697,12 +3697,12 @@
 	<Label item="IWS_AgilityDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>103</X>
+			<X>123</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -3713,12 +3713,12 @@
 		<EQType>267</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>108</X>
+			<X>128</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3729,12 +3729,12 @@
 	<Label item="IWS_AgilityPlus">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>135</X>
+			<X>155</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>10</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>+</Text>
 		<TextColor>
@@ -3751,12 +3751,12 @@
 		<EQType>254</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>142</X>
+			<X>162</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>30</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<TextColor>
@@ -3772,8 +3772,8 @@
 	<Screen item="IWS_AgilityScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Agility</Pieces>
 		<Pieces>IWS_CurrentAgility</Pieces>
@@ -3789,8 +3789,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Dexterity</Text>
 		<NoWrap>true</NoWrap>
@@ -3802,12 +3802,12 @@
 		<EQType>240</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>67</X>
+			<X>87</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3818,12 +3818,12 @@
 	<Label item="IWS_DexterityDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>103</X>
+			<X>123</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -3834,12 +3834,12 @@
 		<EQType>266</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>108</X>
+			<X>128</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3850,12 +3850,12 @@
 	<Label item="IWS_DexterityPlus">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>135</X>
+			<X>155</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>10</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>+</Text>
 		<TextColor>
@@ -3872,12 +3872,12 @@
 		<EQType>253</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>142</X>
+			<X>162</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>30</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<TextColor>
@@ -3893,8 +3893,8 @@
 	<Screen item="IWS_DexterityScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Dexterity</Pieces>
 		<Pieces>IWS_CurrentDexterity</Pieces>
@@ -3910,8 +3910,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Charisma</Text>
 		<NoWrap>true</NoWrap>
@@ -3923,12 +3923,12 @@
 		<EQType>244</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>67</X>
+			<X>87</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3939,12 +3939,12 @@
 	<Label item="IWS_CharismaDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>103</X>
+			<X>123</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -3955,12 +3955,12 @@
 		<EQType>270</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>108</X>
+			<X>128</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -3971,12 +3971,12 @@
 	<Label item="IWS_CharismaPlus">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>135</X>
+			<X>155</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>10</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>+</Text>
 		<TextColor>
@@ -3993,12 +3993,12 @@
 		<EQType>257</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>142</X>
+			<X>162</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>30</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<TextColor>
@@ -4014,8 +4014,8 @@
 	<Screen item="IWS_CharismaScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Charisma</Pieces>
 		<Pieces>IWS_CurrentCharisma</Pieces>
@@ -4027,8 +4027,8 @@
 	<Screen item="IWS_ResistsSpacerScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>8</CY>
+			<CX>195</CX>
+			<CY>4</CY>
 		</Size>
 	</Screen>
 	<Label item="IWS_ResistsLabel">
@@ -4038,8 +4038,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Resists</Text>
 		<TextColor>
@@ -4054,8 +4054,8 @@
 	<Screen item="IWS_ResistsLabelScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_ResistsLabel</Pieces>
 	</Screen>
@@ -4066,8 +4066,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Magic</Text>
 		<NoWrap>true</NoWrap>
@@ -4079,12 +4079,12 @@
 		<EQType>249</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>96</X>
+			<X>116</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4095,12 +4095,12 @@
 	<Label item="IWS_MagicDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>132</X>
+			<X>152</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -4111,12 +4111,12 @@
 		<EQType>275</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>137</X>
+			<X>157</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4127,8 +4127,8 @@
 	<Screen item="IWS_MagicScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Magic</Pieces>
 		<Pieces>IWS_CurrentMagic</Pieces>
@@ -4142,8 +4142,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Fire</Text>
 		<NoWrap>true</NoWrap>
@@ -4155,12 +4155,12 @@
 		<EQType>247</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>96</X>
+			<X>116</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4171,12 +4171,12 @@
 	<Label item="IWS_FireDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>132</X>
+			<X>152</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -4187,12 +4187,12 @@
 		<EQType>273</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>137</X>
+			<X>157</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4203,8 +4203,8 @@
 	<Screen item="IWS_FireScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Fire</Pieces>
 		<Pieces>IWS_CurrentFire</Pieces>
@@ -4218,8 +4218,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Cold</Text>
 		<NoWrap>true</NoWrap>
@@ -4231,12 +4231,12 @@
 		<EQType>248</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>96</X>
+			<X>116</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4247,12 +4247,12 @@
 	<Label item="IWS_ColdDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>132</X>
+			<X>152</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -4263,12 +4263,12 @@
 		<EQType>274</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>137</X>
+			<X>157</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4279,8 +4279,8 @@
 	<Screen item="IWS_ColdScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Cold</Pieces>
 		<Pieces>IWS_CurrentCold</Pieces>
@@ -4294,8 +4294,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Disease</Text>
 		<NoWrap>true</NoWrap>
@@ -4307,12 +4307,12 @@
 		<EQType>246</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>96</X>
+			<X>116</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4323,12 +4323,12 @@
 	<Label item="IWS_DiseaseDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>132</X>
+			<X>152</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -4339,12 +4339,12 @@
 		<EQType>272</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>137</X>
+			<X>157</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4355,8 +4355,8 @@
 	<Screen item="IWS_DiseaseScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Disease</Pieces>
 		<Pieces>IWS_CurrentDisease</Pieces>
@@ -4370,8 +4370,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Poison</Text>
 		<NoWrap>true</NoWrap>
@@ -4383,12 +4383,12 @@
 		<EQType>245</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>96</X>
+			<X>116</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4399,12 +4399,12 @@
 	<Label item="IWS_PoisonDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>132</X>
+			<X>152</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -4415,12 +4415,12 @@
 		<EQType>271</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>137</X>
+			<X>157</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4431,8 +4431,8 @@
 	<Screen item="IWS_PoisonScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Poison</Pieces>
 		<Pieces>IWS_CurrentPoison</Pieces>
@@ -4446,8 +4446,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Corruption</Text>
 		<NoWrap>true</NoWrap>
@@ -4459,12 +4459,12 @@
 		<EQType>250</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>96</X>
+			<X>116</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4475,12 +4475,12 @@
 	<Label item="IWS_CorruptionDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>132</X>
+			<X>152</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -4491,12 +4491,12 @@
 		<EQType>276</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>137</X>
+			<X>157</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4507,8 +4507,8 @@
 	<Screen item="IWS_CorruptionScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Corruption</Pieces>
 		<Pieces>IWS_CurrentCorruption</Pieces>
@@ -4522,8 +4522,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Heroic Mods</Text>
 		<TextColor>
@@ -4538,8 +4538,8 @@
 	<Screen item="IWS_HeroicModsLabelScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_HeroicModsLabel</Pieces>
 	</Screen>
@@ -4550,8 +4550,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Combat Effects</Text>
 		<NoWrap>true</NoWrap>
@@ -4563,12 +4563,12 @@
 		<EQType>216</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>104</X>
+			<X>124</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4579,12 +4579,12 @@
 	<Label item="IWS_CombatEffectsDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>140</X>
+			<X>160</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -4595,12 +4595,12 @@
 		<EQType>278</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>145</X>
+			<X>165</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4611,8 +4611,8 @@
 	<Screen item="IWS_CombatEffectsScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_CombatEffects</Pieces>
 		<Pieces>IWS_CurrentCombatEffects</Pieces>
@@ -4626,8 +4626,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Spell Shielding</Text>
 		<NoWrap>true</NoWrap>
@@ -4639,12 +4639,12 @@
 		<EQType>215</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>110</X>
+			<X>130</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4655,12 +4655,12 @@
 	<Label item="IWS_SpellShieldDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>146</X>
+			<X>166</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -4671,12 +4671,12 @@
 		<EQType>277</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>152</X>
+			<X>172</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4687,8 +4687,8 @@
 	<Screen item="IWS_SpellShieldScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_SpellShield</Pieces>
 		<Pieces>IWS_CurrentSpellShield</Pieces>
@@ -4702,8 +4702,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Melee Shielding</Text>
 		<NoWrap>true</NoWrap>
@@ -4715,12 +4715,12 @@
 		<EQType>217</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>110</X>
+			<X>130</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4731,12 +4731,12 @@
 	<Label item="IWS_ShieldingDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>146</X>
+			<X>166</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -4747,12 +4747,12 @@
 		<EQType>279</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>152</X>
+			<X>172</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4763,8 +4763,8 @@
 	<Screen item="IWS_ShieldingScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Shielding</Pieces>
 		<Pieces>IWS_CurrentShielding</Pieces>
@@ -4778,8 +4778,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Damage Shielding</Text>
 		<NoWrap>true</NoWrap>
@@ -4791,12 +4791,12 @@
 		<EQType>218</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>110</X>
+			<X>130</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4807,12 +4807,12 @@
 	<Label item="IWS_DamageShieldingDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>146</X>
+			<X>166</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -4823,12 +4823,12 @@
 		<EQType>280</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>152</X>
+			<X>172</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4839,8 +4839,8 @@
 	<Screen item="IWS_DamageShieldingScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_DamageShielding</Pieces>
 		<Pieces>IWS_CurrentDamageShielding</Pieces>
@@ -4854,8 +4854,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>DoT Shielding</Text>
 		<NoWrap>true</NoWrap>
@@ -4867,12 +4867,12 @@
 		<EQType>219</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>110</X>
+			<X>130</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4883,12 +4883,12 @@
 	<Label item="IWS_DoTShieldingDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>146</X>
+			<X>166</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -4899,12 +4899,12 @@
 		<EQType>281</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>152</X>
+			<X>172</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4915,8 +4915,8 @@
 	<Screen item="IWS_DoTShieldingScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_DoTShielding</Pieces>
 		<Pieces>IWS_CurrentDoTShielding</Pieces>
@@ -4930,10 +4930,10 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
-		<Text>Damage Shield Mitigation</Text>
+		<Text>DS Mitigation</Text>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
@@ -4943,12 +4943,12 @@
 		<EQType>220</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>110</X>
+			<X>130</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4959,12 +4959,12 @@
 	<Label item="IWS_DamageShieldMitigationDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>146</X>
+			<X>166</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -4975,12 +4975,12 @@
 		<EQType>282</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>152</X>
+			<X>172</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -4991,8 +4991,8 @@
 	<Screen item="IWS_DamageShieldMitigationScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_DamageShieldMitigation</Pieces>
 		<Pieces>IWS_CurrentDamageShieldMitigation</Pieces>
@@ -5006,8 +5006,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Avoidance</Text>
 		<NoWrap>true</NoWrap>
@@ -5019,12 +5019,12 @@
 		<EQType>221</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>104</X>
+			<X>124</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5035,12 +5035,12 @@
 	<Label item="IWS_ItemAvoidanceDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>140</X>
+			<X>160</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -5051,12 +5051,12 @@
 		<EQType>283</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>145</X>
+			<X>165</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5067,8 +5067,8 @@
 	<Screen item="IWS_ItemAvoidanceScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_ItemAvoidance</Pieces>
 		<Pieces>IWS_CurrentItemAvoidance</Pieces>
@@ -5082,8 +5082,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Accuracy</Text>
 		<NoWrap>true</NoWrap>
@@ -5095,12 +5095,12 @@
 		<EQType>222</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>104</X>
+			<X>124</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5111,12 +5111,12 @@
 	<Label item="IWS_ItemAccuracyDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>140</X>
+			<X>160</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -5127,12 +5127,12 @@
 		<EQType>284</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>145</X>
+			<X>165</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5143,8 +5143,8 @@
 	<Screen item="IWS_ItemAccuracyScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_ItemAccuracy</Pieces>
 		<Pieces>IWS_CurrentItemAccuracy</Pieces>
@@ -5158,8 +5158,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Stun Resist</Text>
 		<NoWrap>true</NoWrap>
@@ -5171,12 +5171,12 @@
 		<EQType>223</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>110</X>
+			<X>130</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5187,12 +5187,12 @@
 	<Label item="IWS_StunResistDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>146</X>
+			<X>166</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -5203,12 +5203,12 @@
 		<EQType>285</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>152</X>
+			<X>172</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5219,8 +5219,8 @@
 	<Screen item="IWS_StunResistScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_StunResist</Pieces>
 		<Pieces>IWS_CurrentStunResist</Pieces>
@@ -5234,8 +5234,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Strike Through</Text>
 		<NoWrap>true</NoWrap>
@@ -5247,12 +5247,12 @@
 		<EQType>224</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>110</X>
+			<X>130</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5263,12 +5263,12 @@
 	<Label item="IWS_StrikeThroughDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>146</X>
+			<X>166</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -5279,12 +5279,12 @@
 		<EQType>286</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>152</X>
+			<X>172</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5295,8 +5295,8 @@
 	<Screen item="IWS_StrikeThroughScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_StrikeThrough</Pieces>
 		<Pieces>IWS_CurrentStrikeThrough</Pieces>
@@ -5306,8 +5306,8 @@
 	<Screen item="IWS_ModsSpacerScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>8</CY>
+			<CX>195</CX>
+			<CY>4</CY>
 		</Size>
 	</Screen>
 	<Label item="IWS_ModsLabel">
@@ -5317,8 +5317,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Spell Mods</Text>
 		<TextColor>
@@ -5333,8 +5333,8 @@
 	<Screen item="IWS_ModsLabelScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_ModsLabel</Pieces>
 	</Screen>
@@ -5345,8 +5345,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Heal Amount</Text>
 		<NoWrap>true</NoWrap>
@@ -5358,12 +5358,12 @@
 		<EQType>225</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>91</X>
+			<X>111</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>75</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5374,8 +5374,8 @@
 	<Screen item="IWS_HealAmountScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_HealAmount</Pieces>
 		<Pieces>IWS_CurrentHealAmount</Pieces>
@@ -5387,8 +5387,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Spell Damage</Text>
 		<NoWrap>true</NoWrap>
@@ -5400,12 +5400,12 @@
 		<EQType>226</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>91</X>
+			<X>111</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>75</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5416,8 +5416,8 @@
 	<Screen item="IWS_SpellDamageScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_SpellDamage</Pieces>
 		<Pieces>IWS_CurrentSpellDamage</Pieces>
@@ -5429,8 +5429,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Clairvoyance</Text>
 		<NoWrap>true</NoWrap>
@@ -5442,12 +5442,12 @@
 		<EQType>227</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>91</X>
+			<X>111</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>75</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5458,8 +5458,8 @@
 	<Screen item="IWS_ClairvoyanceScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Clairvoyance</Pieces>
 		<Pieces>IWS_CurrentClairvoyance</Pieces>
@@ -5471,8 +5471,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Luck</Text>
 		<NoWrap>true</NoWrap>
@@ -5484,12 +5484,12 @@
 		<EQType>416</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>91</X>
+			<X>111</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>75</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5500,8 +5500,8 @@
 	<Screen item="IWS_LuckScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Luck</Pieces>
 		<Pieces>IWS_CurrentLuck</Pieces>
@@ -5509,8 +5509,8 @@
 	<Screen item="IWS_SkillDamageModSpacerScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>8</CY>
+			<CX>195</CX>
+			<CY>4</CY>
 		</Size>
 	</Screen>
 	<Label item="IWS_SkillDamageModLabel">
@@ -5520,8 +5520,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Skill Damage Mod</Text>
 		<TextColor>
@@ -5536,8 +5536,8 @@
 	<Screen item="IWS_SkillDamageModLabelScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_SkillDamageModLabel</Pieces>
 	</Screen>
@@ -5548,8 +5548,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Bash</Text>
 		<NoWrap>true</NoWrap>
@@ -5561,12 +5561,12 @@
 		<EQType>228</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>104</X>
+			<X>124</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5577,12 +5577,12 @@
 	<Label item="IWS_BashDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>140</X>
+			<X>160</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -5593,12 +5593,12 @@
 		<EQType>287</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>145</X>
+			<X>165</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5609,8 +5609,8 @@
 	<Screen item="IWS_BashScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Bash</Pieces>
 		<Pieces>IWS_CurrentBash</Pieces>
@@ -5624,8 +5624,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Backstab</Text>
 		<NoWrap>true</NoWrap>
@@ -5637,12 +5637,12 @@
 		<EQType>229</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>104</X>
+			<X>124</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5653,12 +5653,12 @@
 	<Label item="IWS_BackstabDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>140</X>
+			<X>160</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -5669,12 +5669,12 @@
 		<EQType>288</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>145</X>
+			<X>165</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5685,8 +5685,8 @@
 	<Screen item="IWS_BackstabScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Backstab</Pieces>
 		<Pieces>IWS_CurrentBackstab</Pieces>
@@ -5700,8 +5700,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Dragon Punch</Text>
 		<NoWrap>true</NoWrap>
@@ -5713,12 +5713,12 @@
 		<EQType>230</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>104</X>
+			<X>124</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5729,12 +5729,12 @@
 	<Label item="IWS_DragonPunchDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>140</X>
+			<X>160</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -5745,12 +5745,12 @@
 		<EQType>289</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>145</X>
+			<X>165</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5761,8 +5761,8 @@
 	<Screen item="IWS_DragonPunchScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_DragonPunch</Pieces>
 		<Pieces>IWS_CurrentDragonPunch</Pieces>
@@ -5776,8 +5776,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Eagle Strike</Text>
 		<NoWrap>true</NoWrap>
@@ -5789,12 +5789,12 @@
 		<EQType>231</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>104</X>
+			<X>124</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5805,12 +5805,12 @@
 	<Label item="IWS_EagleStrikeDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>140</X>
+			<X>160</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -5821,12 +5821,12 @@
 		<EQType>290</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>145</X>
+			<X>165</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5837,8 +5837,8 @@
 	<Screen item="IWS_EagleStrikeScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_EagleStrike</Pieces>
 		<Pieces>IWS_CurrentEagleStrike</Pieces>
@@ -5852,8 +5852,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Flying Kick</Text>
 		<NoWrap>true</NoWrap>
@@ -5865,12 +5865,12 @@
 		<EQType>232</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>104</X>
+			<X>124</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5881,12 +5881,12 @@
 	<Label item="IWS_FlyingKickDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>140</X>
+			<X>160</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -5897,12 +5897,12 @@
 		<EQType>291</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>145</X>
+			<X>165</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5913,8 +5913,8 @@
 	<Screen item="IWS_FlyingKickScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_FlyingKick</Pieces>
 		<Pieces>IWS_CurrentFlyingKick</Pieces>
@@ -5928,8 +5928,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Kick</Text>
 		<NoWrap>true</NoWrap>
@@ -5941,12 +5941,12 @@
 		<EQType>233</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>104</X>
+			<X>124</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5957,12 +5957,12 @@
 	<Label item="IWS_KickDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>140</X>
+			<X>160</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -5973,12 +5973,12 @@
 		<EQType>292</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>145</X>
+			<X>165</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -5989,8 +5989,8 @@
 	<Screen item="IWS_KickScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Kick</Pieces>
 		<Pieces>IWS_CurrentKick</Pieces>
@@ -6004,8 +6004,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Round Kick</Text>
 		<NoWrap>true</NoWrap>
@@ -6017,12 +6017,12 @@
 		<EQType>234</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>104</X>
+			<X>124</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -6033,12 +6033,12 @@
 	<Label item="IWS_RoundKickDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>140</X>
+			<X>160</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -6049,12 +6049,12 @@
 		<EQType>293</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>145</X>
+			<X>165</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -6065,8 +6065,8 @@
 	<Screen item="IWS_RoundKickScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_RoundKick</Pieces>
 		<Pieces>IWS_CurrentRoundKick</Pieces>
@@ -6080,8 +6080,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Tiger Claw</Text>
 		<NoWrap>true</NoWrap>
@@ -6093,12 +6093,12 @@
 		<EQType>235</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>104</X>
+			<X>124</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -6109,12 +6109,12 @@
 	<Label item="IWS_TigerClawDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>140</X>
+			<X>160</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -6125,12 +6125,12 @@
 		<EQType>294</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>145</X>
+			<X>165</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -6141,8 +6141,8 @@
 	<Screen item="IWS_TigerClawScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_TigerClaw</Pieces>
 		<Pieces>IWS_CurrentTigerClaw</Pieces>
@@ -6156,8 +6156,8 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>120</CX>
-			<CY>14</CY>
+			<CX>140</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>Frenzy</Text>
 		<NoWrap>true</NoWrap>
@@ -6169,12 +6169,12 @@
 		<EQType>236</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>104</X>
+			<X>124</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -6185,12 +6185,12 @@
 	<Label item="IWS_FrenzyDivider">
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>140</X>
+			<X>160</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>5</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>/</Text>
 		<NoWrap>true</NoWrap>
@@ -6201,12 +6201,12 @@
 		<EQType>295</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>145</X>
+			<X>165</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
 			<CX>35</CX>
-			<CY>14</CY>
+			<CY>16</CY>
 		</Size>
 		<Text>0</Text>
 		<NoWrap>true</NoWrap>
@@ -6217,8 +6217,8 @@
 	<Screen item="IWS_FrenzyScreen">
 		<RelativePosition>true</RelativePosition>
 		<Size>
-			<CX>175</CX>
-			<CY>14</CY>
+			<CX>195</CX>
+			<CY>16</CY>
 		</Size>
 		<Pieces>IWS_Frenzy</Pieces>
 		<Pieces>IWS_CurrentFrenzy</Pieces>
@@ -6226,18 +6226,19 @@
 		<Pieces>IWS_MaxFrenzy</Pieces>
 	</Screen>
 
+		<!-- stats page is two explicit columns: IW_Stats (HP .. Corruption) and IW_Stats2 (Heroic Mods .. Tiger Claw) -->
 	<TileLayoutBox item="IW_Stats">
 		<RelativePosition>true</RelativePosition>
 		<AutoStretch>true</AutoStretch>
-		<LeftAnchorOffset>20</LeftAnchorOffset>
-		<RightAnchorOffset>10</RightAnchorOffset>
-		<TopAnchorOffset>10</TopAnchorOffset>
+		<LeftAnchorOffset>12</LeftAnchorOffset>
+		<RightAnchorOffset>221</RightAnchorOffset>
+		<TopAnchorOffset>6</TopAnchorOffset>
 		<BottomAnchorOffset>5</BottomAnchorOffset>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
 		<Style_Transparent>true</Style_Transparent>
-		<Spacing>2</Spacing>
-		<SecondarySpacing>30</SecondarySpacing>
+		<Spacing>0</Spacing>
+		<SecondarySpacing>26</SecondarySpacing>
 		<HorizontalFirst>false</HorizontalFirst>
 		<AnchorToTop>true</AnchorToTop>
 		<AnchorToLeft>true</AnchorToLeft>
@@ -6271,6 +6272,23 @@
 		<Pieces>Screen:IWS_DiseaseScreen</Pieces>
 		<Pieces>Screen:IWS_PoisonScreen</Pieces>
 		<Pieces>Screen:IWS_CorruptionScreen</Pieces>
+	</TileLayoutBox>
+	<TileLayoutBox item="IW_Stats2">
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>233</LeftAnchorOffset>
+		<RightAnchorOffset>6</RightAnchorOffset>
+		<TopAnchorOffset>6</TopAnchorOffset>
+		<BottomAnchorOffset>5</BottomAnchorOffset>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Transparent>true</Style_Transparent>
+		<Spacing>0</Spacing>
+		<SecondarySpacing>26</SecondarySpacing>
+		<HorizontalFirst>false</HorizontalFirst>
+		<AnchorToTop>true</AnchorToTop>
+		<AnchorToLeft>true</AnchorToLeft>
+		<FirstPieceTemplate>false</FirstPieceTemplate>
 		<Pieces>Screen:IWS_HeroicModsLabelScreen</Pieces>
 		<Pieces>Screen:IWS_ItemAccuracyScreen</Pieces>
 		<Pieces>Screen:IWS_ItemAvoidanceScreen</Pieces>
@@ -6322,6 +6340,7 @@
 			<CY>434</CY>
 		</Size>
 		<Pieces>TileLayoutBox:IW_Stats</Pieces>
+		<Pieces>TileLayoutBox:IW_Stats2</Pieces>
 	</Page>
 	<!-- END STATS -->
 
