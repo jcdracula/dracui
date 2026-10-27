@@ -4,66 +4,66 @@
   <WindowDrawTemplate item="WDT_defaultChat_Def">
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -135,66 +135,66 @@
     <Background>wnd_bg_dark_rock.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>0</R>
-        <G>0</G>
-        <B>0</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -254,66 +254,66 @@
     <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -384,66 +384,66 @@
     <BackgroundDrawType>0</BackgroundDrawType>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -513,66 +513,66 @@
     <Background>wnd_bg_dark_rock.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -642,66 +642,66 @@
     <Background>wnd_bg_light_rock.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -772,66 +772,66 @@
     <Background>wnd_bg_trans.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -901,66 +901,66 @@
     <Background>transp_mp.tga</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -1051,66 +1051,66 @@
     <Background>achm_card_open.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -1182,66 +1182,66 @@
     <Background>achm_card_account.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -1313,66 +1313,66 @@
     <Background>achm_card_completed.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -1444,66 +1444,66 @@
     <Background>achm_card_locked.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -1575,66 +1575,66 @@
     <Background>transp_mp.tga</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -1704,66 +1704,66 @@
     <Background>wnd_bg_dark_rock.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -1836,66 +1836,66 @@
     <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -1965,66 +1965,66 @@
     <Background>wnd_bg_dark_rock.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -2095,66 +2095,66 @@
     <Background>wnd_bg_menu.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -2225,66 +2225,66 @@
     <Background>wnd_bg_buff.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -2355,66 +2355,66 @@
     <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -2485,66 +2485,66 @@
     <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -2615,66 +2615,66 @@
     <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -2746,66 +2746,66 @@
     <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -2876,66 +2876,66 @@
     <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -3020,66 +3020,66 @@
     <Background>chat_field.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <Border>
@@ -3747,34 +3747,34 @@
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <Border>
@@ -3833,34 +3833,34 @@
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <Border>
@@ -3886,66 +3886,66 @@
     <Background>chat_field.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <Border>
@@ -3987,66 +3987,66 @@
     <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -4116,66 +4116,66 @@
     <Background>achm_panel.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>
@@ -4245,66 +4245,66 @@
     <Background>achm_bg.png</Background>
     <VSBTemplate>
       <UpButton>
-        <Normal>A_VSBUpNormal</Normal>
-        <Pressed>A_VSBUpPressed</Pressed>
-        <Flyby>A_VSBUpFlyby</Flyby>
-        <Disabled>A_VSBUpDisabled</Disabled>
-        <PressedFlyby>A_VSBUpPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBUpNormal</Normal>
+        <Pressed>A_CHAT_VSBUpPressed</Pressed>
+        <Flyby>A_CHAT_VSBUpFlyby</Flyby>
+        <Disabled>A_CHAT_VSBUpDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBUpPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_VSBDownNormal</Normal>
-        <Pressed>A_VSBDownPressed</Pressed>
-        <Flyby>A_VSBDownFlyby</Flyby>
-        <Disabled>A_VSBDownDisabled</Disabled>
-        <PressedFlyby>A_VSBDownPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_VSBDownNormal</Normal>
+        <Pressed>A_CHAT_VSBDownPressed</Pressed>
+        <Flyby>A_CHAT_VSBDownFlyby</Flyby>
+        <Disabled>A_CHAT_VSBDownDisabled</Disabled>
+        <PressedFlyby>A_CHAT_VSBDownPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Top>A_VSBThumbTop</Top>
-        <Bottom>A_VSBThumbBottom</Bottom>
-        <Middle>A_VSBThumbMiddle</Middle>
+        <Top>A_CHAT_ThumbTop</Top>
+        <Bottom>A_CHAT_ThumbBottom</Bottom>
+        <Middle>A_CHAT_ThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_gutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_gutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </VSBTemplate>
     <HSBTemplate>
       <UpButton>
-        <Normal>A_HSBLeftNormal</Normal>
-        <Pressed>A_HSBLeftPressed</Pressed>
-        <Flyby>A_HSBLeftFlyby</Flyby>
-        <Disabled>A_HSBLeftDisabled</Disabled>
-        <PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBLeftNormal</Normal>
+        <Pressed>A_CHAT_HSBLeftPressed</Pressed>
+        <Flyby>A_CHAT_HSBLeftFlyby</Flyby>
+        <Disabled>A_CHAT_HSBLeftDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBLeftPressedFlyby</PressedFlyby>
       </UpButton>
       <DownButton>
-        <Normal>A_HSBRightNormal</Normal>
-        <Pressed>A_HSBRightPressed</Pressed>
-        <Flyby>A_HSBRightFlyby</Flyby>
-        <Disabled>A_HSBRightDisabled</Disabled>
-        <PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+        <Normal>A_CHAT_HSBRightNormal</Normal>
+        <Pressed>A_CHAT_HSBRightPressed</Pressed>
+        <Flyby>A_CHAT_HSBRightFlyby</Flyby>
+        <Disabled>A_CHAT_HSBRightDisabled</Disabled>
+        <PressedFlyby>A_CHAT_HSBRightPressedFlyby</PressedFlyby>
       </DownButton>
       <Thumb>
-        <Right>A_HSBThumbRight</Right>
-        <Left>A_HSBThumbLeft</Left>
-        <Middle>A_HSBThumbMiddle</Middle>
+        <Right>A_CHAT_HThumbRight</Right>
+        <Left>A_CHAT_HThumbLeft</Left>
+        <Middle>A_CHAT_HThumbMiddle</Middle>
         <OverlapLeft>0</OverlapLeft>
         <OverlapTop>0</OverlapTop>
         <OverlapRight>0</OverlapRight>
         <OverlapBottom>0</OverlapBottom>
       </Thumb>
-      <MiddleTextureInfo>scrollbar_Hgutter.png</MiddleTextureInfo>
+      <MiddleTextureInfo>chat_Hgutter.png</MiddleTextureInfo>
       <MiddleTint>
         <Alpha>255</Alpha>
-        <R>128</R>
-        <G>128</G>
-        <B>128</B>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
       </MiddleTint>
     </HSBTemplate>
     <CloseBox>

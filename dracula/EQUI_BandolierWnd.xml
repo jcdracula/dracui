@@ -1,0 +1,304 @@
+<?xml version = "1.0"?>
+<XML ID = "EQInterfaceDefinitionLanguage">
+	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
+
+<!--
+	Modernized Bandolier window (206 x 268)
+	Client area is 200 x 240 with an 8px margin on all sides (184px content width).
+	Top to bottom:
+	- Equipped-slot preview: Primary, Secondary, Range, Ammo in one row (40x40, 8px gaps)
+	- Full-width weapon set list
+	- Auto Swap and Use locked slots, one per line so labels never clip
+	- 2 x 2 action buttons (90x20, 4px gaps): Activate / Hot Button, Add / Delete
+	All ScreenIDs are unchanged, so the game wires everything up as before.
+-->
+
+<!-- Equipped-slot preview row -->
+
+	<Button item = "BW_DisplayButton0">
+		<ScreenID>DisplayButton0</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>8</X>
+			<Y>8</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<TooltipReference>Primary</TooltipReference>
+		<Style_Checkbox>false</Style_Checkbox>
+		<Text></Text>
+		<ButtonDrawTemplate>
+			<Normal>A_InvPrimary</Normal>
+		</ButtonDrawTemplate>
+		<DecalOffset>
+			<X>0</X>
+			<Y>0</Y>
+		</DecalOffset>
+		<DecalSize>
+			<CX>40</CX>
+			<CY>40</CY>
+		</DecalSize>
+	</Button>
+
+	<Button item = "BW_DisplayButton1">
+		<ScreenID>DisplayButton1</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>56</X>
+			<Y>8</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<TooltipReference>Secondary</TooltipReference>
+		<Style_Checkbox>false</Style_Checkbox>
+		<Text></Text>
+		<ButtonDrawTemplate>
+			<Normal>A_InvSecondary</Normal>
+		</ButtonDrawTemplate>
+		<DecalOffset>
+			<X>0</X>
+			<Y>0</Y>
+		</DecalOffset>
+		<DecalSize>
+			<CX>40</CX>
+			<CY>40</CY>
+		</DecalSize>
+	</Button>
+
+	<Button item = "BW_DisplayButton2">
+		<ScreenID>DisplayButton2</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>104</X>
+			<Y>8</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<TooltipReference>Range</TooltipReference>
+		<Style_Checkbox>false</Style_Checkbox>
+		<Text></Text>
+		<ButtonDrawTemplate>
+			<Normal>A_InvRange</Normal>
+		</ButtonDrawTemplate>
+		<DecalOffset>
+			<X>0</X>
+			<Y>0</Y>
+		</DecalOffset>
+		<DecalSize>
+			<CX>40</CX>
+			<CY>40</CY>
+		</DecalSize>
+	</Button>
+
+	<Button item = "BW_DisplayButton3">
+		<ScreenID>DisplayButton3</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>152</X>
+			<Y>8</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<TooltipReference>Ammo</TooltipReference>
+		<Style_Checkbox>false</Style_Checkbox>
+		<Text></Text>
+		<ButtonDrawTemplate>
+			<Normal>A_InvAmmo</Normal>
+		</ButtonDrawTemplate>
+		<DecalOffset>
+			<X>0</X>
+			<Y>0</Y>
+		</DecalOffset>
+		<DecalSize>
+			<CX>40</CX>
+			<CY>40</CY>
+		</DecalSize>
+	</Button>
+
+<!-- Weapon set list -->
+
+	<Listbox item = "BW_WeaponSetList">
+		<ScreenID>WeaponSetList</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>8</X>
+			<Y>56</Y>
+		</Location>
+		<Size>
+			<CX>184</CX>
+			<CY>88</CY>
+		</Size>
+		<Columns>
+			<Width>164</Width>
+		</Columns>
+		<Style_Border>true</Style_Border>
+		<Style_VScroll>true</Style_VScroll>
+	</Listbox>
+
+<!-- Options -->
+
+	<Button item = "BW_AutoSwapButton">
+		<ScreenID>AutoSwapButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>8</X>
+			<Y>150</Y>
+		</Location>
+		<Size>
+			<CX>100</CX>
+			<CY>15</CY>
+		</Size>
+		<Style_Checkbox>true</Style_Checkbox>
+		<Text>Auto Swap</Text>
+		<Template>BDT_CheckboxWithText</Template>
+		<DecalOffset>
+			<X>0</X>
+			<Y>2</Y>
+		</DecalOffset>
+		<DecalSize>
+			<CX>12</CX>
+			<CY>12</CY>
+		</DecalSize>
+	</Button>
+
+	<Button item = "BW_LockedSlotsButton">
+		<ScreenID>LockedSlotsButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>8</X>
+			<Y>166</Y>
+		</Location>
+		<Size>
+			<CX>137</CX>
+			<CY>15</CY>
+		</Size>
+		<TooltipReference>Selecting this allows items in locked inventory slots to be used when changing bandolier sets.</TooltipReference>
+		<NoWrap>true</NoWrap>
+		<Style_Checkbox>true</Style_Checkbox>
+		<Text>Use locked slots</Text>
+		<Template>BDT_CheckboxWithText</Template>
+		<DecalOffset>
+			<X>0</X>
+			<Y>2</Y>
+		</DecalOffset>
+		<DecalSize>
+			<CX>12</CX>
+			<CY>12</CY>
+		</DecalSize>
+	</Button>
+
+<!-- Actions (2 x 2) -->
+
+	<Button item = "BW_UseButton">
+		<ScreenID>UseButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>8</X>
+			<Y>188</Y>
+		</Location>
+		<Size>
+			<CX>90</CX>
+			<CY>20</CY>
+		</Size>
+		<TooltipReference>Equip the selected weapon set.</TooltipReference>
+		<Style_Checkbox>false</Style_Checkbox>
+		<Text>Activate</Text>
+		<Template>BDT_Normal</Template>
+	</Button>
+
+	<Button item = "BW_MakeHotkeyButton">
+		<ScreenID>MkHotButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>102</X>
+			<Y>188</Y>
+		</Location>
+		<Size>
+			<CX>90</CX>
+			<CY>20</CY>
+		</Size>
+		<TooltipReference>Create a hot button that activates the selected set.</TooltipReference>
+		<Style_Checkbox>false</Style_Checkbox>
+		<Text>Hot Button</Text>
+		<Template>BDT_Normal</Template>
+	</Button>
+
+	<Button item = "BW_AddButton">
+		<ScreenID>AddButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>8</X>
+			<Y>212</Y>
+		</Location>
+		<Size>
+			<CX>90</CX>
+			<CY>20</CY>
+		</Size>
+		<TooltipReference>Save your currently equipped weapons as a new set.</TooltipReference>
+		<Style_Checkbox>false</Style_Checkbox>
+		<Text>Add</Text>
+		<Template>BDT_Normal</Template>
+	</Button>
+
+	<Button item = "BW_DeleteButton">
+		<ScreenID>DeleteButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>102</X>
+			<Y>212</Y>
+		</Location>
+		<Size>
+			<CX>90</CX>
+			<CY>20</CY>
+		</Size>
+		<TooltipReference>Delete the selected weapon set.</TooltipReference>
+		<Style_Checkbox>false</Style_Checkbox>
+		<Text>Delete</Text>
+		<Template>BDT_Normal</Template>
+	</Button>
+
+	<Screen item = "BandolierWnd">
+		<ScreenID>BandolierWnd</ScreenID>
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>196</X>
+			<Y>50</Y>
+		</Location>
+		<Size>
+			<CX>206</CX>
+			<CY>268</CY>
+		</Size>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<Text>Bandolier</Text>
+		<DrawTemplate>WDT_Rounded</DrawTemplate>
+		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Qmarkbox>true</Style_Qmarkbox>
+		<Style_Closebox>true</Style_Closebox>
+		<Style_Minimizebox>true</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>false</Style_Sizable>
+		<Pieces>BW_DisplayButton0</Pieces>
+		<Pieces>BW_DisplayButton1</Pieces>
+		<Pieces>BW_DisplayButton2</Pieces>
+		<Pieces>BW_DisplayButton3</Pieces>
+		<Pieces>BW_WeaponSetList</Pieces>
+		<Pieces>BW_AutoSwapButton</Pieces>
+		<Pieces>BW_LockedSlotsButton</Pieces>
+		<Pieces>BW_UseButton</Pieces>
+		<Pieces>BW_MakeHotkeyButton</Pieces>
+		<Pieces>BW_AddButton</Pieces>
+		<Pieces>BW_DeleteButton</Pieces>
+	</Screen>
+
+</XML>

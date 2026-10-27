@@ -2,26 +2,22 @@
 <XML ID="EQInterfaceDefinitionLanguage">
 	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
 	<!-- ============================================================
-	     Modernized spell book, "clean list" layout (modern full-window theme)
-	     - slate window with a header; each page is a column of 8 rows: icon, name, and a
-	       dot at the right (blue = beneficial, red = detrimental). The game picks
-	       BDT_BlueBuff / BDT_RedBuff per spell, so the row art carries that colour.
-	     - every spell is one full-width row button, drawn above its name, so the whole
-	       row highlights gold on hover and takes clicks (the row art is see-through
-	       where the name sits)
-	     - names in one line, soft white; zebra striping on alternate rows
-	     - "PAGE" captions with the game's page numbers beside them, in gold
-	     - footer: page arrows at each corner (dim when there's no page to turn to) and
-	       the memorize / scribe bar centred between them
-	     Art: wnd_pieces.dds (EQUI_Animations.xml); tile templates in EQUI_Templates.xml
+	     Spell book restyled to match the Alternate Advancement window
+	     - real rounded window frame with a "Spell Book" title bar, ? and close boxes
+	       (replaces the baked-in background picture)
+	     - each page sits in a dark AA list panel (244 x 277) with a small gold PAGE caption
+	       and the page number; 6px margins and gutters throughout
+	     - 8 rows per page: the game itself fills each row slate (beneficial) or red (detrimental);
+	       the spell names are drawn above the rows so that fill can't dim them
+	     - footer: "< Prev" / "Next >" in the AA button style, memorize / scribe bar centred
 	     ============================================================ -->
 	<!-- Spells -->
 	<Button item="SBW_Spell0">
 		<ScreenID>SBW_Spell0</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>14</X>
-			<Y>66</Y>
+			<X>12</X>
+			<Y>30</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -43,8 +39,8 @@
 		<ScreenID>SBW_Spell1</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>14</X>
-			<Y>97</Y>
+			<X>12</X>
+			<Y>61</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -66,8 +62,8 @@
 		<ScreenID>SBW_Spell2</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>14</X>
-			<Y>128</Y>
+			<X>12</X>
+			<Y>92</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -89,8 +85,8 @@
 		<ScreenID>SBW_Spell3</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>14</X>
-			<Y>159</Y>
+			<X>12</X>
+			<Y>123</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -112,8 +108,8 @@
 		<ScreenID>SBW_Spell4</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>14</X>
-			<Y>190</Y>
+			<X>12</X>
+			<Y>154</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -135,8 +131,8 @@
 		<ScreenID>SBW_Spell5</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>14</X>
-			<Y>221</Y>
+			<X>12</X>
+			<Y>185</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -158,8 +154,8 @@
 		<ScreenID>SBW_Spell6</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>14</X>
-			<Y>252</Y>
+			<X>12</X>
+			<Y>216</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -181,8 +177,8 @@
 		<ScreenID>SBW_Spell7</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>14</X>
-			<Y>283</Y>
+			<X>12</X>
+			<Y>247</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -204,8 +200,8 @@
 		<ScreenID>SBW_Spell8</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>264</X>
-			<Y>66</Y>
+			<X>262</X>
+			<Y>30</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -227,8 +223,8 @@
 		<ScreenID>SBW_Spell9</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>264</X>
-			<Y>97</Y>
+			<X>262</X>
+			<Y>61</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -250,8 +246,8 @@
 		<ScreenID>SBW_Spell10</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>264</X>
-			<Y>128</Y>
+			<X>262</X>
+			<Y>92</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -273,8 +269,8 @@
 		<ScreenID>SBW_Spell11</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>264</X>
-			<Y>159</Y>
+			<X>262</X>
+			<Y>123</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -296,8 +292,8 @@
 		<ScreenID>SBW_Spell12</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>264</X>
-			<Y>190</Y>
+			<X>262</X>
+			<Y>154</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -319,8 +315,8 @@
 		<ScreenID>SBW_Spell13</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>264</X>
-			<Y>221</Y>
+			<X>262</X>
+			<Y>185</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -342,8 +338,8 @@
 		<ScreenID>SBW_Spell14</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>264</X>
-			<Y>252</Y>
+			<X>262</X>
+			<Y>216</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -365,8 +361,8 @@
 		<ScreenID>SBW_Spell15</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>264</X>
-			<Y>283</Y>
+			<X>262</X>
+			<Y>247</Y>
 		</Location>
 		<Size>
 			<CX>232</CX>
@@ -387,21 +383,21 @@
 	<!-- Spell names (listed before the spells so the rows sit on top) -->
 	<StaticText item="SBW_SpellName0">
 		<ScreenID>SBW_SpellName0</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>56</X>
-			<Y>74</Y>
+			<X>54</X>
+			<Y>37</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -409,21 +405,21 @@
 	</StaticText>
 	<StaticText item="SBW_SpellName1">
 		<ScreenID>SBW_SpellName1</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>56</X>
-			<Y>105</Y>
+			<X>54</X>
+			<Y>68</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -431,21 +427,21 @@
 	</StaticText>
 	<StaticText item="SBW_SpellName2">
 		<ScreenID>SBW_SpellName2</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>56</X>
-			<Y>136</Y>
+			<X>54</X>
+			<Y>99</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -453,21 +449,21 @@
 	</StaticText>
 	<StaticText item="SBW_SpellName3">
 		<ScreenID>SBW_SpellName3</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>56</X>
-			<Y>167</Y>
+			<X>54</X>
+			<Y>130</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -475,21 +471,21 @@
 	</StaticText>
 	<StaticText item="SBW_SpellName4">
 		<ScreenID>SBW_SpellName4</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>56</X>
-			<Y>198</Y>
+			<X>54</X>
+			<Y>161</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -497,21 +493,21 @@
 	</StaticText>
 	<StaticText item="SBW_SpellName5">
 		<ScreenID>SBW_SpellName5</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>56</X>
-			<Y>229</Y>
+			<X>54</X>
+			<Y>192</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -519,21 +515,21 @@
 	</StaticText>
 	<StaticText item="SBW_SpellName6">
 		<ScreenID>SBW_SpellName6</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>56</X>
-			<Y>260</Y>
+			<X>54</X>
+			<Y>223</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -541,21 +537,21 @@
 	</StaticText>
 	<StaticText item="SBW_SpellName7">
 		<ScreenID>SBW_SpellName7</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>56</X>
-			<Y>291</Y>
+			<X>54</X>
+			<Y>254</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -563,21 +559,21 @@
 	</StaticText>
 	<StaticText item="SBW_SpellName8">
 		<ScreenID>SBW_SpellName8</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>306</X>
-			<Y>74</Y>
+			<X>304</X>
+			<Y>37</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -585,21 +581,21 @@
 	</StaticText>
 	<StaticText item="SBW_SpellName9">
 		<ScreenID>SBW_SpellName9</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>306</X>
-			<Y>105</Y>
+			<X>304</X>
+			<Y>68</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -607,21 +603,21 @@
 	</StaticText>
 	<StaticText item="SBW_SpellName10">
 		<ScreenID>SBW_SpellName10</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>306</X>
-			<Y>136</Y>
+			<X>304</X>
+			<Y>99</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -629,21 +625,21 @@
 	</StaticText>
 	<StaticText item="SBW_SpellName11">
 		<ScreenID>SBW_SpellName11</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>306</X>
-			<Y>167</Y>
+			<X>304</X>
+			<Y>130</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -651,21 +647,21 @@
 	</StaticText>
 	<StaticText item="SBW_SpellName12">
 		<ScreenID>SBW_SpellName12</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>306</X>
-			<Y>198</Y>
+			<X>304</X>
+			<Y>161</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -673,21 +669,21 @@
 	</StaticText>
 	<StaticText item="SBW_SpellName13">
 		<ScreenID>SBW_SpellName13</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>306</X>
-			<Y>229</Y>
+			<X>304</X>
+			<Y>192</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -695,21 +691,21 @@
 	</StaticText>
 	<StaticText item="SBW_SpellName14">
 		<ScreenID>SBW_SpellName14</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>306</X>
-			<Y>260</Y>
+			<X>304</X>
+			<Y>223</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -717,21 +713,21 @@
 	</StaticText>
 	<StaticText item="SBW_SpellName15">
 		<ScreenID>SBW_SpellName15</ScreenID>
-		<Font>2</Font>
+		<Font>3</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>306</X>
-			<Y>291</Y>
+			<X>304</X>
+			<Y>254</Y>
 		</Location>
 		<Size>
-			<CX>164</CX>
-			<CY>15</CY>
+			<CX>180</CX>
+			<CY>16</CY>
 		</Size>
 		<Text>xx</Text>
 		<TextColor>
-			<R>236</R>
-			<G>239</G>
-			<B>245</B>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -742,8 +738,8 @@
 		<ScreenID>SBW_Memorize_Gauge</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>155</X>
-			<Y>340</Y>
+			<X>153</X>
+			<Y>296</Y>
 		</Location>
 		<Size>
 			<CX>200</CX>
@@ -773,8 +769,8 @@
 		<ScreenID>SBW_Memorize_Gauge</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>155</X>
-			<Y>340</Y>
+			<X>153</X>
+			<Y>296</Y>
 		</Location>
 		<Size>
 			<CX>200</CX>
@@ -806,7 +802,7 @@
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>66</X>
-			<Y>285</Y>
+			<Y>250</Y>
 		</Location>
 		<Size>
 			<CX>1</CX>
@@ -821,8 +817,8 @@
 		<ScreenID>SBW_MemPage1_Button</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>296</X>
-			<Y>285</Y>
+			<X>316</X>
+			<Y>250</Y>
 		</Location>
 		<Size>
 			<CX>1</CX>
@@ -837,56 +833,44 @@
 		<ScreenID>SBW_PageDown_Button</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>10</X>
-			<Y>334</Y>
+			<X>6</X>
+			<Y>289</Y>
 		</Location>
 		<Size>
-			<CX>26</CX>
-			<CY>20</CY>
+			<CX>70</CX>
+			<CY>22</CY>
 		</Size>
 		<Style_Transparent>false</Style_Transparent>
 		<Style_Checkbox>false</Style_Checkbox>
-		<Text />
+		<Text>&lt; Prev</Text>
 		<TooltipReference>Previous pages</TooltipReference>
-		<ButtonDrawTemplate>
-			<Normal>A_SBW_LeftNormal</Normal>
-			<Flyby>A_SBW_LeftFlyby</Flyby>
-			<Pressed>A_SBW_LeftPressed</Pressed>
-			<PressedFlyby>A_SBW_LeftPressedFlyby</PressedFlyby>
-			<Disabled>A_SBW_LeftDisabled</Disabled>
-		</ButtonDrawTemplate>
+		<Template>BDT_Normal</Template>
 	</Button>
 	<Button item="SBW_PageUp_Button">
 		<ScreenID>SBW_PageUp_Button</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>474</X>
-			<Y>334</Y>
+			<X>430</X>
+			<Y>289</Y>
 		</Location>
 		<Size>
-			<CX>26</CX>
-			<CY>20</CY>
+			<CX>70</CX>
+			<CY>22</CY>
 		</Size>
 		<Style_Transparent>false</Style_Transparent>
 		<Style_Checkbox>false</Style_Checkbox>
-		<Text />
+		<Text>Next &gt;</Text>
 		<TooltipReference>Next pages</TooltipReference>
-		<ButtonDrawTemplate>
-			<Normal>A_SBW_RightNormal</Normal>
-			<Flyby>A_SBW_RightFlyby</Flyby>
-			<Pressed>A_SBW_RightPressed</Pressed>
-			<PressedFlyby>A_SBW_RightPressedFlyby</PressedFlyby>
-			<Disabled>A_SBW_RightDisabled</Disabled>
-		</ButtonDrawTemplate>
+		<Template>BDT_Normal</Template>
 	</Button>
 	<!-- page numbers (beside the "PAGE" captions) -->
 	<StaticText item="SBW_LeftPageNum">
 		<ScreenID>SBW_LeftPageNum</ScreenID>
-		<Font>1</Font>
+		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>52</X>
-			<Y>49</Y>
+			<X>50</X>
+			<Y>12</Y>
 		</Location>
 		<Size>
 			<CX>40</CX>
@@ -894,9 +878,9 @@
 		</Size>
 		<Text>000</Text>
 		<TextColor>
-			<R>205</R>
-			<G>162</G>
-			<B>72</B>
+			<R>236</R>
+			<G>214</G>
+			<B>160</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
@@ -904,11 +888,11 @@
 	</StaticText>
 	<StaticText item="SBW_RightPageNum">
 		<ScreenID>SBW_RightPageNum</ScreenID>
-		<Font>1</Font>
+		<Font>2</Font>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>302</X>
-			<Y>49</Y>
+			<X>300</X>
+			<Y>12</Y>
 		</Location>
 		<Size>
 			<CX>40</CX>
@@ -916,78 +900,26 @@
 		</Size>
 		<Text>000</Text>
 		<TextColor>
-			<R>205</R>
-			<G>162</G>
-			<B>72</B>
+			<R>236</R>
+			<G>214</G>
+			<B>160</B>
 		</TextColor>
 		<NoWrap>true</NoWrap>
 		<AlignCenter>false</AlignCenter>
 		<AlignRight>false</AlignRight>
 	</StaticText>
 	<!-- window background in four quarters -->
-	<StaticAnimation item="SBW_SpellBook1">
-		<ScreenID>SBW_SpellBook1</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>256</CX>
-			<CY>256</CY>
-		</Size>
-		<Animation>A_SBW_Bg1</Animation>
-	</StaticAnimation>
-	<StaticAnimation item="SBW_SpellBook2">
-		<ScreenID>SBW_SpellBook2</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>256</X>
-			<Y>0</Y>
-		</Location>
-		<Size>
-			<CX>254</CX>
-			<CY>256</CY>
-		</Size>
-		<Animation>A_SBW_Bg2</Animation>
-	</StaticAnimation>
-	<StaticAnimation item="SBW_SpellBook3">
-		<ScreenID>SBW_SpellBook3</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>0</X>
-			<Y>256</Y>
-		</Location>
-		<Size>
-			<CX>256</CX>
-			<CY>104</CY>
-		</Size>
-		<Animation>A_SBW_Bg3</Animation>
-	</StaticAnimation>
-	<StaticAnimation item="SBW_SpellBook4">
-		<ScreenID>SBW_SpellBook4</ScreenID>
-		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>256</X>
-			<Y>256</Y>
-		</Location>
-		<Size>
-			<CX>254</CX>
-			<CY>104</CY>
-		</Size>
-		<Animation>A_SBW_Bg4</Animation>
-	</StaticAnimation>
 	<!-- Close Button -->
 	<Button item="SBW_DoneButton">
 		<ScreenID>DoneButton</ScreenID>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>484</X>
-			<Y>10</Y>
+			<X>0</X>
+			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>16</CX>
-			<CY>16</CY>
+			<CX>0</CX>
+			<CY>0</CY>
 		</Size>
 		<Style_Transparent>false</Style_Transparent>
 		<Style_Checkbox>false</Style_Checkbox>
@@ -1000,6 +932,89 @@
 			<PressedFlyby>A_SBW_ClosePressed</PressedFlyby>
 		</ButtonDrawTemplate>
 	</Button>
+	<!-- Page panels (AA dark list panel) with small gold "PAGE" captions -->
+	<Screen item="SBW_LeftPanel">
+		<ScreenID>SBW_LeftPanel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>6</X>
+			<Y>6</Y>
+		</Location>
+		<Size>
+			<CX>244</CX>
+			<CY>277</CY>
+		</Size>
+		<Style_Transparent>false</Style_Transparent>
+		<DrawTemplate>WDT_ItemPanel</DrawTemplate>
+		<Style_Titlebar>false</Style_Titlebar>
+		<Style_Closebox>false</Style_Closebox>
+		<Style_Minimizebox>false</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>false</Style_Sizable>
+	</Screen>
+	<StaticText item="SBW_LeftPageCaption">
+		<ScreenID>SBW_LeftPageCaption</ScreenID>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>14</X>
+			<Y>12</Y>
+		</Location>
+		<Size>
+			<CX>36</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>PAGE</Text>
+		<TextColor>
+			<R>236</R>
+			<G>214</G>
+			<B>160</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</StaticText>
+	<Screen item="SBW_RightPanel">
+		<ScreenID>SBW_RightPanel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>256</X>
+			<Y>6</Y>
+		</Location>
+		<Size>
+			<CX>244</CX>
+			<CY>277</CY>
+		</Size>
+		<Style_Transparent>false</Style_Transparent>
+		<DrawTemplate>WDT_ItemPanel</DrawTemplate>
+		<Style_Titlebar>false</Style_Titlebar>
+		<Style_Closebox>false</Style_Closebox>
+		<Style_Minimizebox>false</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>false</Style_Sizable>
+	</Screen>
+	<StaticText item="SBW_RightPageCaption">
+		<ScreenID>SBW_RightPageCaption</ScreenID>
+		<Font>2</Font>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>264</X>
+			<Y>12</Y>
+		</Location>
+		<Size>
+			<CX>36</CX>
+			<CY>14</CY>
+		</Size>
+		<Text>PAGE</Text>
+		<TextColor>
+			<R>236</R>
+			<G>214</G>
+			<B>160</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</StaticText>
 	<!-- Spellbook -->
 	<Screen item="SpellBookWnd">
 		<RelativePosition>false</RelativePosition>
@@ -1008,41 +1023,25 @@
 			<Y>80</Y>
 		</Location>
 		<Size>
-			<CX>510</CX>
-			<CY>360</CY>
+			<CX>512</CX>
+			<CY>345</CY>
 		</Size>
 		<!-- misc. -->
-		<Text>My Spell Book</Text>
-		<Style_Transparent>true</Style_Transparent>
+		<Text>Spell Book</Text>
+		<Style_Transparent>false</Style_Transparent>
 		<TooltipReference />
 		<DrawTemplate>WDT_Rounded</DrawTemplate>
-		<Style_Titlebar>false</Style_Titlebar>
+		<Style_Titlebar>true</Style_Titlebar>
 		<Style_Qmarkbox>true</Style_Qmarkbox>
-		<Style_Closebox>false</Style_Closebox>
+		<Style_Closebox>true</Style_Closebox>
 		<Style_Minimizebox>false</Style_Minimizebox>
-		<Style_Border>false</Style_Border>
+		<Style_Border>true</Style_Border>
 		<Style_Sizable>false</Style_Sizable>
-		<!-- defs. (later pieces draw on top: names first, then the spell rows) -->
-		<Pieces>SBW_SpellBook1</Pieces>
-		<Pieces>SBW_SpellBook2</Pieces>
-		<Pieces>SBW_SpellBook3</Pieces>
-		<Pieces>SBW_SpellBook4</Pieces>
-		<Pieces>SBW_SpellName0</Pieces>
-		<Pieces>SBW_SpellName1</Pieces>
-		<Pieces>SBW_SpellName2</Pieces>
-		<Pieces>SBW_SpellName3</Pieces>
-		<Pieces>SBW_SpellName4</Pieces>
-		<Pieces>SBW_SpellName5</Pieces>
-		<Pieces>SBW_SpellName6</Pieces>
-		<Pieces>SBW_SpellName7</Pieces>
-		<Pieces>SBW_SpellName8</Pieces>
-		<Pieces>SBW_SpellName9</Pieces>
-		<Pieces>SBW_SpellName10</Pieces>
-		<Pieces>SBW_SpellName11</Pieces>
-		<Pieces>SBW_SpellName12</Pieces>
-		<Pieces>SBW_SpellName13</Pieces>
-		<Pieces>SBW_SpellName14</Pieces>
-		<Pieces>SBW_SpellName15</Pieces>
+		<!-- defs. (panels, then the spell rows, then the names on top so the game's row colour can't dim them) -->
+		<Pieces>Screen:SBW_LeftPanel</Pieces>
+		<Pieces>Screen:SBW_RightPanel</Pieces>
+		<Pieces>SBW_LeftPageCaption</Pieces>
+		<Pieces>SBW_RightPageCaption</Pieces>
 		<Pieces>SBW_Memorize_Gauge</Pieces>
 		<Pieces>SBW_Scribe_Gauge</Pieces>
 		<Pieces>SBW_MemPage0_Button</Pieces>
@@ -1067,6 +1066,22 @@
 		<Pieces>SBW_Spell13</Pieces>
 		<Pieces>SBW_Spell14</Pieces>
 		<Pieces>SBW_Spell15</Pieces>
+		<Pieces>SBW_SpellName0</Pieces>
+		<Pieces>SBW_SpellName1</Pieces>
+		<Pieces>SBW_SpellName2</Pieces>
+		<Pieces>SBW_SpellName3</Pieces>
+		<Pieces>SBW_SpellName4</Pieces>
+		<Pieces>SBW_SpellName5</Pieces>
+		<Pieces>SBW_SpellName6</Pieces>
+		<Pieces>SBW_SpellName7</Pieces>
+		<Pieces>SBW_SpellName8</Pieces>
+		<Pieces>SBW_SpellName9</Pieces>
+		<Pieces>SBW_SpellName10</Pieces>
+		<Pieces>SBW_SpellName11</Pieces>
+		<Pieces>SBW_SpellName12</Pieces>
+		<Pieces>SBW_SpellName13</Pieces>
+		<Pieces>SBW_SpellName14</Pieces>
+		<Pieces>SBW_SpellName15</Pieces>
 		<Pieces>SBW_DoneButton</Pieces>
 	</Screen>
 </XML>
